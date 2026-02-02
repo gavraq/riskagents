@@ -1,0 +1,32 @@
+{
+  "test1": {
+    "name": "US Recession with Fed Policy Error",
+    "confidence": 60,
+    "validation_errors": 0,
+    "validation_warnings": 1,
+    "asset_classes": 5,
+    "output_file": "/Users/gavinslater/projects/riskagent/.claude/skills/pillar-stress-generator/test_output/test1/us_recession_with_fed_policy_error_20251112.json"
+  },
+  "test2": {
+    "name": "Middle East Oil Supply Disruption",
+    "confidence": 70,
+    "validation_errors": 0,
+    "validation_warnings": 1,
+    "asset_classes": 5,
+    "output_file": "/Users/gavinslater/projects/riskagent/.claude/skills/pillar-stress-generator/test_output/test2/middle_east_oil_supply_disruption_20251112.json"
+  },
+  "test3": {
+    "name": "EUR Sovereign Crisis 2.0",
+    "confidence": 80,
+    "validation_errors": 0,
+    "validation_warnings": 1,
+    "asset_classes": 5,
+    "output_file": "/Users/gavinslater/projects/riskagent/.claude/skills/pillar-stress-generator/test_output/test3/eur_sovereign_crisis_2.0_20251112.json"
+  },
+  "test4": {
+    "scenario": "Financial Crisis 2025",
+    "recommendation": "major_revision_needed",
+    "changes_proposed": 3,
+    "output_file": "/Users/gavinslater/projects/riskagent/.claude/skills/pillar-stress-generator/test_output/test4/annual_review_memo.md"
+  }
+}

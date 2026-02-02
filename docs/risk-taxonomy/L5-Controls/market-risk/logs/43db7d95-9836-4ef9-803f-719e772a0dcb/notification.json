@@ -1,0 +1,18 @@
+[
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L5-Controls/market-risk",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L5-Controls/market-risk",
+    "hook_event_name": "Notification",
+    "message": "Claude is waiting for your input",
+    "notification_type": "idle_prompt"
+  }
+]

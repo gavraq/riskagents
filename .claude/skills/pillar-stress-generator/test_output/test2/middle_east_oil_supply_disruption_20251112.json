@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "scenario_id": "middle_east_oil_supply_disruption_20251112",
+    "scenario_name": "Middle East Oil Supply Disruption",
+    "created_date": "2025-11-12",
+    "created_by": "Market Risk",
+    "version": "1.0",
+    "scenario_type": "supply_disruption",
+    "severity": "severe",
+    "primary_geography": "global",
+    "status": "draft"
+  },
+  "narrative": {
+    "trigger_event": "Regional conflict escalates, disrupting 3 million barrels/day of oil exports through critical shipping lanes",
+    "transmission_channels": [
+      "Oil prices spike 50% as supply is physically disrupted",
+      "Inflation expectations rise sharply, forcing central bank tightening",
+      "Energy-importing economies see terms of trade deterioration",
+      "Gas prices follow oil higher on energy complex correlation",
+      "Consumer spending constrained by higher energy costs, growth slows"
+    ],
+    "timeline": {
+      "onset": "Immediate - conflict escalation, shipping halt",
+      "peak": "1-2 months - oil peaks at $135/bbl, policy response begins",
+      "recovery": "6-12 months - diplomatic resolution, supply gradually restored"
+    },
+    "key_assumptions": [
+      "Disruption lasts 6+ months (not quickly resolved)",
+      "Strategic petroleum reserves provide limited buffer",
+      "OPEC+ unable or unwilling to fully offset supply loss",
+      "Limited demand destruction despite high prices"
+    ],
+    "probability_assessment": "unlikely_but_possible",
+    "narrative_text": "**Trigger Event**: Regional conflict escalates, disrupting 3 million barrels/day of oil exports through critical shipping lanes\n\n**Scenario Type**: Supply Disruption\n**Severity**: Severe Stress\n\n**Transmission Channels**:\n1. Oil prices spike 50% as supply is physically disrupted\n2. Inflation expectations rise sharply, forcing central bank tightening\n3. Energy-importing economies see terms of trade deterioration\n4. Gas prices follow oil higher on energy complex correlation\n5. Consumer spending constrained by higher energy costs, growth slows\n\n**Timeline**:\n- **Onset**: Immediate - conflict escalation, shipping halt\n- **Peak**: 1-2 months - oil peaks at $135/bbl, policy response begins\n- **Recovery**: 6-12 months - diplomatic resolution, supply gradually restored"
+  },
+  "asset_class_shocks": [
+    {
+      "asset_class": "Rates & FX",
+      "description": "Interest rate curve shocks (bps) and FX movements (% change in value of 1 USD)",
+      "shocks": {
+        "regions": {
+          "China": {
+            "3M": 150.0,
+            "2Y": 150.0,
+            "10Y": 150.0
+          },
+          "Europe": {
+            "3M": 50.0,
+            "2Y": 50.0,
+            "10Y": 50.0
+          },
+          "Emerging Europe": {
+            "3M": 150.0,
+            "2Y": 150.0,
+            "10Y": 150.0
+          },
+          "North America": {
+            "3M": 50.0,
+            "2Y": 50.0,
+            "10Y": 50.0
+          },
+          "EM Asia": {
+            "3M": 150.0,
+            "2Y": 150.0,
+            "10Y": 150.0
+          },
+          "Africa Sub Sahara": {
+            "3M": 150.0,
+            "2Y": 150.0,
+            "10Y": 150.0
+          }
+        },
+        "fx_moves": {}
+      },
+      "rationale": "Rate movements calibrated to scenario type and severity.",
+      "historical_analogue": "Historical precedent"
+    },
+    {
+      "asset_class": "Credit Trading",
+      "description": "Credit spread relative moves by sector and region with beta multipliers",
+      "shocks": {
+        "base_spreads": {
+          "IG": 60.0,
+          "HY": 180.0
+        },
+        "sector_betas": {
+          "Europe": {
+            "base_spread_move_pct": 45,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "Emerging Europe": {
+            "base_spread_move_pct": 75,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "North America": {
+            "base_spread_move_pct": 45,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "South America": {
+            "base_spread_move_pct": 75,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "Africa Sub Sahara": {
+            "base_spread_move_pct": 75,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "Emerging Asia": {
+            "base_spread_move_pct": 75,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          }
+        }
+      },
+      "rationale": "Supply Disruption scenario drives credit risk repricing. Spreads widen due to default risk and liquidity premium. High yield particularly affected. Cyclical sectors (Energy, Materials) see elevated betas.",
+      "historical_analogue": "Historical precedent"
+    },
+    {
+      "asset_class": "Energy",
+      "description": "Energy commodity shocks as relative price moves and absolute volatility shocks",
+      "shocks": {},
+      "rationale": "Supply disruption from geopolitical event drives oil prices sharply higher. Volatility spikes as market reprices supply risk.",
+      "historical_analogue": "Historical precedent"
+    },
+    {
+      "asset_class": "Precious Metals",
+      "description": "Precious metals shocks: relative price, relative volatility, absolute lease rate (bps)",
+      "shocks": {},
+      "rationale": "Gold and silver benefit from safe haven demand in risk-off scenario. Industrial PMs (Platinum, Palladium) decline with broader industrial demand weakness. Lease rates fall reflecting lower cost of carry.",
+      "historical_analogue": "Historical precedent"
+    },
+    {
+      "asset_class": "Base Metals",
+      "description": "Base metals shocks: relative price and absolute volatility",
+      "shocks": {
+        "Copper": {
+          "price_shock_pct": -20,
+          "vol_shock_abs": 25
+        },
+        "Aluminium": {
+          "price_shock_pct": -15.0,
+          "vol_shock_abs": 10
+        },
+        "Nickel": {
+          "price_shock_pct": -20,
+          "vol_shock_abs": 25
+        },
+        "Zinc": {
+          "price_shock_pct": -20,
+          "vol_shock_abs": 20
+        },
+        "Lead": {
+          "price_shock_pct": -20,
+          "vol_shock_abs": 20
+        },
+        "Tin": {
+          "price_shock_pct": -20,
+          "vol_shock_abs": 20
+        }
+      },
+      "rationale": "Industrial metals decline on weaker global growth expectations. Copper acts as economic bellwether. Volatility increases reflecting uncertainty.",
+      "historical_analogue": "Historical precedent"
+    }
+  ],
+  "validation_results": [
+    {
+      "level": {},
+      "category": "completeness",
+      "message": "Missing asset classes: rates, fx, credit, commodities",
+      "affected_factors": [
+        "rates",
+        "fx",
+        "credit",
+        "commodities"
+      ],
+      "suggestion": "Complete scenarios should cover all major asset classes"
+    }
+  ],
+  "confidence_score": 70,
+  "consultation_prompts": {
+    "Energy Trading": [
+      "Review Middle East Oil Supply Disruption oil price shocks vs current positioning",
+      "Confirm relevance to key trading strategies (calendar spreads, crack spreads)",
+      "Identify any basis risks (Brent-WTI, physical vs futures) needing explicit shocks",
+      "Validate vol shock magnitudes vs current market conditions"
+    ],
+    "Precious Metals": [
+      "Review precious metals shocks vs inventory positions",
+      "Confirm lease rate assumptions align with financing strategies",
+      "Identify any cross-commodity risks not captured"
+    ],
+    "Base Metals": [
+      "Validate base metals shocks vs key positions (especially copper)",
+      "Confirm calendar spread impacts captured (pending Murex migration)",
+      "Review any specific contract types (LME, SHFE) needing separate shocks"
+    ],
+    "Credit Trading": [
+      "Review sector beta assumptions vs current portfolio composition",
+      "Validate regional spread differentiation",
+      "Identify any specific issuer concentrations requiring attention",
+      "Confirm alignment with issuer risk exposures"
+    ]
+  },
+  "next_steps": [
+    "\u26a0\ufe0f  Review validation warnings with Market Risk SME",
+    "Conduct Front Office consultation (use prompts provided)",
+    "Present to Market Risk team for technical review",
+    "Prepare MLRC presentation materials",
+    "Schedule MLRC approval discussion"
+  ]
+}

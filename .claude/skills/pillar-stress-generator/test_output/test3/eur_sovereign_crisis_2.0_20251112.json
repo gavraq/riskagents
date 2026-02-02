@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "scenario_id": "eur_sovereign_crisis_2.0_20251112",
+    "scenario_name": "EUR Sovereign Crisis 2.0",
+    "created_date": "2025-11-12",
+    "created_by": "Market Risk",
+    "version": "1.0",
+    "scenario_type": "recession",
+    "severity": "severe",
+    "primary_geography": "EUR",
+    "status": "draft"
+  },
+  "narrative": {
+    "trigger_event": "Sovereign debt crisis re-emerges in peripheral EUR economies amid fiscal deterioration and political fragmentation",
+    "transmission_channels": [
+      "Peripheral sovereign spreads widen sharply (Italy, Spain, Portugal)",
+      "Sovereign-bank doom loop re-emerges as banks hold government debt",
+      "EUR depreciates on capital flight and ECB credibility concerns",
+      "Credit spreads widen, especially for EUR financials",
+      "Flight to quality into German Bunds and USD"
+    ],
+    "timeline": {
+      "onset": "Q2 2025 - Sovereign debt auction fails, spreads spike",
+      "peak": "Q3 2025 - Banking sector stress, EUR weakness accelerates",
+      "recovery": "Q4 2025-Q1 2026 - ECB intervention, fiscal support package"
+    },
+    "key_assumptions": [
+      "ECB constrained by inflation, cannot immediately ease",
+      "Fiscal rules prevent aggressive national responses",
+      "Political will for bailouts limited vs 2011-2012",
+      "Contagion contained to EUR (limited global spillover)"
+    ],
+    "probability_assessment": "unlikely_but_possible",
+    "narrative_text": "**Trigger Event**: Sovereign debt crisis re-emerges in peripheral EUR economies amid fiscal deterioration and political fragmentation\n\n**Scenario Type**: Recession\n**Severity**: Severe Stress\n\n**Transmission Channels**:\n1. Peripheral sovereign spreads widen sharply (Italy, Spain, Portugal)\n2. Sovereign-bank doom loop re-emerges as banks hold government debt\n3. EUR depreciates on capital flight and ECB credibility concerns\n4. Credit spreads widen, especially for EUR financials\n5. Flight to quality into German Bunds and USD\n\n**Timeline**:\n- **Onset**: Q2 2025 - Sovereign debt auction fails, spreads spike\n- **Peak**: Q3 2025 - Banking sector stress, EUR weakness accelerates\n- **Recovery**: Q4 2025-Q1 2026 - ECB intervention, fiscal support package"
+  },
+  "asset_class_shocks": [
+    {
+      "asset_class": "Rates & FX",
+      "description": "Interest rate curve shocks (bps) and FX movements (% change in value of 1 USD)",
+      "shocks": {
+        "regions": {
+          "China": {
+            "3M": 200.0,
+            "2Y": 200.0,
+            "10Y": 200.0
+          },
+          "Europe": {
+            "3M": -100.0,
+            "2Y": -100.0,
+            "10Y": -100.0
+          },
+          "Emerging Europe": {
+            "3M": 200.0,
+            "2Y": 200.0,
+            "10Y": 200.0
+          },
+          "North America": {
+            "3M": -100.0,
+            "2Y": -100.0,
+            "10Y": -100.0
+          },
+          "EM Asia": {
+            "3M": 200.0,
+            "2Y": 200.0,
+            "10Y": 200.0
+          },
+          "Africa Sub Sahara": {
+            "3M": 200.0,
+            "2Y": 200.0,
+            "10Y": 200.0
+          }
+        },
+        "fx_moves": {
+          "USD_Index": 10.0,
+          "EM_FX_Avg": -15.0
+        }
+      },
+      "rationale": "Flight to quality drives DM rates down; EM rates up on risk premium. USD strengthens as safe haven.",
+      "historical_analogue": "Historical precedent"
+    },
+    {
+      "asset_class": "Credit Trading",
+      "description": "Credit spread relative moves by sector and region with beta multipliers",
+      "shocks": {
+        "base_spreads": {
+          "IG": 120.0,
+          "HY": 400.0
+        },
+        "sector_betas": {
+          "Europe": {
+            "base_spread_move_pct": 45,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "Emerging Europe": {
+            "base_spread_move_pct": 75,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "North America": {
+            "base_spread_move_pct": 45,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "South America": {
+            "base_spread_move_pct": 75,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "Africa Sub Sahara": {
+            "base_spread_move_pct": 75,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          },
+          "Emerging Asia": {
+            "base_spread_move_pct": 75,
+            "sectors": {
+              "Energy": 1.5,
+              "Materials": 1.5,
+              "Financials": 1.0
+            }
+          }
+        }
+      },
+      "rationale": "Recession scenario drives credit risk repricing. Spreads widen due to default risk and liquidity premium. High yield particularly affected. Cyclical sectors (Energy, Materials) see elevated betas.",
+      "historical_analogue": "Historical precedent"
+    },
+    {
+      "asset_class": "Energy",
+      "description": "Energy commodity shocks as relative price moves and absolute volatility shocks",
+      "shocks": {
+        "WTI": {
+          "price_shock_pct": -25.0,
+          "vol_shock_abs": 20
+        },
+        "Brent": {
+          "price_shock_pct": -22.5,
+          "vol_shock_abs": 20
+        },
+        "Heavy Distillates": {
+          "price_shock_pct": -25.0,
+          "vol_shock_abs": 20
+        },
+        "Medium Distillates": {
+          "price_shock_pct": -25.0,
+          "vol_shock_abs": 20
+        },
+        "Light Distillates": {
+          "price_shock_pct": -25.0,
+          "vol_shock_abs": 20
+        }
+      },
+      "rationale": "Demand destruction from economic contraction drives oil prices lower. OPEC+ production cuts insufficient to offset demand weakness.",
+      "historical_analogue": "Historical precedent"
+    },
+    {
+      "asset_class": "Precious Metals",
+      "description": "Precious metals shocks: relative price, relative volatility, absolute lease rate (bps)",
+      "shocks": {
+        "Gold": {
+          "price_shock_pct": 5.0,
+          "vol_shock_pct": 60,
+          "lease_rate_bps": -140
+        },
+        "Silver": {
+          "price_shock_pct": 7.5,
+          "vol_shock_pct": 30,
+          "lease_rate_bps": -190
+        },
+        "Platinum": {
+          "price_shock_pct": -12.0,
+          "vol_shock_pct": 15,
+          "lease_rate_bps": -140
+        },
+        "Palladium": {
+          "price_shock_pct": -16.0,
+          "vol_shock_pct": 30,
+          "lease_rate_bps": -130
+        }
+      },
+      "rationale": "Gold and silver benefit from safe haven demand in risk-off scenario. Industrial PMs (Platinum, Palladium) decline with broader industrial demand weakness. Lease rates fall reflecting lower cost of carry.",
+      "historical_analogue": "Historical precedent"
+    },
+    {
+      "asset_class": "Base Metals",
+      "description": "Base metals shocks: relative price and absolute volatility",
+      "shocks": {
+        "Copper": {
+          "price_shock_pct": -20.0,
+          "vol_shock_abs": 25
+        },
+        "Aluminium": {
+          "price_shock_pct": -15.0,
+          "vol_shock_abs": 10
+        },
+        "Nickel": {
+          "price_shock_pct": -20.0,
+          "vol_shock_abs": 25
+        },
+        "Zinc": {
+          "price_shock_pct": -20.0,
+          "vol_shock_abs": 20
+        },
+        "Lead": {
+          "price_shock_pct": -20.0,
+          "vol_shock_abs": 20
+        },
+        "Tin": {
+          "price_shock_pct": -20.0,
+          "vol_shock_abs": 20
+        }
+      },
+      "rationale": "Industrial metals decline on weaker global growth expectations. Copper acts as economic bellwether. Volatility increases reflecting uncertainty.",
+      "historical_analogue": "Historical precedent"
+    }
+  ],
+  "validation_results": [
+    {
+      "level": {},
+      "category": "completeness",
+      "message": "Missing asset classes: rates, fx, credit, commodities",
+      "affected_factors": [
+        "rates",
+        "fx",
+        "credit",
+        "commodities"
+      ],
+      "suggestion": "Complete scenarios should cover all major asset classes"
+    }
+  ],
+  "confidence_score": 80,
+  "consultation_prompts": {
+    "Energy Trading": [
+      "Review EUR Sovereign Crisis 2.0 oil price shocks vs current positioning",
+      "Confirm relevance to key trading strategies (calendar spreads, crack spreads)",
+      "Identify any basis risks (Brent-WTI, physical vs futures) needing explicit shocks",
+      "Validate vol shock magnitudes vs current market conditions"
+    ],
+    "Precious Metals": [
+      "Review precious metals shocks vs inventory positions",
+      "Confirm lease rate assumptions align with financing strategies",
+      "Identify any cross-commodity risks not captured"
+    ],
+    "Base Metals": [
+      "Validate base metals shocks vs key positions (especially copper)",
+      "Confirm calendar spread impacts captured (pending Murex migration)",
+      "Review any specific contract types (LME, SHFE) needing separate shocks"
+    ],
+    "Credit Trading": [
+      "Review sector beta assumptions vs current portfolio composition",
+      "Validate regional spread differentiation",
+      "Identify any specific issuer concentrations requiring attention",
+      "Confirm alignment with issuer risk exposures"
+    ]
+  },
+  "next_steps": [
+    "\u26a0\ufe0f  Review validation warnings with Market Risk SME",
+    "Conduct Front Office consultation (use prompts provided)",
+    "Present to Market Risk team for technical review",
+    "Prepare MLRC presentation materials",
+    "Schedule MLRC approval discussion"
+  ]
+}

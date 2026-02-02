@@ -1,0 +1,10 @@
+[
+  {
+    "session_id": "1f5de835-0850-4dcf-851c-57087d0fb27b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/1f5de835-0850-4dcf-851c-57087d0fb27b.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/.claude/skills/climate-scorecard-filler",
+    "permission_mode": "default",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  }
+]

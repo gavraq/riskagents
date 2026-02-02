@@ -1,0 +1,354 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Historical financial crisis data for stress scenario calibration",
+    "last_updated": "2025-01-12",
+    "source": "Market data, regulatory reports, academic research"
+  },
+  "crises": [
+    {
+      "id": "financial_crisis_2008",
+      "name": "2008 Global Financial Crisis",
+      "period": {
+        "start_date": "2008-09-15",
+        "peak_stress": "2008-10-10",
+        "end_date": "2009-03-09",
+        "duration_months": 6
+      },
+      "trigger": "Lehman Brothers bankruptcy, subprime mortgage crisis, systemic banking failure",
+      "severity": "extreme",
+      "geography": "global",
+      "risk_factors": {
+        "equities": {
+          "S&P_500": {"peak_decline_pct": -42, "duration_days": 180, "bottom_date": "2009-03-09"},
+          "EUR_STOXX_50": {"peak_decline_pct": -45, "duration_days": 180},
+          "MSCI_EM": {"peak_decline_pct": -54, "duration_days": 180},
+          "VIX": {"peak_level": 80, "avg_elevated_level": 45, "normal_level": 20}
+        },
+        "credit": {
+          "US_IG_spreads": {"widening_bps": 400, "peak_spread_bps": 600},
+          "US_HY_spreads": {"widening_bps": 1200, "peak_spread_bps": 2000},
+          "EUR_IG_spreads": {"widening_bps": 350, "peak_spread_bps": 550},
+          "EUR_HY_spreads": {"widening_bps": 1000, "peak_spread_bps": 1800}
+        },
+        "rates": {
+          "US_10Y_yield": {"movement_bps": -200, "flight_to_quality": true},
+          "EUR_10Y_yield": {"movement_bps": -150, "flight_to_quality": true},
+          "EM_yields": {"avg_movement_bps": 300, "risk_premium_spike": true}
+        },
+        "fx": {
+          "EUR_USD": {"movement_pct": -10, "direction": "USD_strength"},
+          "EM_FX_basket": {"avg_depreciation_pct": 25, "max_depreciation_pct": 40}
+        },
+        "commodities": {
+          "Brent_crude": {"peak_decline_pct": -50, "from_level": 145, "to_level": 40},
+          "Copper": {"peak_decline_pct": -54},
+          "Gold": {"movement_pct": 5, "safe_haven_bid": true}
+        }
+      },
+      "key_characteristics": [
+        "Systemic banking crisis",
+        "Credit market freeze",
+        "Flight to quality (DM government bonds)",
+        "Dollar strength despite US epicenter",
+        "Commodity demand collapse",
+        "Correlation breakdown (diversification failed)"
+      ],
+      "use_for_calibration": {
+        "credit_stress": "Extreme benchmark (HY +1200bps)",
+        "equity_stress": "Severe benchmark (-40% to -50%)",
+        "volatility_stress": "Extreme benchmark (VIX 80)",
+        "flight_to_quality": "Reference for DM rates rally"
+      }
+    },
+    {
+      "id": "eur_sovereign_crisis_2011",
+      "name": "2011-2012 European Sovereign Debt Crisis",
+      "period": {
+        "start_date": "2011-05-01",
+        "peak_stress": "2011-11-25",
+        "end_date": "2012-07-26",
+        "duration_months": 15
+      },
+      "trigger": "Greek debt crisis, sovereign-bank doom loop, ECB credibility concerns",
+      "severity": "severe",
+      "geography": "Europe, contagion to EM",
+      "risk_factors": {
+        "equities": {
+          "EUR_STOXX_50": {"peak_decline_pct": -25},
+          "S&P_500": {"peak_decline_pct": -19, "contagion": true},
+          "MSCI_EM": {"peak_decline_pct": -22}
+        },
+        "credit": {
+          "PIIGS_sovereign_spreads": {
+            "Greece_10Y": {"widening_bps": 800, "peak_spread_bps": 3500},
+            "Ireland_10Y": {"widening_bps": 400, "peak_spread_bps": 700},
+            "Portugal_10Y": {"widening_bps": 500, "peak_spread_bps": 1000},
+            "Spain_10Y": {"widening_bps": 300, "peak_spread_bps": 450},
+            "Italy_10Y": {"widening_bps": 250, "peak_spread_bps": 400}
+          },
+          "EUR_corporate_IG": {"widening_bps": 150},
+          "EUR_corporate_HY": {"widening_bps": 400},
+          "EUR_financials": {"widening_bps": 200, "sector_specific": true}
+        },
+        "rates": {
+          "Germany_10Y": {"movement_bps": -100, "flight_to_quality": true},
+          "US_10Y": {"movement_bps": -75, "contagion_safe_haven": true},
+          "PIIGS_10Y": {"avg_movement_bps": 400, "sovereign_risk": true}
+        },
+        "fx": {
+          "EUR_USD": {"movement_pct": -15, "from_level": 1.48, "to_level": 1.26},
+          "EUR_CHF": {"movement_pct": -12, "safe_haven_CHF": true}
+        },
+        "commodities": {
+          "Brent_crude": {"peak_decline_pct": -15, "modest_impact": true},
+          "Gold": {"movement_pct": 15, "safe_haven_bid": true}
+        }
+      },
+      "key_characteristics": [
+        "Sovereign debt crisis",
+        "Intra-EUR divergence (core vs periphery)",
+        "Sovereign-bank doom loop",
+        "ECB policy constraints",
+        "Limited global contagion (contained to EUR)",
+        "Flight to Bunds and USD"
+      ],
+      "use_for_calibration": {
+        "sovereign_stress": "Benchmark for sovereign risk (peripheral spreads +300-800bps)",
+        "regional_divergence": "Core vs periphery spread dynamics",
+        "financials_stress": "Sovereign-bank linkage"
+      }
+    },
+    {
+      "id": "covid_pandemic_2020",
+      "name": "2020 COVID-19 Pandemic",
+      "period": {
+        "start_date": "2020-02-20",
+        "peak_stress": "2020-03-23",
+        "end_date": "2020-04-30",
+        "duration_months": 2
+      },
+      "trigger": "Global pandemic, lockdowns, sudden stop in economic activity",
+      "severity": "extreme",
+      "geography": "global",
+      "risk_factors": {
+        "equities": {
+          "S&P_500": {"peak_decline_pct": -34, "duration_days": 33, "fastest_decline": true},
+          "EUR_STOXX_50": {"peak_decline_pct": -39},
+          "MSCI_EM": {"peak_decline_pct": -32},
+          "VIX": {"peak_level": 85, "record_high": true}
+        },
+        "credit": {
+          "US_IG_spreads": {"widening_bps": 250, "peak_spread_bps": 400},
+          "US_HY_spreads": {"widening_bps": 800, "peak_spread_bps": 1100},
+          "EUR_IG_spreads": {"widening_bps": 200},
+          "EUR_HY_spreads": {"widening_bps": 600}
+        },
+        "rates": {
+          "US_10Y_yield": {"movement_bps": -125, "to_level": 0.55, "all_time_low": true},
+          "EUR_10Y_yield": {"movement_bps": -50, "bund_negative": true},
+          "EM_yields": {"avg_movement_bps": 200}
+        },
+        "fx": {
+          "EUR_USD": {"movement_pct": -3, "limited_move": true},
+          "EM_FX_basket": {"avg_depreciation_pct": 15},
+          "USD_index": {"movement_pct": 7, "safe_haven_strength": true}
+        },
+        "commodities": {
+          "WTI_crude": {"peak_decline_pct": -60, "negative_price": true, "historic_event": true},
+          "Brent_crude": {"peak_decline_pct": -65},
+          "Copper": {"peak_decline_pct": -25, "quick_recovery": true},
+          "Gold": {"movement_pct": 15, "safe_haven": true}
+        },
+        "volatility": {
+          "FX_vol": {"EUR_vol_peak": 15, "EM_vol_peak": 25},
+          "commodity_vol": {"Oil_vol_peak": 200, "unprecedented": true}
+        }
+      },
+      "key_characteristics": [
+        "Unprecedented exogenous shock",
+        "Fastest equity market decline in history",
+        "Massive policy response (fiscal + monetary)",
+        "Demand destruction (oil negative price)",
+        "Flight to cash and USD initially",
+        "Quick V-shaped recovery in risk assets"
+      ],
+      "use_for_calibration": {
+        "rapid_shock": "Benchmark for speed of crisis onset (33 days to bottom)",
+        "exogenous_shock": "Non-financial crisis template",
+        "policy_response": "Reference for extraordinary CB intervention",
+        "oil_demand_shock": "Extreme demand destruction scenario"
+      }
+    },
+    {
+      "id": "ukraine_war_2022",
+      "name": "2022 Russia-Ukraine War",
+      "period": {
+        "start_date": "2022-02-24",
+        "peak_stress": "2022-03-08",
+        "ongoing": true,
+        "acute_phase_months": 3
+      },
+      "trigger": "Russia invasion of Ukraine, sanctions, energy supply disruption",
+      "severity": "moderate_to_severe",
+      "geography": "Europe (primary), global (secondary)",
+      "risk_factors": {
+        "equities": {
+          "EUR_STOXX_50": {"peak_decline_pct": -20},
+          "S&P_500": {"peak_decline_pct": -12, "limited_contagion": true},
+          "Russia_RTS": {"peak_decline_pct": -45, "market_closure": true}
+        },
+        "credit": {
+          "EUR_IG_spreads": {"widening_bps": 80},
+          "EUR_HY_spreads": {"widening_bps": 200},
+          "Russian_debt": {"default_event": true}
+        },
+        "rates": {
+          "Germany_10Y": {"movement_bps": -25, "modest_flight_to_quality": true},
+          "US_10Y": {"movement_bps": 15, "inflation_concerns": true}
+        },
+        "fx": {
+          "EUR_USD": {"movement_pct": -10, "EUR_weakness": true},
+          "RUB_USD": {"movement_pct": 30, "peak_depreciation": 50, "capital_controls": true},
+          "CHF_EUR": {"movement_pct": 5, "safe_haven": true}
+        },
+        "commodities": {
+          "Brent_crude": {"peak_increase_pct": 50, "from_level": 85, "to_level": 128},
+          "Natural_gas_EUR": {"peak_increase_pct": 80, "supply_disruption": true},
+          "Wheat": {"peak_increase_pct": 40, "Ukraine_exports": true},
+          "Aluminium": {"peak_increase_pct": 30, "Russia_supply": true},
+          "Nickel": {"peak_increase_pct": 100, "LME_suspension": true, "extreme_volatility": true}
+        }
+      },
+      "key_characteristics": [
+        "Geopolitical shock",
+        "Energy supply disruption",
+        "Stagflation concerns (high inflation + low growth)",
+        "Sanctions regime",
+        "Food security crisis",
+        "Limited financial contagion (vs 2008/2020)"
+      ],
+      "use_for_calibration": {
+        "energy_supply_shock": "Benchmark for oil/gas supply disruption (Oil +50%, Gas +80%)",
+        "geopolitical_risk": "Regional conflict template",
+        "stagflation": "High inflation + weak growth dynamics",
+        "commodity_disruption": "Agriculture and metals supply shocks"
+      }
+    },
+    {
+      "id": "china_slowdown_2015",
+      "name": "2015-2016 China Slowdown & Devaluation",
+      "period": {
+        "start_date": "2015-08-11",
+        "peak_stress": "2016-01-20",
+        "end_date": "2016-02-11",
+        "duration_months": 6
+      },
+      "trigger": "China GDP slowdown, CNY devaluation, capital outflows",
+      "severity": "moderate",
+      "geography": "EM Asia (primary), global (secondary)",
+      "risk_factors": {
+        "equities": {
+          "Shanghai_Comp": {"peak_decline_pct": -43},
+          "MSCI_EM": {"peak_decline_pct": -27},
+          "S&P_500": {"peak_decline_pct": -13},
+          "EUR_STOXX_50": {"peak_decline_pct": -23}
+        },
+        "credit": {
+          "China_HY_USD": {"widening_bps": 400},
+          "EM_Asia_IG": {"widening_bps": 100},
+          "EM_Asia_HY": {"widening_bps": 300}
+        },
+        "rates": {
+          "US_10Y": {"movement_bps": -50, "safe_haven": true},
+          "China_10Y": {"movement_bps": -75, "policy_easing": true}
+        },
+        "fx": {
+          "CNY_USD": {"movement_pct": 8, "devaluation": true},
+          "EM_Asia_FX": {"avg_depreciation_pct": 12},
+          "AUD_USD": {"movement_pct": -15, "China_proxy": true}
+        },
+        "commodities": {
+          "Brent_crude": {"peak_decline_pct": -35, "from_level": 60, "to_level": 28},
+          "Iron_ore": {"peak_decline_pct": -40, "China_demand": true},
+          "Copper": {"peak_decline_pct": -25},
+          "Base_metals": {"avg_decline_pct": 20}
+        }
+      },
+      "key_characteristics": [
+        "China hard landing fears",
+        "CNY devaluation surprise",
+        "EM Asia contagion",
+        "Commodity demand collapse",
+        "Capital flight from China",
+        "Limited DM impact"
+      ],
+      "use_for_calibration": {
+        "china_slowdown": "Benchmark for China-led EM stress (Cu -25%, Iron Ore -40%)",
+        "em_asia_contagion": "Regional FX crisis template (EM Asia FX -12%)",
+        "commodity_demand_shock": "Industrial metals demand destruction"
+      }
+    }
+  ],
+  "correlation_patterns": {
+    "risk_off": {
+      "description": "Typical risk-off scenario (flight to quality)",
+      "movements": {
+        "equities": "down",
+        "credit_spreads": "widen",
+        "DM_rates": "down (flight to quality)",
+        "EM_rates": "up (risk premium)",
+        "USD": "up (safe haven)",
+        "EM_FX": "down (capital flight)",
+        "commodities": "mixed (oil down, gold up)"
+      }
+    },
+    "inflation_shock": {
+      "description": "Inflation surprise scenario",
+      "movements": {
+        "rates": "up (all regions)",
+        "credit_spreads": "widen",
+        "equities": "down (discount rate + margins)",
+        "commodities": "up (inflation hedge)",
+        "EM_FX": "mixed (commodity exporters benefit)"
+      }
+    },
+    "recession": {
+      "description": "Growth shock / recession",
+      "movements": {
+        "equities": "down",
+        "credit_spreads": "widen (especially cyclicals)",
+        "DM_rates": "down (policy easing expectations)",
+        "commodities": "down (demand destruction)",
+        "defensive_sectors": "outperform"
+      }
+    },
+    "supply_disruption": {
+      "description": "Commodity supply shock (geopolitical)",
+      "movements": {
+        "affected_commodity": "up sharply",
+        "inflation_expectations": "up",
+        "rates": "up (CB tightening)",
+        "equities": "down (stagflation fears)",
+        "consumer_discretionary": "underperform"
+      }
+    }
+  },
+  "severity_calibration": {
+    "moderate": {
+      "description": "60% of historical maximum shock",
+      "example": "2015 China slowdown",
+      "use_case": "Base case stress scenario"
+    },
+    "severe": {
+      "description": "100% of historical maximum shock",
+      "example": "2008 Financial Crisis, 2020 COVID",
+      "use_case": "Standard pillar stress scenario target"
+    },
+    "extreme": {
+      "description": "150% of historical maximum shock",
+      "example": "Beyond 2008 levels",
+      "use_case": "Tail risk scenario (requires strong justification)"
+    }
+  }
+}

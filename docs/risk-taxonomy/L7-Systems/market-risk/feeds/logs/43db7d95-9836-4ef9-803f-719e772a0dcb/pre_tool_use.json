@@ -1,0 +1,989 @@
+[
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds && \\\n# CR Delta Zero\nfind cr-delta-zero -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_DeltaZero_/MxMGB_MR_Credit_CS01Zero_/g' {} \\; && \\\nfind cr-delta-zero -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' {} \\; && \\\necho \"CR Delta Zero updated\"",
+      "description": "Update CR Delta Zero naming"
+    },
+    "tool_use_id": "toolu_01VootnhxTF5YD7tNGCDgTDQ"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds && \\\n# CR Delta Par\nfind cr-delta-par -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_DeltaPar_/MxMGB_MR_Credit_CS01Par_/g' {} \\; && \\\nfind cr-delta-par -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' {} \\; && \\\necho \"CR Delta Par updated\"",
+      "description": "Update CR Delta Par naming"
+    },
+    "tool_use_id": "toolu_01QpRqa2reYE2SUztDoiG6k8"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds && \\\n# CR Basis Rate\nfind cr-basis -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_BasisRate_/MxMGB_MR_Credit_Basis_/g' {} \\; && \\\nfind cr-basis -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_Basis_/MxMGB_MR_Credit_Basis_/g' {} \\; && \\\nfind cr-basis -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' {} \\; && \\\necho \"CR Basis updated\"",
+      "description": "Update CR Basis naming"
+    },
+    "tool_use_id": "toolu_01F9ewW2nATpbWFYDG3rMqBK"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds && \\\n# CR Par CDS Rate\nfind cr-par-cds-rate -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_ParCDS_/MxMGB_MR_Credit_ParCDS_/g' {} \\; && \\\nfind cr-par-cds-rate -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' {} \\; && \\\necho \"CR Par CDS updated\"",
+      "description": "Update CR Par CDS naming"
+    },
+    "tool_use_id": "toolu_01XxPbKSSv13NSc6L8tBYLoT"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "cd /Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds && \\\n# CR Instrument Spread\nfind cr-instrument-spread -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_Spread_/MxMGB_MR_Credit_Spread_/g' {} \\; && \\\nfind cr-instrument-spread -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_Instrument_Spread_/MxMGB_MR_Credit_Spread_/g' {} \\; && \\\nfind cr-instrument-spread -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' {} \\; && \\\necho \"CR Instrument Spread updated\"",
+      "description": "Update CR Instrument Spread naming"
+    },
+    "tool_use_id": "toolu_01CB63wNsQAt9fYk1MZHkKUV"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# CR Corr01\nfind cr-corr01 -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_Corr01_/MxMGB_MR_Credit_Corr01_/g' {} \\; && \\\nfind cr-corr01 -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' {} \\; && \\\necho \"CR Corr01 updated\"",
+      "description": "Update CR Corr01 naming"
+    },
+    "tool_use_id": "toolu_01XZMZfpd4fRYghYHfrCzJCn"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# CR RR01\nfind cr-rr01 -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_RR01_/MxMGB_MR_Credit_RR01_/g' {} \\; && \\\nfind cr-rr01 -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' {} \\; && \\\necho \"CR RR01 updated\"",
+      "description": "Update CR RR01 naming"
+    },
+    "tool_use_id": "toolu_01YMGpSPEG6UmJmcMaLDMUpL"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# CR RR02\nfind cr-rr02 -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_CR_RR02_/MxMGB_MR_Credit_RR02_/g' {} \\; && \\\nfind cr-rr02 -name \"*.md\" -exec sed -i '' 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' {} \\; && \\\necho \"CR RR02 updated\"",
+      "description": "Update CR RR02 naming"
+    },
+    "tool_use_id": "toolu_01DTxDhZjudwBPo8jmQhtiwB"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# CR Sensitivities Overview - need to update all CR feed patterns\nsed -i '' 's/MxMGB_Vespa_CR_DeltaZero_/MxMGB_MR_Credit_CS01Zero_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_CR_DeltaPar_/MxMGB_MR_Credit_CS01Par_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_CR_BasisRate_/MxMGB_MR_Credit_Basis_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_CR_Basis_/MxMGB_MR_Credit_Basis_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_CR_ParCDS_/MxMGB_MR_Credit_ParCDS_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_CR_Spread_/MxMGB_MR_Credit_Spread_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_CR_Instrument_Spread_/MxMGB_MR_Credit_Spread_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_CR_Corr01_/MxMGB_MR_Credit_Corr01_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_CR_RR01_/MxMGB_MR_Credit_RR01_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_CR_RR02_/MxMGB_MR_Credit_RR02_/g' cr-sensitivities-overview.md && \\\nsed -i '' 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' cr-sensitivities-overview.md && \\\necho \"CR Sensitivities Overview updated\"",
+      "description": "Update CR Sensitivities Overview naming"
+    },
+    "tool_use_id": "toolu_01EfjNoSZxwWJdfdNCjV4u3w"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Grep",
+    "tool_input": {
+      "pattern": "MxMGB_Vespa|MxGTS_Vespa",
+      "path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+      "output_mode": "files_with_matches"
+    },
+    "tool_use_id": "toolu_01Atn6Sk6k6x4aJT5kdWjw2X"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/energy-sensitivities/energy-sensitivities-idd.md",
+      "old_string": "| Component | Description | Values |\n|-----------|-------------|--------|\n| MxMGB | System prefix | Fixed |\n| Vespa | Module identifier | Fixed |\n| Mrgrnli | Feed type (Margin Non-Linear) | Fixed |\n| Region | Trading region | LN, HK, NY, SP |\n| YYYYMMDD | As-of date | Business date |",
+      "new_string": "| Component | Description | Values |\n|-----------|-------------|--------|\n| MxMGB | System prefix | Fixed |\n| MR | Market Risk module | Fixed |\n| Energy | Asset class | Fixed |\n| Sens | Sensitivities | Fixed |\n| Region | Trading region | LN, HK, NY, SP |\n| YYYYMMDD | As-of date | Business date |"
+    },
+    "tool_use_id": "toolu_01SrVJFG8nnncD1S9u2ZV9Fp"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# Check what patterns remain\ngrep -r \"MxMGB_Vespa\\|MxGTS_Vespa\" --include=\"*.md\" | head -20",
+      "description": "Check remaining Vespa patterns"
+    },
+    "tool_use_id": "toolu_016yedvH51uYj238WUXnQFG4"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# Comprehensive replacement for all Vespa patterns to new MR convention\nfind . -name \"*.md\" -exec sed -i '' \\\n  -e 's/MxMGB_Vespa_CR_Delta_Zero_/MxMGB_MR_Credit_CS01Zero_/g' \\\n  -e 's/MxMGB_Vespa_CR_DeltaZero_/MxMGB_MR_Credit_CS01Zero_/g' \\\n  -e 's/MxMGB_Vespa_CR_Delta_Par_/MxMGB_MR_Credit_CS01Par_/g' \\\n  -e 's/MxMGB_Vespa_CR_DeltaPar_/MxMGB_MR_Credit_CS01Par_/g' \\\n  -e 's/MxMGB_Vespa_CR_DeltaPAR_/MxMGB_MR_Credit_CS01Par_/g' \\\n  -e 's/MxMGB_Vespa_CR_Delta_/MxMGB_MR_Credit_CS01_/g' \\\n  -e 's/MxMGB_Vespa_CR_Basis_Rate_/MxMGB_MR_Credit_Basis_/g' \\\n  -e 's/MxMGB_Vespa_CR_BasisRate_/MxMGB_MR_Credit_Basis_/g' \\\n  -e 's/MxMGB_Vespa_CR_Basis_/MxMGB_MR_Credit_Basis_/g' \\\n  -e 's/MxMGB_Vespa_CR_Par_CDS_Rate_/MxMGB_MR_Credit_ParCDS_/g' \\\n  -e 's/MxMGB_Vespa_CR_ParCDS_/MxMGB_MR_Credit_ParCDS_/g' \\\n  -e 's/MxMGB_Vespa_CR_Instrument_Spread_/MxMGB_MR_Credit_Spread_/g' \\\n  -e 's/MxMGB_Vespa_CR_Spread_/MxMGB_MR_Credit_Spread_/g' \\\n  -e 's/MxMGB_Vespa_CR_Corr01_/MxMGB_MR_Credit_Corr01_/g' \\\n  -e 's/MxMGB_Vespa_CR_RR01_/MxMGB_MR_Credit_RR01_/g' \\\n  -e 's/MxMGB_Vespa_CR_RR02_/MxMGB_MR_Credit_RR02_/g' \\\n  -e 's/MxMGB_Vespa_Sensitivities_/MxMGB_MR_Credit_Sens_/g' \\\n  -e 's/MxMGB_Vespa_Mrgrnli_/MxMGB_MR_Energy_Sens_/g' \\\n  -e 's/MxGTS_Vespa_Mrgrnli_/MxMGB_MR_Energy_Sens_/g' \\\n  {} \\; && echo \"All patterns updated\"",
+      "description": "Comprehensive Vespa naming replacement"
+    },
+    "tool_use_id": "toolu_019FSosYLgp6A2Zn8UNpS3nR"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# Check for any remaining Vespa patterns in file names\ngrep -r \"MxMGB_Vespa\\|MxGTS_Vespa\" --include=\"*.md\" | wc -l && \\\necho \"---\" && \\\n# Show some examples of the new naming\ngrep -r \"MxMGB_MR_Credit_\\|MxMGB_MR_Energy_\" --include=\"*.md\" | head -15",
+      "description": "Verify Vespa patterns replaced"
+    },
+    "tool_use_id": "toolu_013gDoQTF9mpfQvzeMipFyiQ"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# Show the 5 remaining Vespa patterns\ngrep -r \"MxMGB_Vespa\\|MxGTS_Vespa\" --include=\"*.md\"",
+      "description": "Find remaining Vespa patterns"
+    },
+    "tool_use_id": "toolu_019d3T6in29AUeH514bfGjgE"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/cr-delta-zero/cr-delta-zero-idd.md",
+      "old_string": "| Prefix | `MxMGB_Vespa_CR_Delta` | Fixed |",
+      "new_string": "| Prefix | `MxMGB_MR_Credit` | Fixed |"
+    },
+    "tool_use_id": "toolu_011upRuz65Fva7wzbNmsGS9f"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/cr-delta-zero/cr-delta-zero-config.md",
+      "limit": 100
+    },
+    "tool_use_id": "toolu_01W3mjsL7ym7kLqTpD82FaLV"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/energy-sensitivities/energy-sensitivities-config.md",
+      "limit": 100
+    },
+    "tool_use_id": "toolu_016aaBALuoMFoBbMJaVK6tfr"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/energy-sensitivities/energy-sensitivities-overview.md",
+      "offset": 290,
+      "limit": 50
+    },
+    "tool_use_id": "toolu_01EvD8zn9hAfUEJoVz3JXoza"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/energy-sensitivities/energy-sensitivities-config.md",
+      "old_string": "                    \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n                    \u2502 MxMGB_Vespa_    \u2502\n                    \u2502 Mrgrnli_**_.csv \u2502\n                    \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518",
+      "new_string": "                    \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n                    \u2502 MxMGB_MR_Energy \u2502\n                    \u2502 _Sens_**_.csv   \u2502\n                    \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518"
+    },
+    "tool_use_id": "toolu_019FxzyFSXC8kzdSj3hPxMYL"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/energy-sensitivities/energy-sensitivities-overview.md",
+      "offset": 380,
+      "limit": 40
+    },
+    "tool_use_id": "toolu_01QccoHA57dngKxVt1UXgF9B"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/cr-delta-zero/cr-delta-zero-config.md",
+      "offset": 95,
+      "limit": 40
+    },
+    "tool_use_id": "toolu_018yGbMPzeZoSvvAiQrgqJaf"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/energy-sensitivities/energy-sensitivities-overview.md",
+      "old_string": "| File Prefix | MxMGB_Vespa_Mrgrnli | MxMGB_Vespa_CR_* | MxMGB_Vespa_IR_* |",
+      "new_string": "| File Prefix | MxMGB_MR_Energy_Sens | MxMGB_MR_Credit_* | MxMGB_MR_Rates_* |"
+    },
+    "tool_use_id": "toolu_01BuF4MexedmaxTWRsm3qwCd"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/cr-delta-zero/cr-delta-zero-config.md",
+      "old_string": "\u2502  \u2502  process_reports.sh  \u2502\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u25ba\u2502   ZIP Package        \u2502                  \u2502\n\u2502  \u2502  (Compress/Package)  \u2502         \u2502   MxMGB_Vespa_       \u2502                  \u2502\n\u2502  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518         \u2502   Sensitivities_     \u2502                  \u2502\n\u2502                                   \u2502   Region_Date.zip    \u2502                  \u2502",
+      "new_string": "\u2502  \u2502  process_reports.sh  \u2502\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u25ba\u2502   ZIP Package        \u2502                  \u2502\n\u2502  \u2502  (Compress/Package)  \u2502         \u2502   MxMGB_MR_Credit_   \u2502                  \u2502\n\u2502  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518         \u2502   Sens_Region_       \u2502                  \u2502\n\u2502                                   \u2502   Date.zip           \u2502                  \u2502"
+    },
+    "tool_use_id": "toolu_0176CreJf2pJ4qf8GPb5QaKG"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Grep",
+    "tool_input": {
+      "pattern": "NON-LINEAR.*MxMGB_Vespa",
+      "path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+      "output_mode": "content"
+    },
+    "tool_use_id": "toolu_01WkbdWhyf6arNqxTjjGpgRg"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/energy-sensitivities/energy-sensitivities-overview.md",
+      "old_string": "- `NON-LINEAR`: For MxMGB_Vespa_Mrgrnli feed (primary feed)",
+      "new_string": "- `NON-LINEAR`: For MxMGB_MR_Energy_Sens feed (primary feed)"
+    },
+    "tool_use_id": "toolu_014MXfHKtY1EkXjhGsNrT5Gf"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# Final check for any remaining Vespa patterns (excluding logs)\ngrep -r \"MxMGB_Vespa\\|MxGTS_Vespa\" --include=\"*.md\" | grep -v \"^logs/\" | wc -l && \\\necho \"---\" && \\\ngrep -r \"MxMGB_Vespa\\|MxGTS_Vespa\" --include=\"*.md\" | grep -v \"^logs/\"",
+      "description": "Final verification of Vespa patterns"
+    },
+    "tool_use_id": "toolu_01Xhxo8uDWAB3F5iqdS7Ym8R"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Update Energy Sensitivities docs with new naming",
+          "status": "completed",
+          "activeForm": "Updating Energy Sensitivities docs with new naming"
+        },
+        {
+          "content": "Update CR Sensitivities Overview with new naming",
+          "status": "completed",
+          "activeForm": "Updating CR Sensitivities Overview with new naming"
+        },
+        {
+          "content": "Update CR Delta Zero docs with new naming",
+          "status": "completed",
+          "activeForm": "Updating CR Delta Zero docs with new naming"
+        },
+        {
+          "content": "Update CR Delta Par docs with new naming",
+          "status": "completed",
+          "activeForm": "Updating CR Delta Par docs with new naming"
+        },
+        {
+          "content": "Update CR Basis Rate docs with new naming",
+          "status": "completed",
+          "activeForm": "Updating CR Basis Rate docs with new naming"
+        },
+        {
+          "content": "Update CR Par CDS Rate docs with new naming",
+          "status": "completed",
+          "activeForm": "Updating CR Par CDS Rate docs with new naming"
+        },
+        {
+          "content": "Update CR Instrument Spread docs with new naming",
+          "status": "completed",
+          "activeForm": "Updating CR Instrument Spread docs with new naming"
+        },
+        {
+          "content": "Update CR Corr01 docs with new naming",
+          "status": "completed",
+          "activeForm": "Updating CR Corr01 docs with new naming"
+        },
+        {
+          "content": "Update CR RR01 docs with new naming",
+          "status": "completed",
+          "activeForm": "Updating CR RR01 docs with new naming"
+        },
+        {
+          "content": "Update CR RR02 docs with new naming",
+          "status": "completed",
+          "activeForm": "Updating CR RR02 docs with new naming"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01F1z4LZWZQQkiWjw22EsCzL"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "\\\n# Show a sample of the new naming convention in use\necho \"=== New Naming Convention Examples ===\" && \\\ngrep -h \"MxMGB_MR_\" --include=\"*.md\" -r | grep -E \"^\\|.*MxMGB_MR\" | sort -u | head -20",
+      "description": "Show new naming convention examples"
+    },
+    "tool_use_id": "toolu_01DsYmBAfAruiN34ofDKwXzM"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Glob",
+    "tool_input": {
+      "pattern": "**/feeds/*ir*/**/*.md",
+      "path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk"
+    },
+    "tool_use_id": "toolu_012kEG7Egb6zN3otD32zFyTZ"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Glob",
+    "tool_input": {
+      "pattern": "**/feeds/ir-*/**/*.md",
+      "path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk"
+    },
+    "tool_use_id": "toolu_01HpTG9QFWuAnqzQizE1Y696"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/data/ICBCS Bank/Feeds/Feed Documentation/RC-IR Delta & Gamma-010925-153342.pdf"
+    },
+    "tool_use_id": "toolu_01TmqHVWw9VycUcPzyj8hfiK"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Delta & Gamma Overview document",
+          "status": "in_progress",
+          "activeForm": "Creating IR Delta & Gamma Overview document"
+        },
+        {
+          "content": "Create IR Delta & Gamma BRD document",
+          "status": "pending",
+          "activeForm": "Creating IR Delta & Gamma BRD document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IT Config document",
+          "status": "pending",
+          "activeForm": "Creating IR Delta & Gamma IT Config document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IDD document",
+          "status": "pending",
+          "activeForm": "Creating IR Delta & Gamma IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01JWtEj1MgGbJym4k45uAxFu"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "mkdir -p /Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-delta-gamma",
+      "description": "Create IR delta-gamma directory"
+    },
+    "tool_use_id": "toolu_01UUaqjatuiXsBzAUd96fSPJ"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-delta-gamma/ir-delta-gamma-overview.md",
+      "content": "---\n# Document Metadata\ndocument_id: IR-OVW-001\ndocument_name: IR Delta & Gamma - Overview\nversion: 1.0\neffective_date: 2025-01-03\nnext_review_date: 2026-01-03\nowner: Market Risk Technology\napproving_committee: Risk Technology Change Board\n\n# Taxonomy Reference\nparent_node: L7-Systems/market-risk/feeds\nfeed_family: IR Delta & Gamma\n---\n\n# IR Delta & Gamma - Overview\n\n**Meridian Global Bank - Market Risk Technology**\n\n| Document Control | |\n|-----------------|---|\n| **Document ID** | IR-OVW-001 |\n| **Version** | 1.0 |\n| **Effective Date** | 3 January 2025 |\n| **Owner** | Market Risk Technology |\n| **Approver** | Risk Technology Change Board |\n\n---\n\n## 1. Introduction\n\n### 1.1 Purpose\n\nThis document provides an overview of the IR Delta & Gamma feed suite from Murex to downstream risk systems. It serves as the parent document for the IR sensitivity feed documentation, describing the overall architecture, data flow, and relationships between components.\n\n### 1.2 Scope\n\nThe IR Delta & Gamma suite provides interest rate risk exposures and their associated sensitivities for **interest rate risk factors** arising from IRD trading activity executed in Murex. Like Energy Sensitivities, IR Delta & Gamma uses a **single combined feed** approach where Delta and Gamma sensitivities are merged during the extraction process via a LEFT JOIN.\n\n### 1.3 Feed Family Overview\n\n| Property | Value |\n|----------|-------|\n| **Feed Family** | IR Delta & Gamma |\n| **Number of Feeds** | 1 (combined Delta + Gamma) |\n| **Source System** | Murex (VESPA Module) |\n| **Target Systems** | Risk Data Warehouse, Plato, VESPA Reporting |\n| **Frequency** | Daily (T+1) |\n| **Regions** | London (LN), Hong Kong (HK), New York (NY), Singapore (SP) |\n\n---\n\n## 2. Feed Architecture\n\n### 2.1 Single Feed Structure\n\nThe IR Delta & Gamma feed combines two simulation views into a single output via LEFT JOIN:\n\n```\nIR Delta & Gamma Feed\n\u251c\u2500\u2500 Delta Component (from IRPV01_DELTAS)\n\u2502   \u251c\u2500\u2500 DV01 (Zero) - Zero coupon curve sensitivity\n\u2502   \u2514\u2500\u2500 DV01 USD - USD equivalent sensitivity\n\u2514\u2500\u2500 Gamma Component (from IRPV02_GAMMAS)\n    \u251c\u2500\u2500 Gamma Zero CCY - Local currency gamma\n    \u2514\u2500\u2500 Gamma Zero USD - USD equivalent gamma\n```\n\n### 2.2 Output Feed\n\n| Feed Name | File Pattern | Description |\n|-----------|--------------|-------------|\n| IR Delta & Gamma | `MxMGB_MR_Rates_DV01_{Region}_{YYYYMMDD}.csv` | Combined Delta and Gamma sensitivities |\n\n### 2.3 Data Flow Architecture\n\n```mermaid\ngraph TD\n    subgraph \"Simulation Views\"\n        SV1[IRPV01_DELTAS<br/>4 outputs, 13 breakdowns]\n        SV2[IRPV02_GAMMAS<br/>6 outputs, 15 breakdowns]\n    end\n\n    subgraph \"Datamart Tables\"\n        DM1[A_IRPV01_DELTA.REP]\n        DM2[A_IRPV02_GAMMA.REP]\n    end\n\n    subgraph \"Feeders\"\n        F1[**_IRDELTA_FDR]\n        F2[**_IRGAMMA_FDR]\n    end\n\n    subgraph \"Extraction\"\n        EX[DE_IRD_PV01DELTA<br/>LEFT JOIN]\n    end\n\n    subgraph \"Output\"\n        OUT[MxMGB_MR_Rates_DV01_**]\n    end\n\n    SV1 --> F1 --> DM1\n    SV2 --> F2 --> DM2\n    DM1 --> EX\n    DM2 --> EX\n    EX --> OUT\n```\n\n---\n\n## 3. Simulation Views\n\n### 3.1 IRPV01_DELTAS\n\nThe Delta simulation view calculates interest rate DV01 sensitivities (dollar value of a 1 basis point shift).\n\n| Property | Value |\n|----------|-------|\n| **View Name** | IRPV01_DELTAS |\n| **Outputs** | 4 |\n| **Breakdowns** | 13 |\n| **Dynamic Table** | VW_IRPV01_DELTA |\n| **Datamart Table** | A_IRPV01_DELTA.REP |\n\n#### Outputs\n\n| Output | Dictionary Path | Description |\n|--------|-----------------|-------------|\n| DV01 (zero) | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Value | IR Delta per 1bp parallel shift (local CCY) |\n| DV01 USD | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Value USD | IR Delta in USD equivalent |\n| DV01 ZAR | (Deprecated) | ZAR equivalent - SBSA exclusion |\n| DV01 Par ZAR | (Deprecated) | Par ZAR equivalent - SBSA exclusion |\n\n#### Key Breakdowns\n\n| Breakdown | Dictionary Path | Description |\n|-----------|-----------------|-------------|\n| Curve name | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Curve key.Curve name | Interest rate curve label |\n| Date | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Date | Pillar date from maturity set |\n| M_TRN_FMLY | Data.Trade.Typology.Family | Trade family (IRD, etc.) |\n| M_TRN_GRP | Data.Trade.Typology.Group | Trade group |\n| M_TRN_TYPE | Data.Trade.Typology.Type | Trade type |\n| M_TP_PFOLIO | Data.Trade.Portfolio | Trading portfolio |\n\n### 3.2 IRPV02_GAMMAS\n\nThe Gamma simulation view calculates the rate of change of Delta for a 1bp shift (convexity measure).\n\n| Property | Value |\n|----------|-------|\n| **View Name** | IRPV02_GAMMAS |\n| **Outputs** | 6 |\n| **Breakdowns** | 15 |\n| **Dynamic Table** | VW_IRPV02_GAMMA |\n| **Datamart Table** | A_IRPV02_GAMMA.REP |\n\n#### Outputs\n\n| Output | Dictionary Path | Description |\n|--------|-----------------|-------------|\n| Gamma Zero CCY | RiskEngine.Results.Outputs.Interest rates.Gamma.Zero.Value | Gamma in local currency |\n| Gamma Zero USD | RiskEngine.Results.Outputs.Interest rates.Gamma.Zero.Value USD | Gamma in USD equivalent |\n| Gamma Zero ZAR | (Deprecated) | ZAR equivalent - SBSA exclusion |\n| Gamma Par CCY | RiskEngine.Results.Outputs.Interest rates.Gamma.Par.Value | Par gamma in local currency |\n| Gamma Par USD | RiskEngine.Results.Outputs.Interest rates.Gamma.Par.Value USD | Par gamma in USD equivalent |\n| Gamma Par ZAR | (Deprecated) | Par ZAR equivalent - SBSA exclusion |\n\n#### Key Breakdowns\n\n| Breakdown | Dictionary Path | Description |\n|-----------|-----------------|-------------|\n| Curve name | RiskEngine.Results.Outputs.Interest rates.Gamma.Zero.Curve key.Curve name | Interest rate curve label |\n| Date | RiskEngine.Results.Outputs.Interest rates.Gamma.Zero.Date | Pillar date from maturity set |\n| M_TRN_FMLY | Data.Trade.Typology.Family | Trade family |\n| M_TRN_GRP | Data.Trade.Typology.Group | Trade group |\n| M_TRN_TYPE | Data.Trade.Typology.Type | Trade type |\n\n#### Maturity Set: LNOFFICIAL\n\nBoth simulation views use maturity set LNOFFICIAL with pillars:\n- O/N, T/N, 1W, 2W\n- 1M, 2M, 3M, 6M, 9M\n- 1Y, 2Y, 3Y, 5Y, 7Y, 10Y, 15Y, 20Y, 30Y\n\n---\n\n## 4. Product Scope\n\n### 4.1 IRD Product Types\n\nThe IR Delta & Gamma feed covers the following Family/Group/Type combinations:\n\n| Family | Group | Type | Description | Has Gamma |\n|--------|-------|------|-------------|-----------|\n| IRD | CF | * | Caps and Floors | Yes |\n| IRD | OSWP | * | Swaptions | Yes |\n| IRD | SWAP | * | Interest Rate Swaps | No |\n| IRD | FRA | * | Forward Rate Agreements | No |\n| IRD | FUT | * | Interest Rate Futures | No |\n| IRD | BOND | * | Bonds | No |\n| IRD | REPO | * | Repurchase Agreements | No |\n\n### 4.2 Gamma Product Filtering\n\nGamma values are only calculated for products with optionality:\n\n| Product | Gamma Calculation | Rationale |\n|---------|-------------------|-----------|\n| **IRD\\|CF\\|** (Caps/Floors) | Yes | Option premium sensitivity to rate changes |\n| **IRD\\|OSWP\\|** (Swaptions) | Yes | Option premium sensitivity to rate changes |\n| All other IRD products | No (Gamma = 0) | Linear products have no convexity |\n\n### 4.3 Purged Deal Handling\n\nFor purged deals (historical trades no longer in live system):\n- Delta: Calculated from archived data\n- Gamma: Set to 0 (not recalculated)\n\n---\n\n## 5. Regional Processing\n\n### 5.1 Market Data Sets\n\n| Region | Market Data Set | Close Time |\n|--------|-----------------|------------|\n| London (LN) | MGB_LN_EOD | GMT close |\n| Hong Kong (HK) | MGB_HK_EOD | HKT close |\n| New York (NY) | MGB_NY_EOD | EST close |\n| Singapore (SP) | MGB_SP_EOD | SGT close |\n\n### 5.2 Portfolio Nodes by Region\n\n#### Delta Feeders\n\n| Region | Portfolio Nodes | Notes |\n|--------|-----------------|-------|\n| HK | IRDLN, IRDHK | Standard batch |\n| LN | IRDLN (3 batches) | Legacy split for performance |\n| NY | IRDNY | Standard batch |\n| SP | IRDSP | Standard batch |\n\n**Note**: London region uses 3 separate feeder batches for historical performance reasons.\n\n#### Gamma Feeders\n\n| Region | Portfolio Nodes | Gamma Filter |\n|--------|-----------------|--------------|\n| HK | IRDLN, IRDHK | IRD\\|CF\\|, IRD\\|OSWP\\| only |\n| LN | IRDLN | IRD\\|CF\\|, IRD\\|OSWP\\| only |\n| NY | IRDNY | IRD\\|CF\\|, IRD\\|OSWP\\| only |\n| SP | IRDSP | IRD\\|CF\\|, IRD\\|OSWP\\| only |\n\n---\n\n## 6. Special Handling\n\n### 6.1 ZAR Processing (Deprecated)\n\nThe following ZAR-related fields were originally included for SBSA (Standard Bank South Africa) but are now deprecated:\n\n| Field | Status | Reason |\n|-------|--------|--------|\n| DV01 ZAR | Deprecated | SBSA exclusion |\n| DV01 Par ZAR | Deprecated | SBSA exclusion |\n| Gamma Zero ZAR | Deprecated | SBSA exclusion |\n| Gamma Par ZAR | Deprecated | SBSA exclusion |\n\nThese fields remain in the output structure for backward compatibility but are no longer populated.\n\n### 6.2 Delta-Gamma Join Logic\n\nThe extraction combines Delta and Gamma using a LEFT JOIN:\n\n```sql\nSELECT\n    d.TRADE_NUM,\n    d.PORTFOLIO,\n    d.DATE,\n    d.CURVENAME,\n    d.TYPOLOGY,\n    d.DELTAUSD,\n    COALESCE(g.GAMMAUSD, 0) as GAMMAUSD\nFROM A_IRPV01_DELTA.REP d\nLEFT JOIN A_IRPV02_GAMMA.REP g\n    ON d.TRADE_NUM = g.TRADE_NUM\n    AND d.CURVENAME = g.CURVENAME\n    AND d.DATE = g.DATE\n```\n\nThis ensures all Delta records are included, with Gamma defaulting to 0 for products without optionality.\n\n### 6.3 Curve Name Standardization\n\nInterest rate curve names follow the pattern: `{CCY}_{INDEX}_{TENOR}`\n\n| Example | Description |\n|---------|-------------|\n| USD_LIBOR_3M | USD 3-month LIBOR curve |\n| EUR_EURIBOR_6M | EUR 6-month EURIBOR curve |\n| GBP_SONIA | GBP SONIA overnight curve |\n| USD_SOFR | USD SOFR overnight curve |\n\n---\n\n## 7. Output Structure\n\n### 7.1 Output Fields (17 Fields)\n\n| # | Field | Type | Length | Description |\n|---|-------|------|--------|-------------|\n| 1 | TRADE_NUM | VarChar | 20 | Trade number |\n| 2 | PORTFOLIO | VarChar | 30 | Trading portfolio |\n| 3 | DATE | Date | - | Pillar date |\n| 4 | CURVENAME | VarChar | 50 | Interest rate curve name |\n| 5 | TYPOLOGY | VarChar | 30 | Product typology (Family\\|Group\\|Type) |\n| 6 | FAMILY | VarChar | 10 | Trade family |\n| 7 | GROUP | VarChar | 10 | Trade group |\n| 8 | TYPE | VarChar | 10 | Trade type |\n| 9 | CATEGORY | VarChar | 20 | Trade category |\n| 10 | ISSUE | VarChar | 50 | Issue identifier |\n| 11 | PROFITCENTRE | VarChar | 20 | Profit centre |\n| 12 | DELTAUSD | Numeric | 18,4 | DV01 in USD |\n| 13 | GAMMAUSD | Numeric | 18,4 | Gamma in USD |\n| 14 | ZAR_PROCESSING | VarChar | 1 | (Deprecated) |\n| 15 | DELTAZAR | Numeric | 18,4 | (Deprecated) |\n| 16 | GAMMAZAR | Numeric | 18,4 | (Deprecated) |\n| 17 | PARDELTAZAR | Numeric | 18,4 | (Deprecated) |\n| 18 | PARGAMMAZAR | Numeric | 18,4 | (Deprecated) |\n\n### 7.2 Active vs Deprecated Fields\n\n| Field Category | Fields | Status |\n|----------------|--------|--------|\n| **Trade Identification** | TRADE_NUM, PORTFOLIO, TYPOLOGY, FAMILY, GROUP, TYPE | Active |\n| **Risk Factor** | DATE, CURVENAME | Active |\n| **USD Sensitivities** | DELTAUSD, GAMMAUSD | Active |\n| **ZAR Sensitivities** | ZAR_PROCESSING, DELTAZAR, GAMMAZAR, PARDELTAZAR, PARGAMMAZAR | Deprecated |\n\n---\n\n## 8. Processing Schedule\n\n### 8.1 Daily Timeline (GMT)\n\n| Time | Event |\n|------|-------|\n| 18:00 | Market data close (LN) |\n| 21:00 | Valuation batch complete |\n| 02:00 | Delta feeder batch start |\n| 02:30 | Gamma feeder batch start |\n| 03:00 | Delta feeder batch complete |\n| 03:30 | Gamma feeder batch complete |\n| 04:00 | Extraction batch start (LEFT JOIN) |\n| 04:30 | Extraction complete |\n| 05:00 | File delivery via MFT |\n\n### 8.2 Processing Flow\n\n```mermaid\ngraph LR\n    A[Valuation Complete] --> B[Delta Feeders]\n    A --> C[Gamma Feeders]\n    B --> D[A_IRPV01_DELTA.REP]\n    C --> E[A_IRPV02_GAMMA.REP]\n    D --> F[Extraction LEFT JOIN]\n    E --> F\n    F --> G[Regional Files]\n    G --> H[MFT Delivery]\n```\n\n---\n\n## 9. Feed Documentation Index\n\n| Document | ID | Description |\n|----------|-----|-------------|\n| [IR Delta & Gamma BRD](./ir-delta-gamma-brd.md) | IR-BRD-001 | Business requirements |\n| [IR Delta & Gamma IT Config](./ir-delta-gamma-config.md) | IR-CFG-001 | Murex GOM configuration |\n| [IR Delta & Gamma IDD](./ir-delta-gamma-idd.md) | IR-IDD-001 | Interface design |\n\n---\n\n## 10. Comparison with Other Sensitivity Feeds\n\n| Aspect | IR Delta & Gamma | Energy | Credit |\n|--------|------------------|--------|--------|\n| Number of Feeds | 1 | 1 | 8 |\n| Structure | Combined (LEFT JOIN) | Combined (UNION) | Separate feeds |\n| Delta Sensitivity | DV01 (Zero) | Commodity Delta | CS01 (Zero/Par) |\n| Gamma Sensitivity | IR Gamma | Commodity Gamma | N/A |\n| Vega Sensitivity | N/A | Commodity Vega | N/A |\n| Theta Sensitivity | N/A | Commodity Theta | N/A |\n| Rho Sensitivity | N/A | DV01\u00d7100 | N/A |\n| File Prefix | MxMGB_MR_Rates_DV01 | MxMGB_MR_Energy_Sens | MxMGB_MR_Credit_* |\n\n---\n\n## 11. Related Documents\n\n| Document | ID | Relationship |\n|----------|-----|-------------|\n| [Feeds Overview](../feeds-overview.md) | MR-L7-003 | Parent document |\n| [Data Dictionary](../../data-dictionary.md) | MR-L7-002 | Field definitions |\n| [Energy Sensitivities Overview](../energy-sensitivities/energy-sensitivities-overview.md) | EN-OVW-001 | Related suite |\n| [CR Sensitivities Overview](../cr-sensitivities/cr-sensitivities-overview.md) | CR-OVW-001 | Related suite |\n\n---\n\n## 12. Document Control\n\n### 12.1 Version History\n\n| Version | Date | Change | Author |\n|---------|------|--------|--------|\n| 1.0 | 2025-01-03 | Initial version | Risk Technology |\n\n### 12.2 Approval\n\n| Role | Name | Date |\n|------|------|------|\n| Business Owner | Head of Rates Trading | |\n| Technical Owner | Head of Risk Technology | |\n| Approver | Risk Technology Change Board | |\n\n---\n\n*End of Document*\n"
+    },
+    "tool_use_id": "toolu_012stUUK4Hm4VZRBHXarVQgY"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Delta & Gamma Overview document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma Overview document"
+        },
+        {
+          "content": "Create IR Delta & Gamma BRD document",
+          "status": "in_progress",
+          "activeForm": "Creating IR Delta & Gamma BRD document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IT Config document",
+          "status": "pending",
+          "activeForm": "Creating IR Delta & Gamma IT Config document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IDD document",
+          "status": "pending",
+          "activeForm": "Creating IR Delta & Gamma IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01GTPVwh7ANbZU84FkAwQWKP"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-delta-gamma/ir-delta-gamma-brd.md",
+      "content": "---\n# Document Metadata\ndocument_id: IR-BRD-001\ndocument_name: IR Delta & Gamma - Business Requirements Document\nversion: 1.0\neffective_date: 2025-01-03\nnext_review_date: 2026-01-03\nowner: Market Risk Technology\napproving_committee: Risk Technology Change Board\n\n# Taxonomy Reference\nparent_node: L7-Systems/market-risk/feeds/ir-delta-gamma\nfeed_family: IR Delta & Gamma\ndocument_type: BRD\n---\n\n# IR Delta & Gamma - Business Requirements Document\n\n**Meridian Global Bank - Market Risk Technology**\n\n| Document Control | |\n|-----------------|---|\n| **Document ID** | IR-BRD-001 |\n| **Version** | 1.0 |\n| **Effective Date** | 3 January 2025 |\n| **Owner** | Market Risk Technology |\n| **Approver** | Risk Technology Change Board |\n\n---\n\n## 1. Executive Summary\n\n### 1.1 Purpose\n\nThis Business Requirements Document defines the functional and non-functional requirements for the IR Delta & Gamma sensitivity feed from Murex to downstream market risk systems. The feed provides interest rate risk exposures (DV01) and convexity measures (Gamma) for the Interest Rate Derivatives (IRD) trading book.\n\n### 1.2 Business Context\n\nInterest rate risk is a primary driver of Profit & Loss for the Rates trading desk. Accurate and timely DV01 and Gamma sensitivities are essential for:\n\n- **Risk Management**: Daily position monitoring and limit utilization\n- **Trading Decisions**: Understanding portfolio sensitivity to rate movements\n- **Regulatory Reporting**: FRTB SA/IMA calculations, IRRBB compliance\n- **P&L Attribution**: Explaining daily P&L through sensitivity-based decomposition\n\n### 1.3 Scope\n\n| In Scope | Out of Scope |\n|----------|--------------|\n| IR Delta (DV01) calculation | FX Delta sensitivities |\n| IR Gamma calculation | Credit spread sensitivities |\n| Zero curve sensitivities | Equity sensitivities |\n| USD equivalent values | Commodity sensitivities |\n| Regional processing (LN, HK, NY, SP) | Cross-gamma calculations |\n\n---\n\n## 2. Business Requirements\n\n### 2.1 Functional Requirements\n\n#### BR-IR-001: Delta (DV01) Calculation\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-001 |\n| **Title** | DV01 Sensitivity Calculation |\n| **Priority** | Critical |\n| **Description** | The system shall calculate DV01 (Dollar Value of a 01 - one basis point shift) for all IRD positions against zero coupon yield curves |\n| **Acceptance Criteria** | DV01 values shall be expressed in local currency and USD equivalent |\n| **Business Rationale** | DV01 is the primary measure of interest rate risk exposure |\n\n#### BR-IR-002: Gamma Calculation\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-002 |\n| **Title** | Gamma Sensitivity Calculation |\n| **Priority** | High |\n| **Description** | The system shall calculate Gamma (rate of change of Delta for a 1bp shift) for products with embedded optionality |\n| **Acceptance Criteria** | Gamma calculated only for Caps/Floors (IRD\\|CF\\|) and Swaptions (IRD\\|OSWP\\|); Gamma = 0 for linear products |\n| **Business Rationale** | Gamma measures convexity risk for option portfolios |\n\n#### BR-IR-003: Product Coverage\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-003 |\n| **Title** | IRD Product Scope |\n| **Priority** | Critical |\n| **Description** | The feed shall cover all IRD product types traded in Murex |\n| **Product Families** | IRD (Interest Rate Derivatives) |\n| **Product Groups** | CF (Caps/Floors), OSWP (Swaptions), SWAP (Swaps), FRA, FUT, BOND, REPO |\n\n#### BR-IR-004: Curve Granularity\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-004 |\n| **Title** | Interest Rate Curve Breakdown |\n| **Priority** | Critical |\n| **Description** | Sensitivities shall be broken down by interest rate curve and pillar date |\n| **Curve Examples** | USD_LIBOR_3M, EUR_EURIBOR_6M, GBP_SONIA, USD_SOFR |\n| **Pillar Set** | LNOFFICIAL: O/N, T/N, 1W, 2W, 1M, 2M, 3M, 6M, 9M, 1Y-30Y |\n\n#### BR-IR-005: Regional Processing\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-005 |\n| **Title** | Multi-Region Support |\n| **Priority** | High |\n| **Description** | The feed shall be produced separately for each trading region using region-specific market data |\n| **Regions** | London (LN), Hong Kong (HK), New York (NY), Singapore (SP) |\n| **Market Data** | Each region uses its own EOD market data set |\n\n#### BR-IR-006: Delta-Gamma Combination\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-006 |\n| **Title** | Combined Output File |\n| **Priority** | High |\n| **Description** | Delta and Gamma shall be combined into a single output file using LEFT JOIN logic |\n| **Join Key** | TRADE_NUM + CURVENAME + DATE |\n| **Default Gamma** | 0 for non-option products |\n\n### 2.2 Non-Functional Requirements\n\n#### BR-IR-NFR-001: Timeliness\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-NFR-001 |\n| **Title** | Data Delivery SLA |\n| **Priority** | Critical |\n| **Description** | Feed must be delivered by 05:00 GMT (T+1) for London region |\n| **Measurement** | 95% of deliveries within SLA over rolling 30-day period |\n\n#### BR-IR-NFR-002: Completeness\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-NFR-002 |\n| **Title** | Data Completeness |\n| **Priority** | Critical |\n| **Description** | All live IRD positions must have Delta values; option positions must have Gamma values |\n| **Tolerance** | <0.1% missing sensitivity records |\n\n#### BR-IR-NFR-003: Accuracy\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-NFR-003 |\n| **Title** | Calculation Accuracy |\n| **Priority** | Critical |\n| **Description** | DV01 and Gamma values must match front office system within tolerance |\n| **Tolerance** | \u00b10.01% for DV01; \u00b10.1% for Gamma |\n\n#### BR-IR-NFR-004: Reconciliation\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IR-NFR-004 |\n| **Title** | Daily Reconciliation |\n| **Priority** | High |\n| **Description** | Feed totals must reconcile to Murex Valuation Reports |\n| **Breaks Threshold** | \u00b1$10,000 USD at portfolio level |\n\n---\n\n## 3. Data Requirements\n\n### 3.1 Input Data\n\n| Source | Data Element | Description |\n|--------|--------------|-------------|\n| Murex Trade Repository | Trade attributes | Trade number, portfolio, typology |\n| Murex Valuation | DV01 values | Per-curve, per-pillar sensitivities |\n| Murex Valuation | Gamma values | Option convexity measures |\n| Market Data | Yield curves | Zero coupon curves by currency |\n| Market Data | Volatility surfaces | For option Greeks calculation |\n\n### 3.2 Output Data\n\n| Field | Type | Description | Source |\n|-------|------|-------------|--------|\n| TRADE_NUM | String | Unique trade identifier | Trade Repository |\n| PORTFOLIO | String | Trading book code | Trade Repository |\n| DATE | Date | Pillar date | Maturity Set |\n| CURVENAME | String | Interest rate curve | Valuation Engine |\n| TYPOLOGY | String | Product classification | Trade Repository |\n| DELTAUSD | Numeric | DV01 in USD | Valuation Engine |\n| GAMMAUSD | Numeric | Gamma in USD | Valuation Engine |\n\n### 3.3 Data Quality Rules\n\n| Rule ID | Field | Rule | Action on Failure |\n|---------|-------|------|-------------------|\n| DQ-IR-001 | TRADE_NUM | Must not be null | Reject record |\n| DQ-IR-002 | DELTAUSD | Must be numeric | Reject record |\n| DQ-IR-003 | DATE | Must be valid date | Reject record |\n| DQ-IR-004 | CURVENAME | Must exist in curve inventory | Warning |\n| DQ-IR-005 | GAMMAUSD | Must be 0 for non-options | Correct to 0 |\n\n---\n\n## 4. Business Rules\n\n### 4.1 Gamma Filtering Rules\n\n| Rule ID | Condition | Action |\n|---------|-----------|--------|\n| BR-GAMMA-001 | Product = IRD\\|CF\\|* | Calculate Gamma |\n| BR-GAMMA-002 | Product = IRD\\|OSWP\\|* | Calculate Gamma |\n| BR-GAMMA-003 | Product = any other | Set Gamma = 0 |\n| BR-GAMMA-004 | Deal is purged | Set Gamma = 0 |\n\n### 4.2 Currency Conversion Rules\n\n| Rule ID | Condition | Action |\n|---------|-----------|--------|\n| BR-FX-001 | Local CCY = USD | DELTAUSD = DV01 |\n| BR-FX-002 | Local CCY \u2260 USD | DELTAUSD = DV01 \u00d7 FX Rate |\n| BR-FX-003 | FX Rate unavailable | Use previous day rate |\n\n### 4.3 Maturity Set Rules\n\nThe LNOFFICIAL maturity set defines the pillar structure:\n\n| Tenor Bucket | Pillars |\n|--------------|---------|\n| Short-term | O/N, T/N, 1W, 2W |\n| Money Market | 1M, 2M, 3M, 6M, 9M |\n| Swap Tenors | 1Y, 2Y, 3Y, 5Y, 7Y, 10Y, 15Y, 20Y, 30Y |\n\n### 4.4 Deprecated Fields\n\nThe following fields are retained for backward compatibility but are no longer actively used:\n\n| Field | Original Purpose | Current Status |\n|-------|------------------|----------------|\n| ZAR_PROCESSING | SBSA flag | Deprecated |\n| DELTAZAR | ZAR equivalent DV01 | Deprecated |\n| GAMMAZAR | ZAR equivalent Gamma | Deprecated |\n| PARDELTAZAR | Par ZAR Delta | Deprecated |\n| PARGAMMAZAR | Par ZAR Gamma | Deprecated |\n\n---\n\n## 5. Processing Requirements\n\n### 5.1 Processing Schedule\n\n| Step | Time (GMT) | Description |\n|------|------------|-------------|\n| 1 | 18:00 | Market data close (London) |\n| 2 | 21:00 | Valuation batch complete |\n| 3 | 02:00 | Delta feeder batch start |\n| 4 | 02:30 | Gamma feeder batch start |\n| 5 | 03:30 | Both feeders complete |\n| 6 | 04:00 | Extraction (LEFT JOIN) |\n| 7 | 04:30 | File generation |\n| 8 | 05:00 | MFT delivery |\n\n### 5.2 Dependencies\n\n| Upstream | Dependency Type | Impact if Delayed |\n|----------|-----------------|-------------------|\n| Market Data | Hard | Feed cannot run |\n| Valuation Batch | Hard | Feed cannot run |\n| Trade Repository | Hard | Missing trades |\n| FX Rates | Soft | Previous day rates used |\n\n### 5.3 Error Handling\n\n| Error Type | Handling | Escalation |\n|------------|----------|------------|\n| Missing market data | Abort feed | Immediate to Risk Tech |\n| Valuation failure | Retry once, then abort | Immediate to Risk Tech |\n| Partial trade failures | Continue with warnings | Morning summary email |\n| MFT delivery failure | Retry 3 times | After 3rd failure to Ops |\n\n---\n\n## 6. Reporting Requirements\n\n### 6.1 Standard Reports\n\n| Report | Frequency | Audience |\n|--------|-----------|----------|\n| Feed Completion Status | Daily | Risk Technology |\n| Data Quality Summary | Daily | Risk Operations |\n| Reconciliation Breaks | Daily | Risk Control |\n| Monthly Volumes | Monthly | Management |\n\n### 6.2 Reconciliation Requirements\n\n| Check | Frequency | Tolerance |\n|-------|-----------|-----------|\n| Feed vs Murex Totals | Daily | \u00b1$10,000 |\n| Record Count | Daily | 0% variance |\n| Portfolio Coverage | Daily | 100% |\n\n---\n\n## 7. Stakeholders\n\n### 7.1 Business Stakeholders\n\n| Role | Responsibility |\n|------|----------------|\n| Head of Rates Trading | Business owner, sign-off |\n| Rates Risk Manager | Daily user, requirements |\n| Market Risk COO | Operational oversight |\n| Regulatory Reporting | FRTB/IRRBB data consumer |\n\n### 7.2 Technical Stakeholders\n\n| Role | Responsibility |\n|------|----------------|\n| Risk Technology Lead | Technical delivery |\n| Murex Support Team | Source system support |\n| Data Warehouse Team | Target system integration |\n| MFT Operations | File transfer |\n\n---\n\n## 8. Acceptance Criteria\n\n### 8.1 Functional Acceptance\n\n| Criteria | Verification Method |\n|----------|---------------------|\n| All IRD products covered | Product inventory reconciliation |\n| DV01 values correct | Sample validation vs front office |\n| Gamma values correct | Option pricing model validation |\n| Regional files generated | File existence check |\n| LEFT JOIN logic correct | Delta records without Gamma = 0 |\n\n### 8.2 Non-Functional Acceptance\n\n| Criteria | Verification Method |\n|----------|---------------------|\n| Delivery by 05:00 GMT | Timestamp monitoring |\n| <0.1% missing records | Completeness report |\n| \u00b10.01% accuracy | Reconciliation report |\n| 99.5% availability | Uptime monitoring |\n\n---\n\n## 9. Risks and Mitigations\n\n| Risk | Impact | Likelihood | Mitigation |\n|------|--------|------------|------------|\n| Valuation batch delays | High | Medium | Buffer time in schedule |\n| Market data gaps | High | Low | Previous day fallback |\n| High trade volumes | Medium | Medium | Performance optimization |\n| Curve inventory changes | Medium | Low | Change management process |\n\n---\n\n## 10. Document Control\n\n### 10.1 Version History\n\n| Version | Date | Change | Author |\n|---------|------|--------|--------|\n| 1.0 | 2025-01-03 | Initial version | Risk Technology |\n\n### 10.2 Approval\n\n| Role | Name | Date |\n|------|------|------|\n| Business Owner | Head of Rates Trading | |\n| Technical Owner | Head of Risk Technology | |\n| Approver | Risk Technology Change Board | |\n\n---\n\n*End of Document*\n"
+    },
+    "tool_use_id": "toolu_014WUjw4KFmawCURG88L2JRh"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Delta & Gamma Overview document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma Overview document"
+        },
+        {
+          "content": "Create IR Delta & Gamma BRD document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma BRD document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IT Config document",
+          "status": "in_progress",
+          "activeForm": "Creating IR Delta & Gamma IT Config document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IDD document",
+          "status": "pending",
+          "activeForm": "Creating IR Delta & Gamma IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01GycD1XNM9Td34gM32Hfeit"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-delta-gamma/ir-delta-gamma-config.md",
+      "content": "---\n# Document Metadata\ndocument_id: IR-CFG-001\ndocument_name: IR Delta & Gamma - IT Configuration\nversion: 1.0\neffective_date: 2025-01-03\nnext_review_date: 2026-01-03\nowner: Market Risk Technology\napproving_committee: Risk Technology Change Board\n\n# Taxonomy Reference\nparent_node: L7-Systems/market-risk/feeds/ir-delta-gamma\nfeed_family: IR Delta & Gamma\ndocument_type: Config\n---\n\n# IR Delta & Gamma - IT Configuration\n\n**Meridian Global Bank - Market Risk Technology**\n\n| Document Control | |\n|-----------------|---|\n| **Document ID** | IR-CFG-001 |\n| **Version** | 1.0 |\n| **Effective Date** | 3 January 2025 |\n| **Owner** | Market Risk Technology |\n| **Approver** | Risk Technology Change Board |\n\n---\n\n## 1. Introduction\n\n### 1.1 Purpose\n\nThis document details the Murex GOM (Generic Object Management) configuration for the IR Delta & Gamma sensitivity feed. It provides the technical specifications required to configure, maintain, and troubleshoot the feed components within Murex.\n\n### 1.2 Scope\n\nThis configuration covers:\n- Simulation View definitions (IRPV01_DELTAS, IRPV02_GAMMAS)\n- Feeder configurations (Delta and Gamma feeders)\n- Datamart table structures\n- Data Extractor configuration\n- Extraction Request setup\n- Regional processing parameters\n\n---\n\n## 2. Component Overview\n\n### 2.1 Architecture Diagram\n\n```\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502                          IR DELTA & GAMMA FEED                              \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502                                                                             \u2502\n\u2502  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                     \u2502\n\u2502  \u2502   IRPV01_DELTAS      \u2502      \u2502   IRPV02_GAMMAS      \u2502                     \u2502\n\u2502  \u2502   Simulation View    \u2502      \u2502   Simulation View    \u2502                     \u2502\n\u2502  \u2502   4 outputs          \u2502      \u2502   6 outputs          \u2502                     \u2502\n\u2502  \u2502   13 breakdowns      \u2502      \u2502   15 breakdowns      \u2502                     \u2502\n\u2502  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518      \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                     \u2502\n\u2502             \u2502                             \u2502                                 \u2502\n\u2502             \u25bc                             \u25bc                                 \u2502\n\u2502  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                     \u2502\n\u2502  \u2502   **_IRDELTA_FDR     \u2502      \u2502   **_IRGAMMA_FDR     \u2502                     \u2502\n\u2502  \u2502   Feeders            \u2502      \u2502   Feeders            \u2502                     \u2502\n\u2502  \u2502   HK/LN/NY/SP        \u2502      \u2502   HK/LN/NY/SP        \u2502                     \u2502\n\u2502  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518      \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                     \u2502\n\u2502             \u2502                             \u2502                                 \u2502\n\u2502             \u25bc                             \u25bc                                 \u2502\n\u2502  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                     \u2502\n\u2502  \u2502   A_IRPV01_DELTA.REP \u2502      \u2502   A_IRPV02_GAMMA.REP \u2502                     \u2502\n\u2502  \u2502   Datamart Table     \u2502      \u2502   Datamart Table     \u2502                     \u2502\n\u2502  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518      \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                     \u2502\n\u2502             \u2502                             \u2502                                 \u2502\n\u2502             \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                                 \u2502\n\u2502                            \u2502                                                \u2502\n\u2502                            \u25bc                                                \u2502\n\u2502             \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                                \u2502\n\u2502             \u2502   DE_IRD_PV01DELTA           \u2502                                \u2502\n\u2502             \u2502   Data Extractor             \u2502                                \u2502\n\u2502             \u2502   (LEFT JOIN)                \u2502                                \u2502\n\u2502             \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                                \u2502\n\u2502                            \u2502                                                \u2502\n\u2502                            \u25bc                                                \u2502\n\u2502             \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                                \u2502\n\u2502             \u2502   IRPV01_Delta_ZAR           \u2502                                \u2502\n\u2502             \u2502   Extraction Request         \u2502                                \u2502\n\u2502             \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                                \u2502\n\u2502                            \u2502                                                \u2502\n\u2502                            \u25bc                                                \u2502\n\u2502             \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                                \u2502\n\u2502             \u2502   MxMGB_MR_Rates_DV01_**     \u2502                                \u2502\n\u2502             \u2502   Output File                \u2502                                \u2502\n\u2502             \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                                \u2502\n\u2502                                                                             \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n```\n\n### 2.2 Component Summary\n\n| Component Type | Name | Description |\n|---------------|------|-------------|\n| Simulation View | IRPV01_DELTAS | Delta (DV01) calculation |\n| Simulation View | IRPV02_GAMMAS | Gamma calculation |\n| Feeder | **_IRDELTA_FDR | Delta feeder (per region) |\n| Feeder | **_IRGAMMA_FDR | Gamma feeder (per region) |\n| Datamart Table | A_IRPV01_DELTA.REP | Delta results storage |\n| Datamart Table | A_IRPV02_GAMMA.REP | Gamma results storage |\n| Data Extractor | DE_IRD_PV01DELTA | Combined extraction |\n| Extraction Request | IRPV01_Delta_ZAR | Output file generation |\n\n---\n\n## 3. Simulation Views\n\n### 3.1 IRPV01_DELTAS\n\n#### 3.1.1 View Properties\n\n| Property | Value |\n|----------|-------|\n| **View Name** | IRPV01_DELTAS |\n| **View Type** | Dynamic |\n| **Dynamic Table** | VW_IRPV01_DELTA |\n| **Base Template** | IR_DELTA_BASE |\n| **Calculation Engine** | Standard Valuation |\n\n#### 3.1.2 Outputs Configuration\n\n| # | Output Name | Dictionary Path | Type | Precision |\n|---|-------------|-----------------|------|-----------|\n| 1 | DV01_ZERO | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Value | Numeric | 4 |\n| 2 | DV01_USD | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Value USD | Numeric | 4 |\n| 3 | DV01_ZAR | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Value ZAR | Numeric | 4 |\n| 4 | DV01_PAR_ZAR | RiskEngine.Results.Outputs.Interest rates.Delta.Par.Value ZAR | Numeric | 4 |\n\n**Note**: Outputs 3 and 4 (ZAR-related) are deprecated but retained for backward compatibility.\n\n#### 3.1.3 Breakdowns Configuration\n\n| # | Breakdown Name | Dictionary Path | Type |\n|---|----------------|-----------------|------|\n| 1 | M_NB | Data.Trade.Trade number | String |\n| 2 | M_TP_PFOLIO | Data.Trade.Portfolio | String |\n| 3 | M_DATE | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Date | Date |\n| 4 | M_CURVENAME | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Curve key.Curve name | String |\n| 5 | M_TRN_FMLY | Data.Trade.Typology.Family | String |\n| 6 | M_TRN_GRP | Data.Trade.Typology.Group | String |\n| 7 | M_TRN_TYPE | Data.Trade.Typology.Type | String |\n| 8 | M_TRN_STYP | Data.Trade.Typology.Subtype | String |\n| 9 | M_CATEGORY | Data.Trade.Category | String |\n| 10 | M_ISSUE | Data.Trade.Issue | String |\n| 11 | M_PROFITCTR | Data.Trade.Profit centre | String |\n| 12 | M_ENTITY | Data.Trade.Entity | String |\n| 13 | M_CCY | Data.Trade.Currency | String |\n\n#### 3.1.4 Maturity Set Configuration\n\n| Property | Value |\n|----------|-------|\n| **Maturity Set Name** | LNOFFICIAL |\n| **Reference Curve** | Interest rates.Delta.Zero |\n| **Interpolation** | Linear |\n\n**Pillar Definition:**\n\n| Tenor | Days | Label |\n|-------|------|-------|\n| O/N | 1 | O/N |\n| T/N | 2 | T/N |\n| 1W | 7 | 1W |\n| 2W | 14 | 2W |\n| 1M | 30 | 1M |\n| 2M | 60 | 2M |\n| 3M | 90 | 3M |\n| 6M | 180 | 6M |\n| 9M | 270 | 9M |\n| 1Y | 365 | 1Y |\n| 2Y | 730 | 2Y |\n| 3Y | 1095 | 3Y |\n| 5Y | 1825 | 5Y |\n| 7Y | 2555 | 7Y |\n| 10Y | 3650 | 10Y |\n| 15Y | 5475 | 15Y |\n| 20Y | 7300 | 20Y |\n| 30Y | 10950 | 30Y |\n\n### 3.2 IRPV02_GAMMAS\n\n#### 3.2.1 View Properties\n\n| Property | Value |\n|----------|-------|\n| **View Name** | IRPV02_GAMMAS |\n| **View Type** | Dynamic |\n| **Dynamic Table** | VW_IRPV02_GAMMA |\n| **Base Template** | IR_GAMMA_BASE |\n| **Calculation Engine** | Standard Valuation |\n\n#### 3.2.2 Outputs Configuration\n\n| # | Output Name | Dictionary Path | Type | Precision |\n|---|-------------|-----------------|------|-----------|\n| 1 | GAMMA_ZERO_CCY | RiskEngine.Results.Outputs.Interest rates.Gamma.Zero.Value | Numeric | 4 |\n| 2 | GAMMA_ZERO_USD | RiskEngine.Results.Outputs.Interest rates.Gamma.Zero.Value USD | Numeric | 4 |\n| 3 | GAMMA_ZERO_ZAR | RiskEngine.Results.Outputs.Interest rates.Gamma.Zero.Value ZAR | Numeric | 4 |\n| 4 | GAMMA_PAR_CCY | RiskEngine.Results.Outputs.Interest rates.Gamma.Par.Value | Numeric | 4 |\n| 5 | GAMMA_PAR_USD | RiskEngine.Results.Outputs.Interest rates.Gamma.Par.Value USD | Numeric | 4 |\n| 6 | GAMMA_PAR_ZAR | RiskEngine.Results.Outputs.Interest rates.Gamma.Par.Value ZAR | Numeric | 4 |\n\n**Note**: Outputs 3 and 6 (ZAR-related) are deprecated but retained for backward compatibility.\n\n#### 3.2.3 Breakdowns Configuration\n\n| # | Breakdown Name | Dictionary Path | Type |\n|---|----------------|-----------------|------|\n| 1 | M_NB | Data.Trade.Trade number | String |\n| 2 | M_TP_PFOLIO | Data.Trade.Portfolio | String |\n| 3 | M_DATE | RiskEngine.Results.Outputs.Interest rates.Gamma.Zero.Date | Date |\n| 4 | M_CURVENAME | RiskEngine.Results.Outputs.Interest rates.Gamma.Zero.Curve key.Curve name | String |\n| 5 | M_TRN_FMLY | Data.Trade.Typology.Family | String |\n| 6 | M_TRN_GRP | Data.Trade.Typology.Group | String |\n| 7 | M_TRN_TYPE | Data.Trade.Typology.Type | String |\n| 8 | M_TRN_STYP | Data.Trade.Typology.Subtype | String |\n| 9 | M_CATEGORY | Data.Trade.Category | String |\n| 10 | M_ISSUE | Data.Trade.Issue | String |\n| 11 | M_PROFITCTR | Data.Trade.Profit centre | String |\n| 12 | M_ENTITY | Data.Trade.Entity | String |\n| 13 | M_CCY | Data.Trade.Currency | String |\n| 14 | M_OPT_STYLE | Data.Trade.Option style | String |\n| 15 | M_OPT_TYPE | Data.Trade.Option type | String |\n\n#### 3.2.4 Product Filter\n\nThe Gamma simulation view includes a product filter to restrict calculation to option products:\n\n```sql\nWHERE M_TRN_FMLY = 'IRD'\nAND (M_TRN_GRP = 'CF' OR M_TRN_GRP = 'OSWP')\n```\n\n| Product | Description | Gamma Calculated |\n|---------|-------------|------------------|\n| IRD\\|CF\\|* | Caps and Floors | Yes |\n| IRD\\|OSWP\\|* | Swaptions | Yes |\n| IRD\\|SWAP\\|* | Interest Rate Swaps | No |\n| IRD\\|FRA\\|* | Forward Rate Agreements | No |\n| IRD\\|FUT\\|* | Futures | No |\n| IRD\\|BOND\\|* | Bonds | No |\n| IRD\\|REPO\\|* | Repos | No |\n\n---\n\n## 4. Feeders\n\n### 4.1 Delta Feeders\n\n#### 4.1.1 Feeder Configuration\n\n| Region | Feeder Name | Simulation View | Portfolio Filter |\n|--------|-------------|-----------------|------------------|\n| HK | HK_IRDELTA_FDR | IRPV01_DELTAS | IRDLN, IRDHK |\n| LN | LN_IRDELTA_FDR_1 | IRPV01_DELTAS | IRDLN (Batch 1) |\n| LN | LN_IRDELTA_FDR_2 | IRPV01_DELTAS | IRDLN (Batch 2) |\n| LN | LN_IRDELTA_FDR_3 | IRPV01_DELTAS | IRDLN (Batch 3) |\n| NY | NY_IRDELTA_FDR | IRPV01_DELTAS | IRDNY |\n| SP | SP_IRDELTA_FDR | IRPV01_DELTAS | IRDSP |\n\n**Note**: London uses 3 separate batches for historical performance optimization.\n\n#### 4.1.2 Feeder Parameters\n\n| Parameter | Value | Description |\n|-----------|-------|-------------|\n| Mode | REPLACE | Full refresh each run |\n| Target Table | A_IRPV01_DELTA.REP | Datamart table |\n| Batch Size | 10000 | Records per commit |\n| Timeout | 3600 | Seconds |\n| Retry Count | 3 | Number of retries |\n| Parallel Threads | 4 | Processing threads |\n\n#### 4.1.3 Market Data Assignment\n\n| Region | Market Data Set | As Of Date |\n|--------|-----------------|------------|\n| HK | MGB_HK_EOD | T (COB) |\n| LN | MGB_LN_EOD | T (COB) |\n| NY | MGB_NY_EOD | T (COB) |\n| SP | MGB_SP_EOD | T (COB) |\n\n### 4.2 Gamma Feeders\n\n#### 4.2.1 Feeder Configuration\n\n| Region | Feeder Name | Simulation View | Portfolio Filter |\n|--------|-------------|-----------------|------------------|\n| HK | HK_IRGAMMA_FDR | IRPV02_GAMMAS | IRDLN, IRDHK |\n| LN | LN_IRGAMMA_FDR | IRPV02_GAMMAS | IRDLN |\n| NY | NY_IRGAMMA_FDR | IRPV02_GAMMAS | IRDNY |\n| SP | SP_IRGAMMA_FDR | IRPV02_GAMMAS | IRDSP |\n\n#### 4.2.2 Feeder Parameters\n\n| Parameter | Value | Description |\n|-----------|-------|-------------|\n| Mode | REPLACE | Full refresh each run |\n| Target Table | A_IRPV02_GAMMA.REP | Datamart table |\n| Batch Size | 5000 | Records per commit |\n| Timeout | 1800 | Seconds (smaller scope) |\n| Retry Count | 3 | Number of retries |\n| Parallel Threads | 2 | Processing threads |\n\n#### 4.2.3 Product Filter Applied\n\n```sql\nWHERE M_TRN_FMLY || '|' || M_TRN_GRP || '|' IN ('IRD|CF|', 'IRD|OSWP|')\n```\n\n---\n\n## 5. Datamart Tables\n\n### 5.1 A_IRPV01_DELTA.REP\n\n#### 5.1.1 Table Structure\n\n| # | Column | Type | Length | Nullable | Description |\n|---|--------|------|--------|----------|-------------|\n| 1 | M_NB | VARCHAR | 20 | NO | Trade number (PK) |\n| 2 | M_TP_PFOLIO | VARCHAR | 30 | NO | Portfolio |\n| 3 | M_DATE | DATE | - | NO | Pillar date (PK) |\n| 4 | M_CURVENAME | VARCHAR | 50 | NO | Curve name (PK) |\n| 5 | M_TRN_FMLY | VARCHAR | 10 | YES | Trade family |\n| 6 | M_TRN_GRP | VARCHAR | 10 | YES | Trade group |\n| 7 | M_TRN_TYPE | VARCHAR | 10 | YES | Trade type |\n| 8 | M_TRN_STYP | VARCHAR | 10 | YES | Trade subtype |\n| 9 | M_CATEGORY | VARCHAR | 20 | YES | Category |\n| 10 | M_ISSUE | VARCHAR | 50 | YES | Issue |\n| 11 | M_PROFITCTR | VARCHAR | 20 | YES | Profit centre |\n| 12 | M_ENTITY | VARCHAR | 20 | YES | Entity |\n| 13 | M_CCY | VARCHAR | 3 | YES | Currency |\n| 14 | M_DV01_ZERO | NUMBER | 18,4 | YES | DV01 local CCY |\n| 15 | M_DV01_USD | NUMBER | 18,4 | YES | DV01 USD |\n| 16 | M_DV01_ZAR | NUMBER | 18,4 | YES | DV01 ZAR (deprecated) |\n| 17 | M_DV01_PAR_ZAR | NUMBER | 18,4 | YES | DV01 Par ZAR (deprecated) |\n| 18 | M_TIMESTAMP | TIMESTAMP | - | NO | Record timestamp |\n| 19 | M_REGION | VARCHAR | 2 | NO | Processing region |\n\n#### 5.1.2 Indexes\n\n| Index Name | Columns | Type |\n|------------|---------|------|\n| PK_IRPV01_DELTA | M_NB, M_DATE, M_CURVENAME | Primary Key |\n| IX_IRPV01_PFOLIO | M_TP_PFOLIO | Non-unique |\n| IX_IRPV01_DATE | M_DATE | Non-unique |\n| IX_IRPV01_REGION | M_REGION, M_TIMESTAMP | Non-unique |\n\n### 5.2 A_IRPV02_GAMMA.REP\n\n#### 5.2.1 Table Structure\n\n| # | Column | Type | Length | Nullable | Description |\n|---|--------|------|--------|----------|-------------|\n| 1 | M_NB | VARCHAR | 20 | NO | Trade number (PK) |\n| 2 | M_TP_PFOLIO | VARCHAR | 30 | NO | Portfolio |\n| 3 | M_DATE | DATE | - | NO | Pillar date (PK) |\n| 4 | M_CURVENAME | VARCHAR | 50 | NO | Curve name (PK) |\n| 5 | M_TRN_FMLY | VARCHAR | 10 | YES | Trade family |\n| 6 | M_TRN_GRP | VARCHAR | 10 | YES | Trade group |\n| 7 | M_TRN_TYPE | VARCHAR | 10 | YES | Trade type |\n| 8 | M_TRN_STYP | VARCHAR | 10 | YES | Trade subtype |\n| 9 | M_CATEGORY | VARCHAR | 20 | YES | Category |\n| 10 | M_ISSUE | VARCHAR | 50 | YES | Issue |\n| 11 | M_PROFITCTR | VARCHAR | 20 | YES | Profit centre |\n| 12 | M_ENTITY | VARCHAR | 20 | YES | Entity |\n| 13 | M_CCY | VARCHAR | 3 | YES | Currency |\n| 14 | M_OPT_STYLE | VARCHAR | 10 | YES | Option style |\n| 15 | M_OPT_TYPE | VARCHAR | 10 | YES | Option type |\n| 16 | M_GAMMA_ZERO_CCY | NUMBER | 18,4 | YES | Gamma local CCY |\n| 17 | M_GAMMA_ZERO_USD | NUMBER | 18,4 | YES | Gamma USD |\n| 18 | M_GAMMA_ZERO_ZAR | NUMBER | 18,4 | YES | Gamma ZAR (deprecated) |\n| 19 | M_GAMMA_PAR_CCY | NUMBER | 18,4 | YES | Par Gamma local CCY |\n| 20 | M_GAMMA_PAR_USD | NUMBER | 18,4 | YES | Par Gamma USD |\n| 21 | M_GAMMA_PAR_ZAR | NUMBER | 18,4 | YES | Par Gamma ZAR (deprecated) |\n| 22 | M_TIMESTAMP | TIMESTAMP | - | NO | Record timestamp |\n| 23 | M_REGION | VARCHAR | 2 | NO | Processing region |\n\n#### 5.2.2 Indexes\n\n| Index Name | Columns | Type |\n|------------|---------|------|\n| PK_IRPV02_GAMMA | M_NB, M_DATE, M_CURVENAME | Primary Key |\n| IX_IRPV02_PFOLIO | M_TP_PFOLIO | Non-unique |\n| IX_IRPV02_DATE | M_DATE | Non-unique |\n| IX_IRPV02_REGION | M_REGION, M_TIMESTAMP | Non-unique |\n\n---\n\n## 6. Data Extractor\n\n### 6.1 DE_IRD_PV01DELTA\n\n#### 6.1.1 Extractor Properties\n\n| Property | Value |\n|----------|-------|\n| **Extractor Name** | DE_IRD_PV01DELTA |\n| **Extractor Type** | SQL-based |\n| **Source Tables** | A_IRPV01_DELTA.REP, A_IRPV02_GAMMA.REP |\n| **Join Type** | LEFT JOIN |\n| **Output Format** | CSV |\n\n#### 6.1.2 SQL Definition\n\n```sql\nSELECT\n    d.M_NB AS TRADE_NUM,\n    d.M_TP_PFOLIO AS PORTFOLIO,\n    d.M_DATE AS DATE,\n    d.M_CURVENAME AS CURVENAME,\n    d.M_TRN_FMLY || '|' || d.M_TRN_GRP || '|' || d.M_TRN_TYPE AS TYPOLOGY,\n    d.M_TRN_FMLY AS FAMILY,\n    d.M_TRN_GRP AS GROUP,\n    d.M_TRN_TYPE AS TYPE,\n    d.M_CATEGORY AS CATEGORY,\n    d.M_ISSUE AS ISSUE,\n    d.M_PROFITCTR AS PROFITCENTRE,\n    d.M_DV01_USD AS DELTAUSD,\n    COALESCE(g.M_GAMMA_ZERO_USD, 0) AS GAMMAUSD,\n    CASE WHEN d.M_CCY = 'ZAR' THEN 'Y' ELSE 'N' END AS ZAR_PROCESSING,\n    COALESCE(d.M_DV01_ZAR, 0) AS DELTAZAR,\n    COALESCE(g.M_GAMMA_ZERO_ZAR, 0) AS GAMMAZAR,\n    COALESCE(d.M_DV01_PAR_ZAR, 0) AS PARDELTAZAR,\n    COALESCE(g.M_GAMMA_PAR_ZAR, 0) AS PARGAMMAZAR\nFROM A_IRPV01_DELTA.REP d\nLEFT JOIN A_IRPV02_GAMMA.REP g\n    ON d.M_NB = g.M_NB\n    AND d.M_DATE = g.M_DATE\n    AND d.M_CURVENAME = g.M_CURVENAME\n    AND d.M_REGION = g.M_REGION\nWHERE d.M_REGION = @Region\n    AND d.M_TIMESTAMP >= @RunDate\nORDER BY d.M_TP_PFOLIO, d.M_NB, d.M_CURVENAME, d.M_DATE\n```\n\n#### 6.1.3 Parameters\n\n| Parameter | Type | Description | Example |\n|-----------|------|-------------|---------|\n| @Region | String | Processing region | 'LN' |\n| @RunDate | Date | Processing date | '2025-01-03' |\n\n---\n\n## 7. Extraction Request\n\n### 7.1 IRPV01_Delta_ZAR\n\n#### 7.1.1 Request Properties\n\n| Property | Value |\n|----------|-------|\n| **Request Name** | IRPV01_Delta_ZAR |\n| **Data Extractor** | DE_IRD_PV01DELTA |\n| **Output Type** | File |\n| **File Format** | CSV |\n| **Delimiter** | Comma |\n| **Header Row** | Yes |\n\n#### 7.1.2 Output File Configuration\n\n| Property | Value |\n|----------|-------|\n| **File Pattern** | MxMGB_MR_Rates_DV01_{Region}_{YYYYMMDD}.csv |\n| **Output Directory** | /data/outbound/vespa/ |\n| **Encoding** | UTF-8 |\n| **Line Ending** | Unix (LF) |\n| **Quote Character** | Double quote |\n| **Escape Character** | Backslash |\n\n#### 7.1.3 Field Mapping\n\n| # | Output Field | Source Expression | Format |\n|---|--------------|-------------------|--------|\n| 1 | TRADE_NUM | TRADE_NUM | String |\n| 2 | PORTFOLIO | PORTFOLIO | String |\n| 3 | DATE | DATE | YYYY-MM-DD |\n| 4 | CURVENAME | CURVENAME | String |\n| 5 | TYPOLOGY | TYPOLOGY | String |\n| 6 | FAMILY | FAMILY | String |\n| 7 | GROUP | GROUP | String |\n| 8 | TYPE | TYPE | String |\n| 9 | CATEGORY | CATEGORY | String |\n| 10 | ISSUE | ISSUE | String |\n| 11 | PROFITCENTRE | PROFITCENTRE | String |\n| 12 | DELTAUSD | DELTAUSD | Numeric (18,4) |\n| 13 | GAMMAUSD | GAMMAUSD | Numeric (18,4) |\n| 14 | ZAR_PROCESSING | ZAR_PROCESSING | String |\n| 15 | DELTAZAR | DELTAZAR | Numeric (18,4) |\n| 16 | GAMMAZAR | GAMMAZAR | Numeric (18,4) |\n| 17 | PARDELTAZAR | PARDELTAZAR | Numeric (18,4) |\n| 18 | PARGAMMAZAR | PARGAMMAZAR | Numeric (18,4) |\n\n---\n\n## 8. Regional Batch Configuration\n\n### 8.1 Batch Scripts\n\n| Region | Script Name | Schedule (GMT) |\n|--------|-------------|----------------|\n| HK | HK_VSPA_IRDELTA_RPT | 02:00 |\n| LN | LN_VSPA_IRDELTA_RPT | 02:00 |\n| NY | NY_VSPA_IRDELTA_RPT | 02:00 |\n| SP | SP_VSPA_IRDELTA_RPT | 02:00 |\n\n### 8.2 Processing Order\n\n```mermaid\ngraph TD\n    subgraph \"02:00 GMT\"\n        F1[HK_IRDELTA_FDR]\n        F2[LN_IRDELTA_FDR_1]\n        F3[LN_IRDELTA_FDR_2]\n        F4[LN_IRDELTA_FDR_3]\n        F5[NY_IRDELTA_FDR]\n        F6[SP_IRDELTA_FDR]\n    end\n\n    subgraph \"02:30 GMT\"\n        G1[HK_IRGAMMA_FDR]\n        G2[LN_IRGAMMA_FDR]\n        G3[NY_IRGAMMA_FDR]\n        G4[SP_IRGAMMA_FDR]\n    end\n\n    subgraph \"04:00 GMT\"\n        E1[HK_VSPA_IRDELTA_RPT]\n        E2[LN_VSPA_IRDELTA_RPT]\n        E3[NY_VSPA_IRDELTA_RPT]\n        E4[SP_VSPA_IRDELTA_RPT]\n    end\n\n    F1 --> G1 --> E1\n    F2 --> G2\n    F3 --> G2\n    F4 --> G2 --> E2\n    F5 --> G3 --> E3\n    F6 --> G4 --> E4\n```\n\n### 8.3 Timeout Configuration\n\n| Component | Timeout (seconds) | Alert Threshold |\n|-----------|-------------------|-----------------|\n| Delta Feeder | 3600 | 2700 (75%) |\n| Gamma Feeder | 1800 | 1350 (75%) |\n| Extraction | 1800 | 1350 (75%) |\n| Total Process | 7200 | 5400 (75%) |\n\n---\n\n## 9. Error Handling\n\n### 9.1 Feeder Errors\n\n| Error Type | Action | Notification |\n|------------|--------|--------------|\n| Connection failure | Retry 3 times | Alert after 3rd failure |\n| Timeout | Abort and alert | Immediate |\n| Data validation | Log and continue | Daily summary |\n| Memory overflow | Reduce batch size | Alert and retry |\n\n### 9.2 Extraction Errors\n\n| Error Type | Action | Notification |\n|------------|--------|--------------|\n| Source table empty | Abort | Immediate |\n| JOIN mismatch >1% | Warning | Daily summary |\n| File write failure | Retry | Alert after 3rd failure |\n| Invalid data format | Log and continue | Daily summary |\n\n### 9.3 Recovery Procedures\n\n| Scenario | Recovery Steps |\n|----------|----------------|\n| Feeder failure | 1. Check logs 2. Verify source data 3. Re-run feeder |\n| Extraction failure | 1. Verify datamart tables 2. Re-run extraction |\n| File delivery failure | 1. Check MFT status 2. Manual re-send |\n| Complete batch failure | 1. Investigate root cause 2. Full re-run from feeders |\n\n---\n\n## 10. Monitoring and Alerts\n\n### 10.1 Monitoring Points\n\n| Check Point | Expected | Alert If |\n|-------------|----------|----------|\n| Delta feeder complete | 03:00 GMT | Not complete by 03:30 |\n| Gamma feeder complete | 03:30 GMT | Not complete by 04:00 |\n| Extraction complete | 04:30 GMT | Not complete by 05:00 |\n| File delivered | 05:00 GMT | Not delivered by 05:30 |\n\n### 10.2 Data Quality Checks\n\n| Check | SQL | Threshold |\n|-------|-----|-----------|\n| Record count | COUNT(*) vs previous day | \u00b110% |\n| Null Delta | COUNT WHERE DELTAUSD IS NULL | 0 |\n| Gamma for non-options | COUNT WHERE GAMMAUSD <> 0 AND GRP NOT IN ('CF','OSWP') | 0 |\n| Duplicate records | COUNT(*) - COUNT(DISTINCT key) | 0 |\n\n---\n\n## 11. Document Control\n\n### 11.1 Version History\n\n| Version | Date | Change | Author |\n|---------|------|--------|--------|\n| 1.0 | 2025-01-03 | Initial version | Risk Technology |\n\n### 11.2 Approval\n\n| Role | Name | Date |\n|------|------|------|\n| Technical Owner | Murex Support Lead | |\n| Data Owner | Risk Technology Lead | |\n| Approver | Risk Technology Change Board | |\n\n---\n\n*End of Document*\n"
+    },
+    "tool_use_id": "toolu_011Cwy8YYbaeFPmfx9beFXFR"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Delta & Gamma Overview document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma Overview document"
+        },
+        {
+          "content": "Create IR Delta & Gamma BRD document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma BRD document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IT Config document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma IT Config document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IDD document",
+          "status": "in_progress",
+          "activeForm": "Creating IR Delta & Gamma IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_013cM6NiHsSa7Et7mA6HRjfi"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-delta-gamma/ir-delta-gamma-idd.md",
+      "content": "---\n# Document Metadata\ndocument_id: IR-IDD-001\ndocument_name: IR Delta & Gamma - Interface Design Document\nversion: 1.0\neffective_date: 2025-01-03\nnext_review_date: 2026-01-03\nowner: Market Risk Technology\napproving_committee: Risk Technology Change Board\n\n# Taxonomy Reference\nparent_node: L7-Systems/market-risk/feeds/ir-delta-gamma\nfeed_family: IR Delta & Gamma\ndocument_type: IDD\n---\n\n# IR Delta & Gamma - Interface Design Document\n\n**Meridian Global Bank - Market Risk Technology**\n\n| Document Control | |\n|-----------------|---|\n| **Document ID** | IR-IDD-001 |\n| **Version** | 1.0 |\n| **Effective Date** | 3 January 2025 |\n| **Owner** | Market Risk Technology |\n| **Approver** | Risk Technology Change Board |\n\n---\n\n## 1. Introduction\n\n### 1.1 Purpose\n\nThis Interface Design Document specifies the technical interface for the IR Delta & Gamma sensitivity feed from Murex to downstream risk systems. It provides the detailed file format, field specifications, and integration requirements.\n\n### 1.2 Scope\n\nThis document covers:\n- File naming conventions and delivery\n- Record structure and field definitions\n- Data types and validation rules\n- Sample data and examples\n- Consumer integration guidelines\n\n### 1.3 Interface Summary\n\n| Property | Value |\n|----------|-------|\n| **Interface Name** | IR Delta & Gamma Sensitivities |\n| **Interface ID** | MR-IF-IR-001 |\n| **Source System** | Murex (VESPA Module) |\n| **Target Systems** | Risk Data Warehouse, Plato, VESPA Reporting |\n| **Protocol** | MFT (Managed File Transfer) |\n| **Format** | CSV (Comma-Separated Values) |\n| **Frequency** | Daily (T+1) |\n\n---\n\n## 2. File Specification\n\n### 2.1 File Naming Convention\n\n#### Pattern\n```\nMxMGB_MR_Rates_DV01_{Region}_{YYYYMMDD}.csv\n```\n\n#### Components\n\n| Component | Description | Example Values |\n|-----------|-------------|----------------|\n| MxMGB | Source system prefix (Murex, Meridian Global Bank) | MxMGB |\n| MR | Domain (Market Risk) | MR |\n| Rates | Asset class | Rates |\n| DV01 | Sensitivity type | DV01 |\n| {Region} | Trading region code | LN, HK, NY, SP |\n| {YYYYMMDD} | Business date | 20250103 |\n\n#### Examples\n\n| Region | Example Filename |\n|--------|------------------|\n| London | MxMGB_MR_Rates_DV01_LN_20250103.csv |\n| Hong Kong | MxMGB_MR_Rates_DV01_HK_20250103.csv |\n| New York | MxMGB_MR_Rates_DV01_NY_20250103.csv |\n| Singapore | MxMGB_MR_Rates_DV01_SP_20250103.csv |\n\n### 2.2 File Properties\n\n| Property | Value |\n|----------|-------|\n| **Format** | CSV |\n| **Encoding** | UTF-8 |\n| **Delimiter** | Comma (,) |\n| **Text Qualifier** | Double Quote (\") |\n| **Escape Character** | Backslash (\\) |\n| **Line Ending** | Unix (LF) |\n| **Header Row** | Yes (first row) |\n| **Decimal Separator** | Period (.) |\n| **Thousands Separator** | None |\n| **Date Format** | YYYY-MM-DD |\n| **Null Representation** | Empty string |\n\n### 2.3 File Delivery\n\n| Property | Value |\n|----------|-------|\n| **Delivery Method** | MFT (Managed File Transfer) |\n| **Source Directory** | /data/outbound/vespa/ |\n| **Target Directory** | /data/inbound/market_risk/ |\n| **Delivery Time** | 05:00 GMT (T+1) |\n| **SLA** | 99.5% on-time delivery |\n| **Retry Policy** | 3 attempts, 15-minute intervals |\n\n---\n\n## 3. Record Structure\n\n### 3.1 Field Overview\n\n| # | Field Name | Type | Length | Nullable | Description |\n|---|------------|------|--------|----------|-------------|\n| 1 | TRADE_NUM | VARCHAR | 20 | N | Trade number |\n| 2 | PORTFOLIO | VARCHAR | 30 | N | Trading portfolio |\n| 3 | DATE | DATE | 10 | N | Pillar date |\n| 4 | CURVENAME | VARCHAR | 50 | N | Interest rate curve |\n| 5 | TYPOLOGY | VARCHAR | 30 | N | Product typology |\n| 6 | FAMILY | VARCHAR | 10 | N | Trade family |\n| 7 | GROUP | VARCHAR | 10 | N | Trade group |\n| 8 | TYPE | VARCHAR | 10 | Y | Trade type |\n| 9 | CATEGORY | VARCHAR | 20 | Y | Trade category |\n| 10 | ISSUE | VARCHAR | 50 | Y | Issue identifier |\n| 11 | PROFITCENTRE | VARCHAR | 20 | Y | Profit centre |\n| 12 | DELTAUSD | NUMERIC | 18,4 | N | DV01 in USD |\n| 13 | GAMMAUSD | NUMERIC | 18,4 | N | Gamma in USD |\n| 14 | ZAR_PROCESSING | VARCHAR | 1 | Y | ZAR flag (deprecated) |\n| 15 | DELTAZAR | NUMERIC | 18,4 | Y | DV01 ZAR (deprecated) |\n| 16 | GAMMAZAR | NUMERIC | 18,4 | Y | Gamma ZAR (deprecated) |\n| 17 | PARDELTAZAR | NUMERIC | 18,4 | Y | Par Delta ZAR (deprecated) |\n| 18 | PARGAMMAZAR | NUMERIC | 18,4 | Y | Par Gamma ZAR (deprecated) |\n\n### 3.2 Field Definitions\n\n#### TRADE_NUM\n| Property | Value |\n|----------|-------|\n| **Description** | Unique trade identifier from Murex |\n| **Type** | VARCHAR(20) |\n| **Nullable** | No |\n| **Example** | \"TRD123456789\" |\n| **Validation** | Alphanumeric, no special characters |\n\n#### PORTFOLIO\n| Property | Value |\n|----------|-------|\n| **Description** | Trading book/portfolio code |\n| **Type** | VARCHAR(30) |\n| **Nullable** | No |\n| **Example** | \"IRDLN_SWAPS_EUR\" |\n| **Validation** | Must exist in portfolio inventory |\n\n#### DATE\n| Property | Value |\n|----------|-------|\n| **Description** | Pillar date for the sensitivity |\n| **Type** | DATE |\n| **Format** | YYYY-MM-DD |\n| **Nullable** | No |\n| **Example** | \"2025-03-15\" |\n| **Validation** | Must be valid date \u2265 business date |\n\n#### CURVENAME\n| Property | Value |\n|----------|-------|\n| **Description** | Interest rate curve identifier |\n| **Type** | VARCHAR(50) |\n| **Nullable** | No |\n| **Example** | \"USD_SOFR\", \"EUR_EURIBOR_6M\" |\n| **Validation** | Must exist in curve inventory |\n\n#### TYPOLOGY\n| Property | Value |\n|----------|-------|\n| **Description** | Full product classification (Family\\|Group\\|Type) |\n| **Type** | VARCHAR(30) |\n| **Format** | {Family}\\|{Group}\\|{Type} |\n| **Nullable** | No |\n| **Example** | \"IRD\\|SWAP\\|IRS\", \"IRD\\|CF\\|CAP\" |\n\n#### FAMILY\n| Property | Value |\n|----------|-------|\n| **Description** | Product family code |\n| **Type** | VARCHAR(10) |\n| **Nullable** | No |\n| **Valid Values** | IRD |\n| **Example** | \"IRD\" |\n\n#### GROUP\n| Property | Value |\n|----------|-------|\n| **Description** | Product group within family |\n| **Type** | VARCHAR(10) |\n| **Nullable** | No |\n| **Valid Values** | CF, OSWP, SWAP, FRA, FUT, BOND, REPO |\n| **Example** | \"SWAP\", \"CF\" |\n\n#### TYPE\n| Property | Value |\n|----------|-------|\n| **Description** | Product type within group |\n| **Type** | VARCHAR(10) |\n| **Nullable** | Yes |\n| **Example** | \"IRS\", \"OIS\", \"CAP\", \"FLOOR\" |\n\n#### CATEGORY\n| Property | Value |\n|----------|-------|\n| **Description** | Trade category classification |\n| **Type** | VARCHAR(20) |\n| **Nullable** | Yes |\n| **Example** | \"FLOW\", \"STRUCTURED\" |\n\n#### ISSUE\n| Property | Value |\n|----------|-------|\n| **Description** | Issue or instrument identifier |\n| **Type** | VARCHAR(50) |\n| **Nullable** | Yes |\n| **Example** | \"US912810TM26\" |\n\n#### PROFITCENTRE\n| Property | Value |\n|----------|-------|\n| **Description** | Profit centre code for P&L attribution |\n| **Type** | VARCHAR(20) |\n| **Nullable** | Yes |\n| **Example** | \"PC_RATES_LN\" |\n\n#### DELTAUSD\n| Property | Value |\n|----------|-------|\n| **Description** | DV01 sensitivity in USD equivalent |\n| **Type** | NUMERIC(18,4) |\n| **Unit** | USD |\n| **Nullable** | No |\n| **Example** | -12345.6789 |\n| **Interpretation** | P&L change for 1bp parallel shift |\n\n#### GAMMAUSD\n| Property | Value |\n|----------|-------|\n| **Description** | Gamma sensitivity in USD equivalent |\n| **Type** | NUMERIC(18,4) |\n| **Unit** | USD |\n| **Nullable** | No |\n| **Default** | 0 (for non-option products) |\n| **Example** | 567.8901 |\n| **Interpretation** | Rate of change of Delta for 1bp shift |\n\n#### ZAR_PROCESSING (Deprecated)\n| Property | Value |\n|----------|-------|\n| **Description** | Flag for ZAR currency processing |\n| **Type** | VARCHAR(1) |\n| **Valid Values** | Y, N |\n| **Status** | Deprecated - SBSA exclusion |\n| **Default** | N |\n\n#### DELTAZAR (Deprecated)\n| Property | Value |\n|----------|-------|\n| **Description** | DV01 in ZAR equivalent |\n| **Type** | NUMERIC(18,4) |\n| **Status** | Deprecated - SBSA exclusion |\n| **Default** | 0 |\n\n#### GAMMAZAR (Deprecated)\n| Property | Value |\n|----------|-------|\n| **Description** | Gamma in ZAR equivalent |\n| **Type** | NUMERIC(18,4) |\n| **Status** | Deprecated - SBSA exclusion |\n| **Default** | 0 |\n\n#### PARDELTAZAR (Deprecated)\n| Property | Value |\n|----------|-------|\n| **Description** | Par Delta in ZAR |\n| **Type** | NUMERIC(18,4) |\n| **Status** | Deprecated - SBSA exclusion |\n| **Default** | 0 |\n\n#### PARGAMMAZAR (Deprecated)\n| Property | Value |\n|----------|-------|\n| **Description** | Par Gamma in ZAR |\n| **Type** | NUMERIC(18,4) |\n| **Status** | Deprecated - SBSA exclusion |\n| **Default** | 0 |\n\n---\n\n## 4. Data Validation Rules\n\n### 4.1 Field-Level Validations\n\n| Rule ID | Field | Rule | Severity |\n|---------|-------|------|----------|\n| VAL-IR-001 | TRADE_NUM | NOT NULL AND LENGTH > 0 | Error |\n| VAL-IR-002 | PORTFOLIO | NOT NULL AND LENGTH > 0 | Error |\n| VAL-IR-003 | DATE | Valid date format YYYY-MM-DD | Error |\n| VAL-IR-004 | DATE | DATE >= Business date | Warning |\n| VAL-IR-005 | CURVENAME | NOT NULL AND LENGTH > 0 | Error |\n| VAL-IR-006 | TYPOLOGY | Format: XXX\\|XXX\\|XXX | Warning |\n| VAL-IR-007 | FAMILY | = 'IRD' | Error |\n| VAL-IR-008 | GROUP | IN ('CF','OSWP','SWAP','FRA','FUT','BOND','REPO') | Warning |\n| VAL-IR-009 | DELTAUSD | Numeric value | Error |\n| VAL-IR-010 | GAMMAUSD | Numeric value | Error |\n| VAL-IR-011 | GAMMAUSD | = 0 if GROUP NOT IN ('CF','OSWP') | Warning |\n\n### 4.2 Record-Level Validations\n\n| Rule ID | Rule | Description |\n|---------|------|-------------|\n| VAL-IR-R01 | Unique key | TRADE_NUM + DATE + CURVENAME must be unique |\n| VAL-IR-R02 | Gamma consistency | If GROUP = 'CF' or 'OSWP', GAMMAUSD may be non-zero |\n| VAL-IR-R03 | Typology match | TYPOLOGY = FAMILY + '\\|' + GROUP + '\\|' + TYPE |\n\n### 4.3 File-Level Validations\n\n| Rule ID | Rule | Description |\n|---------|------|-------------|\n| VAL-IR-F01 | Header present | First row must be header row |\n| VAL-IR-F02 | Field count | Each row must have 18 fields |\n| VAL-IR-F03 | Non-empty | File must contain at least 1 data row |\n| VAL-IR-F04 | Record count | \u00b110% of previous day |\n\n---\n\n## 5. Sample Data\n\n### 5.1 Header Row\n\n```csv\nTRADE_NUM,PORTFOLIO,DATE,CURVENAME,TYPOLOGY,FAMILY,GROUP,TYPE,CATEGORY,ISSUE,PROFITCENTRE,DELTAUSD,GAMMAUSD,ZAR_PROCESSING,DELTAZAR,GAMMAZAR,PARDELTAZAR,PARGAMMAZAR\n```\n\n### 5.2 Sample Records\n\n#### Interest Rate Swap (Linear - No Gamma)\n```csv\nTRD000001234,IRDLN_SWAPS_EUR,2025-03-15,EUR_EURIBOR_6M,IRD|SWAP|IRS,IRD,SWAP,IRS,FLOW,,PC_RATES_LN,-15234.5678,0.0000,N,0.0000,0.0000,0.0000,0.0000\n```\n\n#### Cap (Option - Has Gamma)\n```csv\nTRD000005678,IRDLN_OPTIONS_USD,2025-06-15,USD_SOFR,IRD|CF|CAP,IRD,CF,CAP,FLOW,,PC_RATES_LN,8765.4321,234.5678,N,0.0000,0.0000,0.0000,0.0000\n```\n\n#### Swaption (Option - Has Gamma)\n```csv\nTRD000009012,IRDLN_SWAPTIONS_GBP,2026-01-15,GBP_SONIA,IRD|OSWP|SWAPTION,IRD,OSWP,SWAPTION,STRUCTURED,,PC_RATES_LN,-5432.1098,156.7890,N,0.0000,0.0000,0.0000,0.0000\n```\n\n#### FRA (Linear - No Gamma)\n```csv\nTRD000003456,IRDHK_FRA_USD,2025-04-15,USD_LIBOR_3M,IRD|FRA|,IRD,FRA,,FLOW,,PC_RATES_HK,2345.6789,0.0000,N,0.0000,0.0000,0.0000,0.0000\n```\n\n### 5.3 Complete Sample File\n\n```csv\nTRADE_NUM,PORTFOLIO,DATE,CURVENAME,TYPOLOGY,FAMILY,GROUP,TYPE,CATEGORY,ISSUE,PROFITCENTRE,DELTAUSD,GAMMAUSD,ZAR_PROCESSING,DELTAZAR,GAMMAZAR,PARDELTAZAR,PARGAMMAZAR\nTRD000001234,IRDLN_SWAPS_EUR,2025-03-15,EUR_EURIBOR_6M,IRD|SWAP|IRS,IRD,SWAP,IRS,FLOW,,PC_RATES_LN,-15234.5678,0.0000,N,0.0000,0.0000,0.0000,0.0000\nTRD000001234,IRDLN_SWAPS_EUR,2025-06-15,EUR_EURIBOR_6M,IRD|SWAP|IRS,IRD,SWAP,IRS,FLOW,,PC_RATES_LN,-14876.2345,0.0000,N,0.0000,0.0000,0.0000,0.0000\nTRD000001234,IRDLN_SWAPS_EUR,2025-09-15,EUR_EURIBOR_6M,IRD|SWAP|IRS,IRD,SWAP,IRS,FLOW,,PC_RATES_LN,-14523.8901,0.0000,N,0.0000,0.0000,0.0000,0.0000\nTRD000005678,IRDLN_OPTIONS_USD,2025-06-15,USD_SOFR,IRD|CF|CAP,IRD,CF,CAP,FLOW,,PC_RATES_LN,8765.4321,234.5678,N,0.0000,0.0000,0.0000,0.0000\nTRD000005678,IRDLN_OPTIONS_USD,2025-09-15,USD_SOFR,IRD|CF|CAP,IRD,CF,CAP,FLOW,,PC_RATES_LN,8234.1234,198.7654,N,0.0000,0.0000,0.0000,0.0000\nTRD000009012,IRDLN_SWAPTIONS_GBP,2026-01-15,GBP_SONIA,IRD|OSWP|SWAPTION,IRD,OSWP,SWAPTION,STRUCTURED,,PC_RATES_LN,-5432.1098,156.7890,N,0.0000,0.0000,0.0000,0.0000\n```\n\n---\n\n## 6. Integration Guidelines\n\n### 6.1 Consumer Onboarding\n\n| Step | Description | Owner |\n|------|-------------|-------|\n| 1 | Request access via Service Desk | Consumer |\n| 2 | Provide target system details | Consumer |\n| 3 | Configure MFT delivery | Risk Technology |\n| 4 | Provide sample files | Risk Technology |\n| 5 | UAT validation | Consumer |\n| 6 | Production go-live | Joint |\n\n### 6.2 Recommended Processing\n\n```\n1. File Arrival\n   \u2514\u2500\u2500 Monitor MFT landing zone\n   \u2514\u2500\u2500 Validate file naming convention\n   \u2514\u2500\u2500 Check file size (non-zero)\n\n2. File Validation\n   \u2514\u2500\u2500 Verify header row structure\n   \u2514\u2500\u2500 Count fields per row (18)\n   \u2514\u2500\u2500 Validate data types\n   \u2514\u2500\u2500 Check record count vs threshold\n\n3. Data Loading\n   \u2514\u2500\u2500 Parse CSV with appropriate library\n   \u2514\u2500\u2500 Apply data type conversions\n   \u2514\u2500\u2500 Handle nullable fields\n   \u2514\u2500\u2500 Insert into staging table\n\n4. Data Quality\n   \u2514\u2500\u2500 Run validation rules\n   \u2514\u2500\u2500 Generate exception report\n   \u2514\u2500\u2500 Alert on critical failures\n\n5. Data Integration\n   \u2514\u2500\u2500 Transform as needed\n   \u2514\u2500\u2500 Load to target tables\n   \u2514\u2500\u2500 Update processing metadata\n```\n\n### 6.3 Error Handling Recommendations\n\n| Error Type | Recommended Action |\n|------------|-------------------|\n| File not arrived | Wait until SLA, then alert |\n| File empty | Reject, alert Risk Technology |\n| Parse errors | Log and continue, report exceptions |\n| Validation failures | Load valid records, quarantine failures |\n| Duplicate records | Take latest by timestamp |\n\n### 6.4 Aggregation Patterns\n\n#### By Portfolio\n```sql\nSELECT\n    PORTFOLIO,\n    SUM(DELTAUSD) AS TOTAL_DELTA,\n    SUM(GAMMAUSD) AS TOTAL_GAMMA\nFROM IR_DELTA_GAMMA\nGROUP BY PORTFOLIO;\n```\n\n#### By Curve\n```sql\nSELECT\n    CURVENAME,\n    SUM(DELTAUSD) AS TOTAL_DELTA,\n    SUM(GAMMAUSD) AS TOTAL_GAMMA\nFROM IR_DELTA_GAMMA\nGROUP BY CURVENAME;\n```\n\n#### By Pillar Bucket\n```sql\nSELECT\n    CASE\n        WHEN DATE <= DATEADD(month, 3, GETDATE()) THEN '0-3M'\n        WHEN DATE <= DATEADD(year, 1, GETDATE()) THEN '3M-1Y'\n        WHEN DATE <= DATEADD(year, 5, GETDATE()) THEN '1Y-5Y'\n        WHEN DATE <= DATEADD(year, 10, GETDATE()) THEN '5Y-10Y'\n        ELSE '10Y+'\n    END AS TENOR_BUCKET,\n    SUM(DELTAUSD) AS TOTAL_DELTA,\n    SUM(GAMMAUSD) AS TOTAL_GAMMA\nFROM IR_DELTA_GAMMA\nGROUP BY TENOR_BUCKET;\n```\n\n---\n\n## 7. Change Management\n\n### 7.1 Change Request Process\n\n| Change Type | Lead Time | Approval |\n|-------------|-----------|----------|\n| New field addition | 4 weeks | Change Board |\n| Field format change | 4 weeks | Change Board |\n| File naming change | 2 weeks | Risk Technology Lead |\n| Delivery time change | 2 weeks | Risk Technology Lead |\n| New consumer | 1 week | Risk Technology Lead |\n\n### 7.2 Version Compatibility\n\n| Version | Status | Support Until |\n|---------|--------|---------------|\n| 1.0 | Current | - |\n\n### 7.3 Deprecation Policy\n\n- Deprecated fields retained for minimum 12 months\n- Consumer notification 6 months before removal\n- Migration support available during transition\n\n---\n\n## 8. Contact Information\n\n### 8.1 Support Contacts\n\n| Role | Team | Contact |\n|------|------|---------|\n| L1 Support | Risk Technology | risk.tech@meridianbank.com |\n| L2 Support | Murex Support | murex.support@meridianbank.com |\n| Data Quality | Risk Operations | risk.ops@meridianbank.com |\n| Business Owner | Rates Trading | rates.trading@meridianbank.com |\n\n### 8.2 Escalation Path\n\n```\nL1: Risk Technology Service Desk (response: 2 hours)\n    \u2193\nL2: Murex Support Team (response: 4 hours)\n    \u2193\nL3: Risk Technology Lead (response: same day)\n    \u2193\nL4: Head of Risk Technology (response: next day)\n```\n\n---\n\n## 9. Appendices\n\n### Appendix A: Curve Name Reference\n\n| Curve Name | Currency | Index | Description |\n|------------|----------|-------|-------------|\n| USD_SOFR | USD | SOFR | Secured Overnight Financing Rate |\n| USD_LIBOR_3M | USD | LIBOR | 3-month USD LIBOR (legacy) |\n| EUR_EURIBOR_6M | EUR | EURIBOR | 6-month EURIBOR |\n| EUR_ESTER | EUR | ESTER | Euro Short-Term Rate |\n| GBP_SONIA | GBP | SONIA | Sterling Overnight Index Average |\n| GBP_LIBOR_6M | GBP | LIBOR | 6-month GBP LIBOR (legacy) |\n| JPY_TONA | JPY | TONA | Tokyo Overnight Average Rate |\n| CHF_SARON | CHF | SARON | Swiss Average Rate Overnight |\n\n### Appendix B: Product Type Reference\n\n| Family | Group | Type | Description | Has Gamma |\n|--------|-------|------|-------------|-----------|\n| IRD | CF | CAP | Interest Rate Cap | Yes |\n| IRD | CF | FLOOR | Interest Rate Floor | Yes |\n| IRD | CF | COLLAR | Cap + Floor combination | Yes |\n| IRD | OSWP | SWAPTION | Option to enter swap | Yes |\n| IRD | OSWP | STRADDLE | Payer + Receiver swaption | Yes |\n| IRD | SWAP | IRS | Interest Rate Swap | No |\n| IRD | SWAP | OIS | Overnight Index Swap | No |\n| IRD | SWAP | BASIS | Basis Swap | No |\n| IRD | SWAP | CCS | Cross Currency Swap | No |\n| IRD | FRA | - | Forward Rate Agreement | No |\n| IRD | FUT | ED | Eurodollar Future | No |\n| IRD | FUT | SOFR | SOFR Future | No |\n| IRD | BOND | FIXED | Fixed Rate Bond | No |\n| IRD | BOND | FRN | Floating Rate Note | No |\n| IRD | REPO | - | Repurchase Agreement | No |\n\n### Appendix C: Maturity Set LNOFFICIAL\n\n| Pillar | Days | Tenor Category |\n|--------|------|----------------|\n| O/N | 1 | Overnight |\n| T/N | 2 | Tomorrow/Next |\n| 1W | 7 | Short-term |\n| 2W | 14 | Short-term |\n| 1M | 30 | Money Market |\n| 2M | 60 | Money Market |\n| 3M | 90 | Money Market |\n| 6M | 180 | Money Market |\n| 9M | 270 | Money Market |\n| 1Y | 365 | Swap |\n| 2Y | 730 | Swap |\n| 3Y | 1095 | Swap |\n| 5Y | 1825 | Swap |\n| 7Y | 2555 | Swap |\n| 10Y | 3650 | Swap |\n| 15Y | 5475 | Long-term |\n| 20Y | 7300 | Long-term |\n| 30Y | 10950 | Long-term |\n\n---\n\n## 10. Document Control\n\n### 10.1 Version History\n\n| Version | Date | Change | Author |\n|---------|------|--------|--------|\n| 1.0 | 2025-01-03 | Initial version | Risk Technology |\n\n### 10.2 Approval\n\n| Role | Name | Date |\n|------|------|------|\n| Technical Owner | Risk Technology Lead | |\n| Data Owner | Head of Risk Data | |\n| Approver | Risk Technology Change Board | |\n\n---\n\n*End of Document*\n"
+    },
+    "tool_use_id": "toolu_01AjWzKBjTvvN7RKC2rmWEWv"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Delta & Gamma Overview document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma Overview document"
+        },
+        {
+          "content": "Create IR Delta & Gamma BRD document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma BRD document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IT Config document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma IT Config document"
+        },
+        {
+          "content": "Create IR Delta & Gamma IDD document",
+          "status": "completed",
+          "activeForm": "Creating IR Delta & Gamma IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_012r7Jqw89ZLm3WSc8tHhFGs"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "ls -la /Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-delta-gamma/",
+      "description": "List IR Delta & Gamma documentation files"
+    },
+    "tool_use_id": "toolu_01KpYRmHMcEtV1WpG5fKiBDF"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Glob",
+    "tool_input": {
+      "pattern": "**/ir-zero-basis*",
+      "path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy"
+    },
+    "tool_use_id": "toolu_01AFsLuKjcH5QSkWesmJsZjL"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/data/ICBCS Bank/Feeds/Feed Documentation/RC-IR Zero Basis-010925-153032.pdf"
+    },
+    "tool_use_id": "toolu_01Czjiwuwvwmz5UpytKdKsSo"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "mkdir -p /Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-zero-basis",
+      "description": "Create IR Zero Basis directory"
+    },
+    "tool_use_id": "toolu_01ERMu4PayGsUWLq6j9pwFVr"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Zero Basis Overview document",
+          "status": "in_progress",
+          "activeForm": "Creating IR Zero Basis Overview document"
+        },
+        {
+          "content": "Create IR Zero Basis BRD document",
+          "status": "pending",
+          "activeForm": "Creating IR Zero Basis BRD document"
+        },
+        {
+          "content": "Create IR Zero Basis IT Config document",
+          "status": "pending",
+          "activeForm": "Creating IR Zero Basis IT Config document"
+        },
+        {
+          "content": "Create IR Zero Basis IDD document",
+          "status": "pending",
+          "activeForm": "Creating IR Zero Basis IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01FZ4BovFit52QEjrY5nwxpn"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-zero-basis/ir-zero-basis-overview.md",
+      "content": "---\n# Document Metadata\ndocument_id: IRB-OVW-001\ndocument_name: IR Zero Basis - Overview\nversion: 1.0\neffective_date: 2025-01-03\nnext_review_date: 2026-01-03\nowner: Market Risk Technology\napproving_committee: Risk Technology Change Board\n\n# Taxonomy Reference\nparent_node: L7-Systems/market-risk/feeds\nfeed_family: IR Zero Basis\n---\n\n# IR Zero Basis - Overview\n\n**Meridian Global Bank - Market Risk Technology**\n\n| Document Control | |\n|-----------------|---|\n| **Document ID** | IRB-OVW-001 |\n| **Version** | 1.0 |\n| **Effective Date** | 3 January 2025 |\n| **Owner** | Market Risk Technology |\n| **Approver** | Risk Technology Change Board |\n\n---\n\n## 1. Introduction\n\n### 1.1 Purpose\n\nThis document provides an overview of the IR Zero Basis sensitivity feed from Murex to downstream risk systems. It serves as the parent document for the IR basis risk feed documentation, describing the overall architecture, data flow, and relationships between components.\n\n### 1.2 Scope\n\nThe IR Zero Basis feed provides market risk exposures and their associated sensitivities for **IR basis risk** - the variation arising from two interest rate curves in the same currency but using different fixing regimes. This risk arises from basis swaps and cross-currency basis positions where the spread between two indices can move independently.\n\n### 1.3 Feed Family Overview\n\n| Property | Value |\n|----------|-------|\n| **Feed Family** | IR Zero Basis |\n| **Number of Feeds** | 1 |\n| **Source System** | Murex (VESPA Module) |\n| **Target Systems** | Risk Data Warehouse, Plato, VESPA Reporting |\n| **Frequency** | Daily (T+1) |\n| **Regions** | London (LN), Hong Kong (HK), New York (NY), Sao Paulo (SP) |\n\n---\n\n## 2. Feed Architecture\n\n### 2.1 Single Feed Structure\n\nThe IR Zero Basis feed captures basis swap sensitivities using a single simulation view:\n\n```\nIR Zero Basis Feed\n\u2514\u2500\u2500 Basis Component (from MDS_BASISSWAP)\n    \u251c\u2500\u2500 Basis (zero) - Local currency sensitivity\n    \u251c\u2500\u2500 Basis (zero) USD - USD equivalent sensitivity\n    \u2514\u2500\u2500 Basis (zero) ZAR - ZAR equivalent (deprecated)\n```\n\n### 2.2 Output Feed\n\n| Feed Name | File Pattern | Description |\n|-----------|--------------|-------------|\n| IR Zero Basis | `MxMGB_MR_Rates_Basis_{Region}_{YYYYMMDD}.csv` | IR basis swap sensitivities |\n\n### 2.3 Data Flow Architecture\n\n```mermaid\ngraph TD\n    subgraph \"Simulation View\"\n        SV[MDS_BASISSWAP<br/>3 outputs, 11 breakdowns]\n    end\n\n    subgraph \"Feeder\"\n        F[**_IRZBAS_FDR]\n    end\n\n    subgraph \"Datamart Table\"\n        DM[A_IRBASISSWAP.REP]\n    end\n\n    subgraph \"Reference Tables\"\n        RT1[A_CURVENAME_REP]\n        RT2[A_RTCT_REP]\n    end\n\n    subgraph \"Extraction\"\n        EX[DE_IRD_PV01DELTA<br/>with JOINs]\n    end\n\n    subgraph \"Output\"\n        OUT[MxMGB_MR_Rates_Basis_**]\n    end\n\n    SV --> F --> DM\n    DM --> EX\n    RT1 --> EX\n    RT2 --> EX\n    EX --> OUT\n```\n\n---\n\n## 3. Simulation View\n\n### 3.1 MDS_BASISSWAP\n\nThe basis swap simulation view calculates IR basis sensitivities by bumping zero coupon curves.\n\n| Property | Value |\n|----------|-------|\n| **View Name** | MDS_BASISSWAP |\n| **Outputs** | 3 |\n| **Breakdowns** | 11 |\n| **Dynamic Table** | A_BASISSWAP |\n| **Datamart Table** | A_IRBASISSWAP.REP |\n\n#### Outputs\n\n| Output | Dictionary Path | Description |\n|--------|-----------------|-------------|\n| Basis (zero) | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Value | IR Basis Zero in local currency. Sensitivity of NPV to zero rates variation for Basis Curves |\n| Basis (zero) USD | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Value | IR Basis Zero in USD. Uses zero day FX spot for conversion |\n| Basis (zero) ZAR | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Value | IR Basis Zero in ZAR (Deprecated - SBSA exclusion) |\n\n#### Key Breakdowns\n\n| Breakdown | Dictionary Path | Description |\n|-----------|-----------------|-------------|\n| Date | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Date | Pillar date from maturity set RISK_VIEW |\n| Curve Name | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Curve key.Curve name | Interest rate curve label for which sensitivity is calculated |\n| Currency | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Curve key.Currency | Currency of the interest rate curve |\n| Portfolio | Data.Trade.Portfolio | Trading portfolio |\n| Trade Number | Data.Trade.Trade number | Unique trade identifier |\n| Legal Entity | Data.Trade.Legal entity | Legal entity code |\n| Closing Entity | Data.Trade.Closing entity | Closing entity (used for ZAR flag) |\n| Typology | Data.Trade.Typology | Product classification |\n\n#### Maturity Set: RISK_VIEW\n\nThe Basis calculation uses maturity set RISK_VIEW with an extended pillar set:\n\n| Tenor Category | Pillars |\n|---------------|---------|\n| Short-term | O/N, T/N, 1W |\n| Money Market | 1M, 2M, 3M, 6M, 9M |\n| Swap Tenors | 1Y, 2Y, 3Y, 4Y, 5Y, 6Y, 7Y, 8Y, 9Y, 10Y, 12Y, 15Y, 20Y, 25Y, 30Y, 35Y, 40Y |\n\n**Note**: This maturity set extends to 40Y, longer than the standard LNOFFICIAL set used for IR Delta & Gamma.\n\n---\n\n## 4. Understanding Basis Risk\n\n### 4.1 What is Basis Risk?\n\nBasis risk arises when a portfolio is exposed to the **spread between two different interest rate indices** in the same currency. Unlike outright IR risk (DV01), basis risk measures sensitivity to changes in this spread.\n\n### 4.2 Common Basis Risk Sources\n\n| Basis Type | Example | Description |\n|------------|---------|-------------|\n| **Tenor Basis** | 3M LIBOR vs 6M LIBOR | Spread between different tenors of same index |\n| **Index Basis** | LIBOR vs OIS | Spread between different indices |\n| **Cross-Currency Basis** | EUR/USD 3M | Spread between funding in different currencies |\n| **RFR Transition Basis** | LIBOR vs SOFR | Spread during benchmark transition |\n\n### 4.3 Example Basis Curves\n\n| Curve Name | Description |\n|------------|-------------|\n| EUR_USD_3MESTR_3MSOFR | EUR ESTR 3M vs USD SOFR 3M basis |\n| GBP_USD_3MSONIA_3MSOFR | GBP SONIA 3M vs USD SOFR 3M basis |\n| USD_3MLIBOR_SOFR | USD 3M LIBOR vs SOFR basis (legacy) |\n\n---\n\n## 5. Product Scope\n\n### 5.1 Products with Basis Risk\n\nThe IR Zero Basis feed covers trades that are sensitive to basis spread movements:\n\n| Family | Group | Type | Description |\n|--------|-------|------|-------------|\n| IRD | BS | * | Basis Swaps |\n| IRD | CCS | * | Cross-Currency Swaps |\n| IRD | SWAP | * | Interest Rate Swaps (multi-curve) |\n| FXD | CS | * | Currency Swaps |\n\n### 5.2 Basis Risk Characteristics\n\n| Characteristic | Description |\n|----------------|-------------|\n| **Risk Driver** | Spread between two IR curves |\n| **Hedging** | Basis swaps, cross-currency basis swaps |\n| **Correlation** | Generally low correlation to outright IR |\n| **Liquidity** | Less liquid than outright IR markets |\n\n---\n\n## 6. Regional Processing\n\n### 6.1 Market Data Sets\n\n| Region | Market Data Set | Description |\n|--------|-----------------|-------------|\n| London (LN) | LNCLOSE | London EOD market data |\n| Hong Kong (HK) | HKCLOSE | Hong Kong EOD market data |\n| New York (NY) | NYCLOSE | New York EOD market data |\n| Sao Paulo (SP) | SPCLOSE | Sao Paulo EOD market data |\n\n### 6.2 Portfolio Nodes by Region\n\n| Region | Key Portfolio Nodes |\n|--------|---------------------|\n| HKG | FXHKSBL, HKSBSA, LMHKSBL, LMHKSGACU, LMHKSGDBU, PMSG |\n| LDN | FXDLNSBL, FXLNSBL, IFXMMLNIC, IFXMMLNLH, IRLNSBL, JBSBSA, LMLNSBL, LNSBSA, MMLNSBLTRADT1-4, PMLN |\n| NYK | FXNYSBL, FXNYSBLSPROPOP1-2, LMNYSBL, LMNYSBLEM1, LMNYSBLEMT1, LMNYSBLSO, NYSBSA, PMNY |\n| SAO | CTBASBLAR*, CTSPSBL*, LMBASBL*, LMSPBSI, LMSPFIA, LMSPFND, LMSPSBL*, PMSP |\n\n**Note**: Portfolio filtering noted as requiring cleanup - some inactive portfolios included, some active portfolios missing.\n\n---\n\n## 7. Special Handling\n\n### 7.1 ZAR Processing (Deprecated)\n\n| Field | Status | Reason |\n|-------|--------|--------|\n| Basis (zero) ZAR | Deprecated | SBSA exclusion |\n| ZAR_PROCESSING flag | Deprecated | Based on JBSBSA closing entity |\n\n### 7.2 Curve Enrichment\n\nThe extraction joins to reference tables for curve metadata:\n\n| Table | Purpose |\n|-------|---------|\n| A_CURVENAME_REP | Maps curve display labels to internal names |\n| A_RTCT_REP | Provides generator type and generator name per pillar |\n\n### 7.3 Generator Information\n\nThe feed includes rate curve generator details:\n\n| Field | Source | Description |\n|-------|--------|-------------|\n| Type | A_RTCT.M_TYPE | Generator type at curve level (e.g., \"Basis swap\") |\n| Generat | A_RTCT.M_D_GEN | Generator name (e.g., \"_EUR ESTR 3M /USD SOFR 3M\") |\n\n---\n\n## 8. Output Structure\n\n### 8.1 Output Fields (12 Fields)\n\n| # | Field | Type | Length | Description |\n|---|-------|------|--------|-------------|\n| 1 | PORTFOLIO | VarChar | 16 | Trading portfolio |\n| 2 | Trade Number | Numeric | 16 | Trade identifier |\n| 3 | CURRENCY | VarChar | 4 | Basis curve currency |\n| 4 | CURVE_NAM | VarChar | 50 | Interest rate curve name |\n| 5 | Type | VarChar | 10 | Generator type |\n| 6 | Generat | VarChar | 15 | Generator name |\n| 7 | DATE | VarChar | 64 | Pillar date |\n| 8 | Basis Zero | Numeric | 16,6 | IR Basis Zero (local CCY) |\n| 9 | ZAR_PROCESSING | VarChar | 1 | JBSBSA flag (deprecated) |\n| 10 | Basis Zero (USD) | Numeric | 16,6 | IR Basis Zero in USD |\n| 11 | Basis Zero (ZAR) | Numeric | 16,6 | IR Basis Zero in ZAR (deprecated) |\n| 12 | Typology | VarChar | 21 | Product typology |\n\n---\n\n## 9. Processing Schedule\n\n### 9.1 Daily Timeline (GMT)\n\n| Time | Event |\n|------|-------|\n| 18:00 | Market data close (LN) |\n| 21:00 | Valuation batch complete |\n| 02:30 | Basis feeder batch start |\n| 03:30 | Basis feeder batch complete |\n| 04:00 | Extraction batch start |\n| 04:30 | Extraction complete |\n| 05:00 | File packaging (process_reports.sh) |\n| 05:30 | MFT delivery |\n\n### 9.2 Processing Flow\n\n```mermaid\ngraph LR\n    A[Valuation Complete] --> B[Basis Feeders]\n    B --> C[A_IRBASISSWAP.REP]\n    C --> D[Extraction with JOINs]\n    D --> E[Regional Files]\n    E --> F[Package to ZIP]\n    F --> G[MFT Delivery]\n```\n\n---\n\n## 10. Feed Documentation Index\n\n| Document | ID | Description |\n|----------|-----|-------------|\n| [IR Zero Basis BRD](./ir-zero-basis-brd.md) | IRB-BRD-001 | Business requirements |\n| [IR Zero Basis IT Config](./ir-zero-basis-config.md) | IRB-CFG-001 | Murex GOM configuration |\n| [IR Zero Basis IDD](./ir-zero-basis-idd.md) | IRB-IDD-001 | Interface design |\n\n---\n\n## 11. Comparison with Other IR Sensitivity Feeds\n\n| Aspect | IR Zero Basis | IR Delta & Gamma | Credit CS01 |\n|--------|---------------|------------------|-------------|\n| Risk Type | Basis spread | Outright IR | Credit spread |\n| Simulation View | MDS_BASISSWAP | IRPV01_DELTAS, IRPV02_GAMMAS | CR_CS01_* |\n| Outputs | 3 | 4 + 6 | 2 |\n| Maturity Set | RISK_VIEW (to 40Y) | LNOFFICIAL (to 30Y) | PILLARS (to 30Y) |\n| Convexity (Gamma) | No | Yes | No |\n| File Prefix | MxMGB_MR_Rates_Basis | MxMGB_MR_Rates_DV01 | MxMGB_MR_Credit_* |\n\n---\n\n## 12. Related Documents\n\n| Document | ID | Relationship |\n|----------|-----|-------------|\n| [Feeds Overview](../feeds-overview.md) | MR-L7-003 | Parent document |\n| [Data Dictionary](../../data-dictionary.md) | MR-L7-002 | Field definitions |\n| [IR Delta & Gamma Overview](../ir-delta-gamma/ir-delta-gamma-overview.md) | IR-OVW-001 | Related IR feed |\n| [Energy Sensitivities Overview](../energy-sensitivities/energy-sensitivities-overview.md) | EN-OVW-001 | Related suite |\n\n---\n\n## 13. Document Control\n\n### 13.1 Version History\n\n| Version | Date | Change | Author |\n|---------|------|--------|--------|\n| 1.0 | 2025-01-03 | Initial version | Risk Technology |\n\n### 13.2 Approval\n\n| Role | Name | Date |\n|------|------|------|\n| Business Owner | Head of Rates Trading | |\n| Technical Owner | Head of Risk Technology | |\n| Approver | Risk Technology Change Board | |\n\n---\n\n*End of Document*\n"
+    },
+    "tool_use_id": "toolu_016UwRNr49m7TQFKtmx7gA1e"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Zero Basis Overview document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis Overview document"
+        },
+        {
+          "content": "Create IR Zero Basis BRD document",
+          "status": "in_progress",
+          "activeForm": "Creating IR Zero Basis BRD document"
+        },
+        {
+          "content": "Create IR Zero Basis IT Config document",
+          "status": "pending",
+          "activeForm": "Creating IR Zero Basis IT Config document"
+        },
+        {
+          "content": "Create IR Zero Basis IDD document",
+          "status": "pending",
+          "activeForm": "Creating IR Zero Basis IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01Nf8axBdEV4pdyTZfHdEHzV"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-zero-basis/ir-zero-basis-brd.md",
+      "content": "---\n# Document Metadata\ndocument_id: IRB-BRD-001\ndocument_name: IR Zero Basis - Business Requirements Document\nversion: 1.0\neffective_date: 2025-01-03\nnext_review_date: 2026-01-03\nowner: Market Risk Technology\napproving_committee: Risk Technology Change Board\n\n# Taxonomy Reference\nparent_node: L7-Systems/market-risk/feeds/ir-zero-basis\nfeed_family: IR Zero Basis\ndocument_type: BRD\n---\n\n# IR Zero Basis - Business Requirements Document\n\n**Meridian Global Bank - Market Risk Technology**\n\n| Document Control | |\n|-----------------|---|\n| **Document ID** | IRB-BRD-001 |\n| **Version** | 1.0 |\n| **Effective Date** | 3 January 2025 |\n| **Owner** | Market Risk Technology |\n| **Approver** | Risk Technology Change Board |\n\n---\n\n## 1. Executive Summary\n\n### 1.1 Purpose\n\nThis Business Requirements Document defines the functional and non-functional requirements for the IR Zero Basis sensitivity feed from Murex to downstream market risk systems. The feed provides interest rate basis risk exposures for positions sensitive to spread movements between different interest rate curves in the same currency.\n\n### 1.2 Business Context\n\nBasis risk is a significant component of interest rate risk for portfolios containing:\n- **Basis swaps** - Exchange floating payments on different indices\n- **Cross-currency swaps** - Exposure to cross-currency basis spreads\n- **Multi-curve discounting** - Positions valued with different projection/discount curves\n\nAccurate basis sensitivity measurement is essential for:\n- **Risk Management**: Understanding exposure to basis spread movements\n- **P&L Attribution**: Explaining daily P&L from basis spread changes\n- **Hedging Decisions**: Identifying basis risk to be hedged\n- **Regulatory Reporting**: FRTB basis risk capital requirements\n\n### 1.3 Scope\n\n| In Scope | Out of Scope |\n|----------|--------------|\n| IR basis zero sensitivities | Outright IR Delta (DV01) |\n| Zero curve basis bumping | Par curve basis sensitivities |\n| Multi-currency basis curves | FX spot/forward sensitivities |\n| Regional processing (LN, HK, NY, SP) | Credit spread sensitivities |\n| USD equivalent values | Commodity basis risk |\n\n---\n\n## 2. Business Requirements\n\n### 2.1 Functional Requirements\n\n#### BR-IRB-001: Basis Zero Sensitivity Calculation\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-001 |\n| **Title** | IR Basis Zero Sensitivity Calculation |\n| **Priority** | Critical |\n| **Description** | The system shall calculate IR Basis Zero sensitivities by bumping zero coupon basis curves |\n| **Acceptance Criteria** | Basis values shall be expressed in local currency and USD equivalent |\n| **Business Rationale** | Basis risk is a distinct risk factor requiring separate measurement from outright IR |\n\n#### BR-IRB-002: Basis Curve Coverage\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-002 |\n| **Title** | Basis Curve Identification |\n| **Priority** | Critical |\n| **Description** | The feed shall identify the specific basis curve for each sensitivity |\n| **Acceptance Criteria** | Curve name, currency, generator type, and generator name included |\n| **Business Rationale** | Different basis curves have different market dynamics and hedging instruments |\n\n#### BR-IRB-003: Pillar Granularity\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-003 |\n| **Title** | Maturity Pillar Breakdown |\n| **Priority** | Critical |\n| **Description** | Sensitivities shall be assigned to standard maturity pillars |\n| **Pillar Set** | RISK_VIEW: O/N, T/N, 1W, 1M, 2M, 3M, 6M, 9M, 1Y through 40Y |\n| **Business Rationale** | Pillar-level detail required for hedging and limit monitoring |\n\n#### BR-IRB-004: Product Coverage\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-004 |\n| **Title** | Basis-Sensitive Product Scope |\n| **Priority** | Critical |\n| **Description** | The feed shall include all trades with exposure to basis spread movements |\n| **Product Types** | Basis swaps, cross-currency swaps, multi-curve swaps |\n| **Business Rationale** | Complete coverage ensures no basis risk is unmeasured |\n\n#### BR-IRB-005: Regional Processing\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-005 |\n| **Title** | Multi-Region Support |\n| **Priority** | High |\n| **Description** | The feed shall be produced separately for each trading region |\n| **Regions** | London (LN), Hong Kong (HK), New York (NY), Sao Paulo (SP) |\n| **Business Rationale** | Regional market data and booking ensures accurate local valuations |\n\n#### BR-IRB-006: Generator Information\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-006 |\n| **Title** | Rate Curve Generator Details |\n| **Priority** | Medium |\n| **Description** | The feed shall include generator type and name from curve configuration |\n| **Data Elements** | Generator Type (e.g., \"Basis swap\"), Generator Name (e.g., \"_EUR ESTR 3M /USD SOFR 3M\") |\n| **Business Rationale** | Generator details identify the specific market instrument driving the basis curve |\n\n### 2.2 Non-Functional Requirements\n\n#### BR-IRB-NFR-001: Timeliness\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-NFR-001 |\n| **Title** | Data Delivery SLA |\n| **Priority** | Critical |\n| **Description** | Feed must be delivered by 05:30 GMT (T+1) for London region |\n| **Measurement** | 95% of deliveries within SLA over rolling 30-day period |\n\n#### BR-IRB-NFR-002: Completeness\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-NFR-002 |\n| **Title** | Data Completeness |\n| **Priority** | Critical |\n| **Description** | All live basis-sensitive positions must have sensitivity values |\n| **Tolerance** | <0.1% missing sensitivity records |\n\n#### BR-IRB-NFR-003: Accuracy\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-NFR-003 |\n| **Title** | Calculation Accuracy |\n| **Priority** | Critical |\n| **Description** | Basis values must match front office system within tolerance |\n| **Tolerance** | \u00b10.01% for Basis Zero |\n\n#### BR-IRB-NFR-004: Reconciliation\n\n| Requirement | Description |\n|-------------|-------------|\n| **ID** | BR-IRB-NFR-004 |\n| **Title** | Daily Reconciliation |\n| **Priority** | High |\n| **Description** | Feed totals must reconcile to Murex Valuation Reports |\n| **Breaks Threshold** | \u00b1$5,000 USD at portfolio level |\n\n---\n\n## 3. Data Requirements\n\n### 3.1 Input Data\n\n| Source | Data Element | Description |\n|--------|--------------|-------------|\n| Murex Trade Repository | Trade attributes | Trade number, portfolio, typology |\n| Murex Valuation | Basis Zero values | Per-curve, per-pillar sensitivities |\n| Market Data | Basis curves | Zero coupon basis curves by currency pair |\n| Market Data | FX rates | For USD equivalent conversion |\n| Curve Configuration | Generator details | Rate curve generator type and name |\n\n### 3.2 Output Data\n\n| Field | Type | Description | Source |\n|-------|------|-------------|--------|\n| PORTFOLIO | String | Trading book code | Trade Repository |\n| Trade Number | Numeric | Unique trade identifier | Trade Repository |\n| CURRENCY | String | Basis curve currency | Curve Configuration |\n| CURVE_NAM | String | Interest rate curve name | Valuation Engine |\n| Type | String | Generator type | A_RTCT_REP |\n| Generat | String | Generator name | A_RTCT_REP |\n| DATE | String | Pillar date | Maturity Set |\n| Basis Zero | Numeric | IR Basis Zero (local) | Valuation Engine |\n| Basis Zero (USD) | Numeric | IR Basis Zero in USD | Valuation Engine |\n| Typology | String | Product classification | Trade Repository |\n\n### 3.3 Data Quality Rules\n\n| Rule ID | Field | Rule | Action on Failure |\n|---------|-------|------|-------------------|\n| DQ-IRB-001 | Trade Number | Must not be null | Reject record |\n| DQ-IRB-002 | Basis Zero | Must be numeric | Reject record |\n| DQ-IRB-003 | DATE | Must be valid pillar | Reject record |\n| DQ-IRB-004 | CURVE_NAM | Must exist in curve inventory | Warning |\n| DQ-IRB-005 | Non-zero filter | At least one Basis field non-zero | Exclude if both zero |\n\n---\n\n## 4. Business Rules\n\n### 4.1 Sensitivity Filtering Rules\n\n| Rule ID | Condition | Action |\n|---------|-----------|--------|\n| BR-FILTER-001 | Basis Zero (local) = 0 AND Basis Zero (ZAR) = 0 | Exclude record |\n| BR-FILTER-002 | Legal Entity = 'SBSA' | Exclude record |\n| BR-FILTER-003 | Trade has basis curve exposure | Include record |\n\n### 4.2 Currency Conversion Rules\n\n| Rule ID | Condition | Action |\n|---------|-----------|--------|\n| BR-FX-001 | Local CCY = USD | Basis Zero (USD) = Basis Zero |\n| BR-FX-002 | Local CCY \u2260 USD | Basis Zero (USD) = Basis Zero \u00d7 FX Spot Rate |\n| BR-FX-003 | FX Rate unavailable | Use previous day rate |\n\n### 4.3 Maturity Set Rules\n\nThe RISK_VIEW maturity set defines an extended pillar structure:\n\n| Tenor Bucket | Pillars |\n|--------------|---------|\n| Short-term | O/N, T/N, 1W |\n| Money Market | 1M, 2M, 3M, 6M, 9M |\n| Short Swaps | 1Y, 2Y, 3Y, 4Y, 5Y |\n| Medium Swaps | 6Y, 7Y, 8Y, 9Y, 10Y, 12Y |\n| Long Swaps | 15Y, 20Y, 25Y, 30Y, 35Y, 40Y |\n\n**Note**: Extended to 40Y compared to standard 30Y sets for long-dated basis exposure.\n\n### 4.4 Deprecated Fields\n\n| Field | Original Purpose | Current Status |\n|-------|------------------|----------------|\n| ZAR_PROCESSING | JBSBSA entity flag | Deprecated |\n| Basis Zero (ZAR) | ZAR equivalent | Deprecated - SBSA exclusion |\n\n---\n\n## 5. Processing Requirements\n\n### 5.1 Processing Schedule\n\n| Step | Time (GMT) | Description |\n|------|------------|-------------|\n| 1 | 18:00 | Market data close (London) |\n| 2 | 21:00 | Valuation batch complete |\n| 3 | 02:30 | Basis feeder batch start |\n| 4 | 03:30 | Basis feeder batch complete |\n| 5 | 04:00 | Extraction start |\n| 6 | 04:30 | File generation |\n| 7 | 05:00 | File packaging |\n| 8 | 05:30 | MFT delivery |\n\n### 5.2 Dependencies\n\n| Upstream | Dependency Type | Impact if Delayed |\n|----------|-----------------|-------------------|\n| Market Data | Hard | Feed cannot run |\n| Valuation Batch | Hard | Feed cannot run |\n| Curve Configuration | Hard | Missing generator details |\n| FX Rates | Soft | Previous day rates used |\n\n### 5.3 Error Handling\n\n| Error Type | Handling | Escalation |\n|------------|----------|------------|\n| Missing market data | Abort feed | Immediate to Risk Tech |\n| Valuation failure | Retry once, then abort | Immediate to Risk Tech |\n| Curve lookup failure | Log warning, continue | Daily summary |\n| MFT delivery failure | Retry 3 times | After 3rd failure to Ops |\n\n---\n\n## 6. Reporting Requirements\n\n### 6.1 Standard Reports\n\n| Report | Frequency | Audience |\n|--------|-----------|----------|\n| Feed Completion Status | Daily | Risk Technology |\n| Data Quality Summary | Daily | Risk Operations |\n| Reconciliation Breaks | Daily | Risk Control |\n| Basis Exposure Summary | Daily | Rates Trading |\n\n### 6.2 Reconciliation Requirements\n\n| Check | Frequency | Tolerance |\n|-------|-----------|-----------|\n| Feed vs Murex Totals | Daily | \u00b1$5,000 |\n| Record Count | Daily | \u00b15% |\n| Portfolio Coverage | Daily | 100% |\n\n---\n\n## 7. Stakeholders\n\n### 7.1 Business Stakeholders\n\n| Role | Responsibility |\n|------|----------------|\n| Head of Rates Trading | Business owner, sign-off |\n| Rates Risk Manager | Daily user, requirements |\n| Basis Trading Desk | Primary data consumer |\n| Treasury | Funding basis exposure |\n\n### 7.2 Technical Stakeholders\n\n| Role | Responsibility |\n|------|----------------|\n| Risk Technology Lead | Technical delivery |\n| Murex Support Team | Source system support |\n| Data Warehouse Team | Target system integration |\n| MFT Operations | File transfer |\n\n---\n\n## 8. Acceptance Criteria\n\n### 8.1 Functional Acceptance\n\n| Criteria | Verification Method |\n|----------|---------------------|\n| All basis-sensitive trades covered | Product inventory reconciliation |\n| Basis values correct | Sample validation vs front office |\n| Generator details populated | Field completeness check |\n| Regional files generated | File existence check |\n\n### 8.2 Non-Functional Acceptance\n\n| Criteria | Verification Method |\n|----------|---------------------|\n| Delivery by 05:30 GMT | Timestamp monitoring |\n| <0.1% missing records | Completeness report |\n| \u00b10.01% accuracy | Reconciliation report |\n| 99.5% availability | Uptime monitoring |\n\n---\n\n## 9. Risks and Mitigations\n\n| Risk | Impact | Likelihood | Mitigation |\n|------|--------|------------|------------|\n| Valuation batch delays | High | Medium | Buffer time in schedule |\n| Basis curve additions | Medium | Medium | Automated curve discovery |\n| Portfolio filter issues | Medium | High | Standardize to Level 4 nodes |\n| Generator lookup failures | Low | Low | Default to blank if missing |\n\n---\n\n## 10. Known Issues\n\n### 10.1 Portfolio Filtering\n\nThe current portfolio selection requires cleanup:\n- Mixing Level 4 and Level 5 portfolio nodes\n- Some inactive portfolios included (e.g., JBSBSA)\n- Some active portfolios missing (e.g., PMSG for Singapore)\n\n**Recommendation**: Standardize to Level 4 portfolio nodes only.\n\n### 10.2 HK Global Filter\n\nThe HKG feeder includes an expression filter to exclude specific currency swaps:\n```\nNOT.(TRN_GRP=\"CS\".AND.(INSTRUMENT=\"SGD/USD F/F 6M\".OR.INSTRUMENT=\"SGD/USD F/V 3M\".OR.INSTRUMENT=\"SGD/USD V/V 6M\"))\n```\n\n**Recommendation**: Remove as related deals have long expired.\n\n---\n\n## 11. Document Control\n\n### 11.1 Version History\n\n| Version | Date | Change | Author |\n|---------|------|--------|--------|\n| 1.0 | 2025-01-03 | Initial version | Risk Technology |\n\n### 11.2 Approval\n\n| Role | Name | Date |\n|------|------|------|\n| Business Owner | Head of Rates Trading | |\n| Technical Owner | Head of Risk Technology | |\n| Approver | Risk Technology Change Board | |\n\n---\n\n*End of Document*\n"
+    },
+    "tool_use_id": "toolu_01Btmh7oMLhfjmbhXKCKN1JD"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Zero Basis Overview document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis Overview document"
+        },
+        {
+          "content": "Create IR Zero Basis BRD document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis BRD document"
+        },
+        {
+          "content": "Create IR Zero Basis IT Config document",
+          "status": "in_progress",
+          "activeForm": "Creating IR Zero Basis IT Config document"
+        },
+        {
+          "content": "Create IR Zero Basis IDD document",
+          "status": "pending",
+          "activeForm": "Creating IR Zero Basis IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_013AtuANUdcyhEw6etm7qtQd"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-zero-basis/ir-zero-basis-config.md",
+      "content": "---\n# Document Metadata\ndocument_id: IRB-CFG-001\ndocument_name: IR Zero Basis - IT Configuration\nversion: 1.0\neffective_date: 2025-01-03\nnext_review_date: 2026-01-03\nowner: Market Risk Technology\napproving_committee: Risk Technology Change Board\n\n# Taxonomy Reference\nparent_node: L7-Systems/market-risk/feeds/ir-zero-basis\nfeed_family: IR Zero Basis\ndocument_type: Config\n---\n\n# IR Zero Basis - IT Configuration\n\n**Meridian Global Bank - Market Risk Technology**\n\n| Document Control | |\n|-----------------|---|\n| **Document ID** | IRB-CFG-001 |\n| **Version** | 1.0 |\n| **Effective Date** | 3 January 2025 |\n| **Owner** | Market Risk Technology |\n| **Approver** | Risk Technology Change Board |\n\n---\n\n## 1. Introduction\n\n### 1.1 Purpose\n\nThis document details the Murex GOM (Generic Object Management) configuration for the IR Zero Basis sensitivity feed. It provides the technical specifications required to configure, maintain, and troubleshoot the feed components within Murex.\n\n### 1.2 Scope\n\nThis configuration covers:\n- Simulation View definition (MDS_BASISSWAP)\n- Feeder configurations per region\n- Datamart table structure\n- Data Extractor configuration with JOINs\n- Extraction Request setup\n- Regional processing parameters\n\n---\n\n## 2. Component Overview\n\n### 2.1 Architecture Diagram\n\n```\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502                          IR ZERO BASIS FEED                                 \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502                                                                             \u2502\n\u2502             \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                                \u2502\n\u2502             \u2502   Processing Script Feeder   \u2502                                \u2502\n\u2502             \u2502   **_IRZBAS_FDR              \u2502                                \u2502\n\u2502             \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                                \u2502\n\u2502                            \u2502                                                \u2502\n\u2502                            \u25bc                                                \u2502\n\u2502             \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                                \u2502\n\u2502             \u2502   Feeder                     \u2502                                \u2502\n\u2502             \u2502   A_BASISSWAP                \u2502                                \u2502\n\u2502             \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                                \u2502\n\u2502                            \u2502                                                \u2502\n\u2502      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                          \u2502\n\u2502      \u2502                     \u2502                     \u2502                          \u2502\n\u2502      \u25bc                     \u25bc                     \u25bc                          \u2502\n\u2502 \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510   \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510   \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510              \u2502\n\u2502 \u2502 Simulation   \u2502   \u2502 Datamart Table   \u2502   \u2502 Extraction       \u2502              \u2502\n\u2502 \u2502 View         \u2502\u2500\u2500\u25b6\u2502 A_IRBASISSWAP    \u2502\u2500\u2500\u25b6\u2502 BASISSWP_FRM_ZAR \u2502              \u2502\n\u2502 \u2502 MDS_BASISSWAP\u2502   \u2502 .REP             \u2502   \u2502                  \u2502              \u2502\n\u2502 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518   \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518   \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518              \u2502\n\u2502                                                    \u2502                        \u2502\n\u2502      \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524                        \u2502\n\u2502      \u2502                     \u2502                       \u2502                        \u2502\n\u2502      \u25bc                     \u25bc                       \u25bc                        \u2502\n\u2502 \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510   \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510   \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510              \u2502\n\u2502 \u2502 A_CURVENAME  \u2502   \u2502 A_RTCT_REP       \u2502   \u2502 Processing Script\u2502              \u2502\n\u2502 \u2502 _REP         \u2502   \u2502 (Curve Config)   \u2502   \u2502 **_DE_IR_BASISSWAP              \u2502\n\u2502 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518   \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518   \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518              \u2502\n\u2502                                                    \u2502                        \u2502\n\u2502                                                    \u25bc                        \u2502\n\u2502                            \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510                 \u2502\n\u2502                            \u2502   Feed                       \u2502                 \u2502\n\u2502                            \u2502   MxMGB_MR_Rates_Basis_**    \u2502                 \u2502\n\u2502                            \u2502   _yyyymmdd.csv              \u2502                 \u2502\n\u2502                            \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518                 \u2502\n\u2502                                                                             \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n```\n\n### 2.2 Component Summary\n\n| Component Type | Name | Description |\n|---------------|------|-------------|\n| Simulation View | MDS_BASISSWAP | Basis sensitivity calculation |\n| Feeder | A_BASISSWAP | Populates datamart table |\n| Datamart Table | A_IRBASISSWAP.REP | Basis results storage |\n| Dynamic Table | A_BASISSWAP | Runtime calculation table |\n| Reference Table | A_CURVENAME_REP | Curve name mapping |\n| Reference Table | A_RTCT_REP | Rate curve configuration |\n| Extraction | BASISSWP_FRM_ZAR | SQL extraction with JOINs |\n| Data Extractor | DE_IRD_PV01DELTA | Shared extractor |\n| Extraction Request | IRPV01_Delta_ZAR | Shared request |\n\n---\n\n## 3. Simulation View\n\n### 3.1 MDS_BASISSWAP\n\n#### 3.1.1 View Properties\n\n| Property | Value |\n|----------|-------|\n| **View Name** | MDS_BASISSWAP |\n| **View Type** | Dynamic |\n| **Dynamic Table** | A_BASISSWAP |\n| **Datamart Table** | A_IRBASISSWAP.REP |\n| **Calculation Engine** | Standard Valuation |\n\n#### 3.1.2 Outputs Configuration\n\n| # | Output Name | Dictionary Path | Type | Precision |\n|---|-------------|-----------------|------|-----------|\n| 1 | Basis (zero) | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Value | Numeric | 6 |\n| 2 | Basis (zero) ZAR | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Value | Numeric | 6 |\n| 3 | Basis (zero) USD | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Value | Numeric | 6 |\n\n**Note**: Output 2 (ZAR) is deprecated but retained for backward compatibility.\n\n#### 3.1.3 Breakdowns Configuration\n\n| # | Breakdown Name | Dictionary Path | Type |\n|---|----------------|-----------------|------|\n| 1 | Portfolio | Data.Trade.Portfolio | String |\n| 2 | Closing Entity | Data.Trade.Closing entity | String |\n| 3 | Legal Entity | Data.Trade.Legal entity | String |\n| 4 | Trade Number | Data.Trade.Trade number | Numeric |\n| 5 | Family | Data.Trade.Typology.Family | String |\n| 6 | Group | Data.Trade.Typology.Group | String |\n| 7 | Type | Data.Trade.Typology.Type | String |\n| 8 | Curve name | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Curve key.Curve name | String |\n| 9 | Currency | RiskEngine.Results.Outputs.Interest rates.Delta.Zero.Curve key.Currency | String |\n| 10 | Date | RiskEngine.Results.Outputs.Interest rates.Basis.Zero.Date | Date |\n| 11 | Typology | Data.Trade.Typology | String |\n\n#### 3.1.4 Maturity Set Configuration\n\n| Property | Value |\n|----------|-------|\n| **Maturity Set Name** | RISK_VIEW |\n| **Reference Output** | Interest rates.Basis.Zero |\n| **Mat. Source** | Maturity Set |\n| **Bucket Type** | Pillars |\n| **Display Mode** | Label |\n| **Split Mode** | Surrounding pillars |\n| **Reduced Label** | Yes |\n| **Standard Labels** | Yes |\n\n**Pillar Definition:**\n\n| Tenor | Label | Tenor | Label |\n|-------|-------|-------|-------|\n| O/N | O/N | 6Y | 6Y |\n| T/N | T/N | 7Y | 7Y |\n| 1W | 1W | 8Y | 8Y |\n| 1M | 1M | 9Y | 9Y |\n| 2M | 2M | 10Y | 10Y |\n| 3M | 3M | 12Y | 12Y |\n| 6M | 6M | 15Y | 15Y |\n| 9M | 9M | 20Y | 20Y |\n| 1Y | 1Y | 25Y | 25Y |\n| 2Y | 2Y | 30Y | 30Y |\n| 3Y | 3Y | 35Y | 35Y |\n| 4Y | 4Y | 40Y | 40Y |\n| 5Y | 5Y | | |\n\n---\n\n## 4. Feeders\n\n### 4.1 Feeder Configuration by Region\n\n| Region | Processing Script | Batches of Feeders | Global Filter | Feeder |\n|--------|-------------------|-------------------|---------------|--------|\n| HKG | HK_IRZBAS_FDR | B_IRBASISSWPHKG | B_IRDPV01OHKG | A_BASISSWAP |\n| LDN | LN_IRZBAS_FDR | B_IRBASISSWPLDN | B_IRDPV01OLDN_JB | A_BASISSWAP |\n| NYK | NY_IRZBAS_FDR | B_IRBASISSWPNYK | B_IRDPV01ONYK | A_BASISSWAP |\n| SAO | SP_IRZBAS_FDR | B_IRBASISSWPSAO | B_IRDPV01OSAO | A_BASISSWAP |\n\n### 4.2 Portfolio Nodes by Region\n\n#### HKG Portfolio Nodes\n\n| Node | Description |\n|------|-------------|\n| FXHKSBL | FX Hong Kong |\n| HKSBSA | HK SBSA |\n| LMHKSBL | LM Hong Kong |\n| LMHKSGACU | LM HK SG ACU |\n| LMHKSGDBU | LM HK SG DBU |\n| PMSG | PM Singapore |\n\n#### LDN Portfolio Nodes\n\n| Node | Description |\n|------|-------------|\n| FXDLNSBL | FXD London |\n| FXLNSBL | FX London |\n| IFXMMLNIC | IFX MM London IC |\n| IFXMMLNLH | IFX MM London LH |\n| IRLNSBL | IR London |\n| JBSBSA | JB SBSA (inactive) |\n| LMLNSBL | LM London |\n| LNSBSA | LN SBSA |\n| MMLNSBLTRADT1 | MM London Trade T1 |\n| MMLNSBLTRADT2 | MM London Trade T2 |\n| MMLNSBLTRADT3 | MM London Trade T3 |\n| MMLNSBLTRADT4 | MM London Trade T4 |\n| PMLN | PM London |\n\n#### NYK Portfolio Nodes\n\n| Node | Description |\n|------|-------------|\n| FXNYSBL | FX New York |\n| FXNYSBLSPROPOP1 | FX NY SP ROP 1 |\n| FXNYSBLSPROPOP2 | FX NY SP ROP 2 |\n| LMNYSBL | LM New York |\n| LMNYSBLEM1 | LM NY EM 1 |\n| LMNYSBLEMT1 | LM NY EM T1 |\n| LMNYSBLSO | LM NY SO |\n| NYSBSA | NY SBSA |\n| PMNY | PM New York |\n\n#### SAO Portfolio Nodes\n\n| Node | Description |\n|------|-------------|\n| CTBASBLARCTG | CT BA CTG |\n| CTBASBLARLON | CT BA LON |\n| CTSPSBLSTRUCT | CT SP Struct |\n| LMBASBLARCTI | LM BA CTI |\n| LMBASBLARSWP | LM BA SWP |\n| LMBASBLFXMIRR | LM BA FX MIRR |\n| LMBASBLFXTRD | LM BA FX TRD |\n| LMSPBSI | LM SP BSI |\n| LMSPFIA | LM SP FIA |\n| LMSPFND | LM SP FND |\n| LMSPSBL | LM SP |\n| LMSPSBLCAPITAL | LM SP Capital |\n| LMSPSBLCUPOM | LM SP CUPOM |\n| LMSPSBLFXOPT | LM SP FX Opt |\n| LMSPSBLSO | LM SP SO |\n\n### 4.3 Global Filter Notes\n\n#### HKG Special Filter\n\nThe HKG global filter (B_IRDPV01OHKG) includes an expression filter:\n\n```\nNOT.(TRN_GRP=\"CS\".AND.(INSTRUMENT=\"SGD/USD F/F 6M\".OR.INSTRUMENT=\"SGD/USD F/V 3M\".OR.INSTRUMENT=\"SGD/USD V/V 6M\"))\n```\n\n**Purpose**: Excludes specific SGD/USD currency swaps\n**Status**: Related deals have long expired - recommend removal\n\n### 4.4 Feeder Parameters\n\n| Parameter | Value | Description |\n|-----------|-------|-------------|\n| Mode | REPLACE | Full refresh each run |\n| Target Table | A_IRBASISSWAP.REP | Datamart table |\n| Simulation View | MDS_BASISSWAP | Source view |\n| Dynamic Table | A_BASISSWAP | Runtime table |\n| Batch Size | 5000 | Records per commit |\n| Timeout | 1800 | Seconds |\n\n### 4.5 Market Data Sets\n\n| Region | Market Data Set | Description |\n|--------|-----------------|-------------|\n| HKG | HKCLOSE | Hong Kong close |\n| LDN | LNCLOSE | London close |\n| NYK | NYCLOSE | New York close |\n| SAO | SPCLOSE | Sao Paulo close |\n\n---\n\n## 5. Datamart Table\n\n### 5.1 A_IRBASISSWAP.REP\n\n#### 5.1.1 Table Structure\n\n| # | Column | Type | Length | Nullable | Description |\n|---|--------|------|--------|----------|-------------|\n| 1 | M_PORTFOLIO | VARCHAR | 16 | NO | Trading portfolio |\n| 2 | M_CLOSING_E | VARCHAR | 20 | YES | Closing entity |\n| 3 | M_LEGAL_ENT | VARCHAR | 20 | YES | Legal entity |\n| 4 | M_TRADE_NUM | NUMBER | 16 | NO | Trade number |\n| 5 | M_TRN_FMLY | VARCHAR | 10 | YES | Trade family |\n| 6 | M_TRN_GRP | VARCHAR | 10 | YES | Trade group |\n| 7 | M_TRN_TYPE | VARCHAR | 10 | YES | Trade type |\n| 8 | M_CURVE_NAM | VARCHAR | 50 | NO | Curve name |\n| 9 | M_CURRENCY | VARCHAR | 4 | NO | Currency |\n| 10 | M_DATE | VARCHAR | 64 | NO | Pillar date |\n| 11 | M_TYPOLOGY | VARCHAR | 21 | YES | Typology |\n| 12 | M_BASIS__ZE | NUMBER | 16,6 | YES | Basis Zero (local) |\n| 13 | M_BASIS__Z1 | NUMBER | 16,6 | YES | Basis Zero ZAR |\n| 14 | M_BASIS__Z2 | NUMBER | 16,6 | YES | Basis Zero USD |\n| 15 | M_REF_DATA | VARCHAR | 20 | NO | Reference data set |\n| 16 | M_TIMESTAMP | TIMESTAMP | - | NO | Record timestamp |\n\n#### 5.1.2 Indexes\n\n| Index Name | Columns | Type |\n|------------|---------|------|\n| PK_IRBASISSWAP | M_TRADE_NUM, M_CURVE_NAM, M_DATE, M_REF_DATA | Primary Key |\n| IX_IRBASIS_PFOLIO | M_PORTFOLIO | Non-unique |\n| IX_IRBASIS_CURVE | M_CURVE_NAM | Non-unique |\n\n---\n\n## 6. Reference Tables\n\n### 6.1 A_CURVENAME_REP\n\nMaps curve display labels to internal curve names.\n\n| Column | Description |\n|--------|-------------|\n| M_DLABEL | Display label (matches M_CURVE_NAM) |\n| M_LABEL | Internal curve label |\n| M_REF_DATA | Reference data set |\n\n### 6.2 A_RTCT_REP\n\nRate curve configuration table providing generator details.\n\n| Column | Description |\n|--------|-------------|\n| M_D_CURVE | Curve name (JOIN key) |\n| M_D_CUR | Currency (JOIN key) |\n| M_LABEL_D | Pillar date (JOIN key) |\n| M_TYPE | Generator type (e.g., \"Basis swap\") |\n| M_GENINTNB | Generator internal number |\n| M_GENERAT | Generator name (if M_GENINTNB = -1) |\n| M_D_GEN | Generator name (otherwise) |\n| M_REF_DATA | Reference data set |\n\n---\n\n## 7. Data Extraction\n\n### 7.1 Extraction Configuration\n\n| Region | Processing Script | Batches of Extraction | Data Extractor | Extraction Request |\n|--------|-------------------|----------------------|----------------|-------------------|\n| HKG | HK_VSPA_IRZBAS_RPT | BE_IRD_BSSWAPHK | DE_IRD_PV01DELTA | IRPV01_Delta_ZAR |\n| LDN | LN_VSPA_IRZBAS_RPT | BE_IRD_BSSWAPLD | DE_IRD_PV01DELTA | IRPV01_Delta_ZAR |\n| NYK | NY_VSPA_IRZBAS_RPT | BE_IRD_BSSWAPNY | DE_IRD_PV01DELTA | IRPV01_Delta_ZAR |\n| SAO | SP_VSPA_IRZBAS_RPT | BE_IRD_BSSWAPSP | DE_IRD_PV01DELTA | IRPV01_Delta_ZAR |\n\n### 7.2 SQL Extraction Query\n\n```sql\nSELECT\n    A_IRBASISSWAP.M_PORTFOLIO AS M_PORTFOLIO,\n    A_IRBASISSWAP.M_TRADE_NUM,\n    A_IRBASISSWAP.M_CURRENCY AS M_CURRENCY,\n    M_CURVE_NAM AS M_CURVE_NAM,\n    A_RTCT.M_TYPE AS D_TYPE,\n    (CASE WHEN A_RTCT.M_GENINTNB = -1\n          THEN A_RTCT.M_GENERAT\n          ELSE A_RTCT.M_D_GEN\n     END) AS M_D_GEN,\n    M_DATE AS M_DATE,\n    A_IRBASISSWAP.M_BASIS__ZE,\n    CASE WHEN A_IRBASISSWAP.M_CLOSING_E = 'JBSBSA'\n         THEN 'Y'\n         ELSE 'N'\n    END AS ZAR_PROCESSING,\n    A_IRBASISSWAP.M_BASIS__Z2 AS BASIS__Z_USD,\n    A_IRBASISSWAP.M_BASIS__Z1 AS BASIS__Z_ZAR,\n    A_IRBASISSWAP.M_TYPOLOGY AS TYPOLOGY\nFROM DM.A_IRBASISSWAP_REP A_IRBASISSWAP\nLEFT OUTER JOIN DM.A_CURVENAME_REP A_CUR\n    ON UPPER(A_IRBASISSWAP.M_CURVE_NAM) = UPPER(A_CUR.M_DLABEL)\n    AND A_IRBASISSWAP.M_REF_DATA = A_CUR.M_REF_DATA\nLEFT OUTER JOIN DM.A_RTCT_REP A_RTCT\n    ON (UPPER(A_CUR.M_LABEL) = UPPER(A_RTCT.M_D_CURVE))\n    AND (A_IRBASISSWAP.M_CURRENCY = A_RTCT.M_D_CUR\n    AND A_IRBASISSWAP.M_DATE = A_RTCT.M_LABEL_D\n    AND A_IRBASISSWAP.M_REF_DATA = A_RTCT.M_REF_DATA)\nWHERE\n    A_IRBASISSWAP.M_REF_DATA = @MxDataSetKey:N\n    AND (A_IRBASISSWAP.M_BASIS__Z1 <> 0\n         OR A_IRBASISSWAP.M_BASIS__ZE <> 0)\n    AND @MxSQLExpression:C\nORDER BY A_IRBASISSWAP.M_TRADE_NUM\n```\n\n### 7.3 SQL Logic Explanation\n\n| Step | Description |\n|------|-------------|\n| 1 | Fetch trade and sensitivity data from A_IRBASISSWAP_REP |\n| 2 | LEFT JOIN to A_CURVENAME_REP to map display label to internal label |\n| 3 | LEFT JOIN to A_RTCT_REP to fetch generator type and name |\n| 4 | Filter to exclude zero sensitivities |\n| 5 | Apply @MxSQLExpression:C filter (excludes SBSA: M_LEGAL_ENT<>'SBSA') |\n| 6 | Order by trade number |\n\n### 7.4 Generator Name Logic\n\n```sql\nCASE WHEN A_RTCT.M_GENINTNB = -1\n     THEN A_RTCT.M_GENERAT\n     ELSE A_RTCT.M_D_GEN\nEND AS M_D_GEN\n```\n\n- If M_GENINTNB = -1: Use M_GENERAT field\n- Otherwise: Use M_D_GEN field\n\n---\n\n## 8. Output File Configuration\n\n### 8.1 File Properties\n\n| Property | Value |\n|----------|-------|\n| **File Pattern** | MxMGB_MR_Rates_Basis_{Region}_{YYYYMMDD}.csv |\n| **Output Directory** | ./reports/today/eod |\n| **Delimiter** | Semicolon (;) |\n| **Encoding** | UTF-8 |\n| **Header Row** | Yes |\n\n### 8.2 Post-Processing\n\nA script (`process_reports.sh`) packages the IR Basis file along with other market risk reports into:\n\n```\nMxMGB_MR_Sensitivities_{Region}_{YYYYMMDD}.zip\n```\n\n---\n\n## 9. Regional Batch Flow\n\n### 9.1 Processing Sequence\n\n```mermaid\ngraph TD\n    subgraph \"02:30 GMT - Feeders\"\n        F1[HK_IRZBAS_FDR]\n        F2[LN_IRZBAS_FDR]\n        F3[NY_IRZBAS_FDR]\n        F4[SP_IRZBAS_FDR]\n    end\n\n    subgraph \"04:00 GMT - Extraction\"\n        E1[HK_VSPA_IRZBAS_RPT]\n        E2[LN_VSPA_IRZBAS_RPT]\n        E3[NY_VSPA_IRZBAS_RPT]\n        E4[SP_VSPA_IRZBAS_RPT]\n    end\n\n    subgraph \"05:00 GMT - Packaging\"\n        P[process_reports.sh]\n    end\n\n    subgraph \"05:30 GMT - Delivery\"\n        D1[MurexGTSSensitivitiesToPlato_**]\n        D2[MurexGTSSensitivitiesToRDS_**]\n    end\n\n    F1 --> E1\n    F2 --> E2\n    F3 --> E3\n    F4 --> E4\n    E1 --> P\n    E2 --> P\n    E3 --> P\n    E4 --> P\n    P --> D1\n    P --> D2\n```\n\n### 9.2 Timeout Configuration\n\n| Component | Timeout (seconds) | Alert Threshold |\n|-----------|-------------------|-----------------|\n| Feeder | 1800 | 1350 (75%) |\n| Extraction | 1200 | 900 (75%) |\n| Packaging | 600 | 450 (75%) |\n\n---\n\n## 10. Delivery Configuration\n\n### 10.1 MFT Configuration\n\n| Target | MFT ID Pattern | Description |\n|--------|----------------|-------------|\n| Plato | MurexGTSSensitivitiesToPlato_{Region} | Risk reporting platform |\n| RDS | MurexGTSSensitivitiesToRDS_{Region} | Risk data store |\n\n### 10.2 Regional MFT IDs\n\n| Region | Plato MFT ID | RDS MFT ID |\n|--------|--------------|------------|\n| LN | MurexGTSSensitivitiesToPlato_LN | MurexGTSSensitivitiesToRDS_LN |\n| HK | MurexGTSSensitivitiesToPlato_HK | MurexGTSSensitivitiesToRDS_HK |\n| NY | MurexGTSSensitivitiesToPlato_NY | MurexGTSSensitivitiesToRDS_NY |\n| SP | MurexGTSSensitivitiesToPlato_SP | MurexGTSSensitivitiesToRDS_SP |\n\n---\n\n## 11. Error Handling\n\n### 11.1 Feeder Errors\n\n| Error Type | Action | Notification |\n|------------|--------|--------------|\n| Connection failure | Retry 3 times | Alert after 3rd failure |\n| Timeout | Abort and alert | Immediate |\n| Data validation | Log and continue | Daily summary |\n\n### 11.2 Extraction Errors\n\n| Error Type | Action | Notification |\n|------------|--------|--------------|\n| Source table empty | Abort | Immediate |\n| JOIN failures | Continue with NULLs | Warning |\n| File write failure | Retry | Alert after 3rd failure |\n\n---\n\n## 12. Document Control\n\n### 12.1 Version History\n\n| Version | Date | Change | Author |\n|---------|------|--------|--------|\n| 1.0 | 2025-01-03 | Initial version | Risk Technology |\n\n### 12.2 Approval\n\n| Role | Name | Date |\n|------|------|------|\n| Technical Owner | Murex Support Lead | |\n| Data Owner | Risk Technology Lead | |\n| Approver | Risk Technology Change Board | |\n\n---\n\n*End of Document*\n"
+    },
+    "tool_use_id": "toolu_01AYHbLMBtsam3zWJrRUnCr9"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Zero Basis Overview document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis Overview document"
+        },
+        {
+          "content": "Create IR Zero Basis BRD document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis BRD document"
+        },
+        {
+          "content": "Create IR Zero Basis IT Config document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis IT Config document"
+        },
+        {
+          "content": "Create IR Zero Basis IDD document",
+          "status": "in_progress",
+          "activeForm": "Creating IR Zero Basis IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01DpQCLHRGNxampPE8ud2U4C"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Write",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-zero-basis/ir-zero-basis-idd.md",
+      "content": "---\n# Document Metadata\ndocument_id: IRB-IDD-001\ndocument_name: IR Zero Basis - Interface Design Document\nversion: 1.0\neffective_date: 2025-01-03\nnext_review_date: 2026-01-03\nowner: Market Risk Technology\napproving_committee: Risk Technology Change Board\n\n# Taxonomy Reference\nparent_node: L7-Systems/market-risk/feeds/ir-zero-basis\nfeed_family: IR Zero Basis\ndocument_type: IDD\n---\n\n# IR Zero Basis - Interface Design Document\n\n**Meridian Global Bank - Market Risk Technology**\n\n| Document Control | |\n|-----------------|---|\n| **Document ID** | IRB-IDD-001 |\n| **Version** | 1.0 |\n| **Effective Date** | 3 January 2025 |\n| **Owner** | Market Risk Technology |\n| **Approver** | Risk Technology Change Board |\n\n---\n\n## 1. Introduction\n\n### 1.1 Purpose\n\nThis Interface Design Document specifies the technical interface for the IR Zero Basis sensitivity feed from Murex to downstream risk systems. It provides the detailed file format, field specifications, and integration requirements.\n\n### 1.2 Scope\n\nThis document covers:\n- File naming conventions and delivery\n- Record structure and field definitions\n- Data types and validation rules\n- Sample data and examples\n- Consumer integration guidelines\n\n### 1.3 Interface Summary\n\n| Property | Value |\n|----------|-------|\n| **Interface Name** | IR Zero Basis Sensitivities |\n| **Interface ID** | MR-IF-IRB-001 |\n| **Source System** | Murex (VESPA Module) |\n| **Target Systems** | Risk Data Warehouse, Plato, VESPA Reporting |\n| **Protocol** | MFT (Managed File Transfer) |\n| **Format** | CSV (Semicolon-Separated Values) |\n| **Frequency** | Daily (T+1) |\n\n---\n\n## 2. File Specification\n\n### 2.1 File Naming Convention\n\n#### Pattern\n```\nMxMGB_MR_Rates_Basis_{Region}_{YYYYMMDD}.csv\n```\n\n#### Components\n\n| Component | Description | Example Values |\n|-----------|-------------|----------------|\n| MxMGB | Source system prefix (Murex, Meridian Global Bank) | MxMGB |\n| MR | Domain (Market Risk) | MR |\n| Rates | Asset class | Rates |\n| Basis | Sensitivity type | Basis |\n| {Region} | Trading region code | LN, HK, NY, SP |\n| {YYYYMMDD} | Business date | 20250103 |\n\n#### Examples\n\n| Region | Example Filename |\n|--------|------------------|\n| London | MxMGB_MR_Rates_Basis_LN_20250103.csv |\n| Hong Kong | MxMGB_MR_Rates_Basis_HK_20250103.csv |\n| New York | MxMGB_MR_Rates_Basis_NY_20250103.csv |\n| Sao Paulo | MxMGB_MR_Rates_Basis_SP_20250103.csv |\n\n### 2.2 File Properties\n\n| Property | Value |\n|----------|-------|\n| **Format** | CSV |\n| **Encoding** | UTF-8 |\n| **Delimiter** | Semicolon (;) |\n| **Text Qualifier** | None |\n| **Line Ending** | Unix (LF) |\n| **Header Row** | Yes (first row) |\n| **Decimal Separator** | Period (.) |\n| **Thousands Separator** | None |\n| **Null Representation** | Empty string |\n\n### 2.3 File Delivery\n\n| Property | Value |\n|----------|-------|\n| **Delivery Method** | MFT (Managed File Transfer) |\n| **Source Directory** | ./reports/today/eod |\n| **Package Format** | ZIP (MxMGB_MR_Sensitivities_{Region}_{YYYYMMDD}.zip) |\n| **Delivery Time** | 05:30 GMT (T+1) |\n| **SLA** | 99.5% on-time delivery |\n| **Retry Policy** | 3 attempts, 15-minute intervals |\n\n---\n\n## 3. Record Structure\n\n### 3.1 Field Overview\n\n| # | Field Name | Type | Length | Nullable | Description |\n|---|------------|------|--------|----------|-------------|\n| 1 | PORTFOLIO | VARCHAR | 16 | N | Trading portfolio |\n| 2 | Trade Number | NUMERIC | 16 | N | Trade identifier |\n| 3 | CURRENCY | VARCHAR | 4 | N | Basis curve currency |\n| 4 | CURVE_NAM | VARCHAR | 50 | N | Interest rate curve name |\n| 5 | Type | VARCHAR | 10 | Y | Generator type |\n| 6 | Generat | VARCHAR | 15 | Y | Generator name |\n| 7 | DATE | VARCHAR | 64 | N | Pillar date |\n| 8 | Basis Zero | NUMERIC | 16,6 | N | IR Basis Zero (local CCY) |\n| 9 | ZAR_PROCESSING | VARCHAR | 1 | Y | JBSBSA flag (deprecated) |\n| 10 | Basis Zero (USD) | NUMERIC | 16,6 | N | IR Basis Zero in USD |\n| 11 | Basis Zero (ZAR) | NUMERIC | 16,6 | Y | IR Basis Zero in ZAR (deprecated) |\n| 12 | Typology | VARCHAR | 21 | Y | Product typology |\n\n### 3.2 Field Definitions\n\n#### PORTFOLIO\n| Property | Value |\n|----------|-------|\n| **Description** | Trading book/portfolio code |\n| **Type** | VARCHAR(16) |\n| **Nullable** | No |\n| **Example** | \"IRLNSBLG7P1\" |\n| **Validation** | Must exist in portfolio inventory |\n\n#### Trade Number\n| Property | Value |\n|----------|-------|\n| **Description** | Unique trade identifier from Murex |\n| **Type** | NUMERIC(16) |\n| **Nullable** | No |\n| **Example** | 58249 |\n| **Validation** | Positive integer |\n\n#### CURRENCY\n| Property | Value |\n|----------|-------|\n| **Description** | Currency of the basis curve |\n| **Type** | VARCHAR(4) |\n| **Nullable** | No |\n| **Example** | \"EUR\", \"GBP\", \"USD\" |\n| **Validation** | ISO 4217 currency code |\n\n#### CURVE_NAM\n| Property | Value |\n|----------|-------|\n| **Description** | Interest rate basis curve identifier |\n| **Type** | VARCHAR(50) |\n| **Nullable** | No |\n| **Example** | \"EUR_USD_3MESTR_3MSOFR\" |\n| **Validation** | Must exist in curve inventory |\n\n#### Type\n| Property | Value |\n|----------|-------|\n| **Description** | Generator type from curve configuration |\n| **Type** | VARCHAR(10) |\n| **Nullable** | Yes (may be blank for some pillars) |\n| **Example** | \"Basis swap\" |\n| **Source** | A_RTCT_REP.M_TYPE |\n\n#### Generat\n| Property | Value |\n|----------|-------|\n| **Description** | Generator name from curve configuration |\n| **Type** | VARCHAR(15) |\n| **Nullable** | Yes (may be blank for some pillars) |\n| **Example** | \"_EUR ESTR 3M /USD SOFR 3M [MT\" |\n| **Source** | A_RTCT_REP.M_GENERAT or M_D_GEN |\n\n#### DATE\n| Property | Value |\n|----------|-------|\n| **Description** | Maturity pillar from RISK_VIEW set |\n| **Type** | VARCHAR(64) |\n| **Nullable** | No |\n| **Example** | \"T/N\", \"1W\", \"3M\", \"5Y\" |\n| **Valid Values** | O/N, T/N, 1W, 1M, 2M, 3M, 6M, 9M, 1Y-40Y |\n\n#### Basis Zero\n| Property | Value |\n|----------|-------|\n| **Description** | IR Basis Zero sensitivity in local currency |\n| **Type** | NUMERIC(16,6) |\n| **Nullable** | No |\n| **Example** | -0.030000 |\n| **Interpretation** | P&L change for 1bp basis spread shift |\n\n#### ZAR_PROCESSING (Deprecated)\n| Property | Value |\n|----------|-------|\n| **Description** | Flag indicating JBSBSA closing entity |\n| **Type** | VARCHAR(1) |\n| **Valid Values** | Y, N |\n| **Status** | Deprecated - SBSA exclusion |\n| **Default** | N |\n\n#### Basis Zero (USD)\n| Property | Value |\n|----------|-------|\n| **Description** | IR Basis Zero sensitivity in USD equivalent |\n| **Type** | NUMERIC(16,6) |\n| **Nullable** | No |\n| **Example** | -0.030000 |\n| **Conversion** | Uses zero day FX spot rate |\n\n#### Basis Zero (ZAR) (Deprecated)\n| Property | Value |\n|----------|-------|\n| **Description** | IR Basis Zero sensitivity in ZAR equivalent |\n| **Type** | NUMERIC(16,6) |\n| **Status** | Deprecated - SBSA exclusion |\n| **Default** | 0.000000 |\n\n#### Typology\n| Property | Value |\n|----------|-------|\n| **Description** | Product classification (Family\\|Group\\|Type) |\n| **Type** | VARCHAR(21) |\n| **Nullable** | Yes |\n| **Example** | \"IRD\\|BS\\|\", \"FXD\\|CS\\|\" |\n\n---\n\n## 4. Data Validation Rules\n\n### 4.1 Field-Level Validations\n\n| Rule ID | Field | Rule | Severity |\n|---------|-------|------|----------|\n| VAL-IRB-001 | PORTFOLIO | NOT NULL AND LENGTH > 0 | Error |\n| VAL-IRB-002 | Trade Number | Positive integer | Error |\n| VAL-IRB-003 | CURRENCY | Valid ISO 4217 code | Error |\n| VAL-IRB-004 | CURVE_NAM | NOT NULL AND LENGTH > 0 | Error |\n| VAL-IRB-005 | DATE | Valid pillar from RISK_VIEW | Error |\n| VAL-IRB-006 | Basis Zero | Numeric value | Error |\n| VAL-IRB-007 | Basis Zero (USD) | Numeric value | Error |\n| VAL-IRB-008 | ZAR_PROCESSING | IN ('Y', 'N', '') | Warning |\n\n### 4.2 Record-Level Validations\n\n| Rule ID | Rule | Description |\n|---------|------|-------------|\n| VAL-IRB-R01 | Non-zero filter | At least one of Basis Zero or Basis Zero (ZAR) must be non-zero |\n| VAL-IRB-R02 | Unique key | Trade Number + CURVE_NAM + DATE must be unique |\n| VAL-IRB-R03 | Currency consistency | CURRENCY must match first 3 chars of CURVE_NAM |\n\n### 4.3 File-Level Validations\n\n| Rule ID | Rule | Description |\n|---------|------|-------------|\n| VAL-IRB-F01 | Header present | First row must be header row |\n| VAL-IRB-F02 | Field count | Each row must have 12 fields |\n| VAL-IRB-F03 | Non-empty | File must contain at least 1 data row |\n| VAL-IRB-F04 | Record count | \u00b110% of previous day |\n\n---\n\n## 5. Sample Data\n\n### 5.1 Header Row\n\n```csv\nPORTFOLIO;Trade Number;CURRENCY;CURVE_NAM;Type;Generat;DATE;Basis Zero;ZAR_PROCESSING;Basis Zero (USD);Basis Zero (ZAR);Typology\n```\n\n### 5.2 Sample Records\n\n#### EUR/USD Basis Swap - Short Pillar\n```csv\nIRLNSBLG7P1;58249;EUR;EUR_USD_3MESTR_3MSOFR;;;T/N;-0.03;N;-0.03;-0.63;\n```\n\n#### EUR/USD Basis Swap - With Generator\n```csv\nIRLNSBLG7P1;58249;EUR;EUR_USD_3MESTR_3MSOFR;Basis swap;_EUR ESTR 3M /USD SOFR 3M [MT;1W;-0.05;N;-0.05;-0.94;\n```\n\n#### GBP/USD Basis Swap - Short Pillar\n```csv\nFXDLNPROPALL;58277;GBP;GBP_USD_3MSONIA_3MSOFR;;;T/N;0.00;N;0.00;0.06;\n```\n\n#### GBP/USD Basis Swap - With Generator\n```csv\nFXDLNPROPALL;58277;GBP;GBP_USD_3MSONIA_3MSOFR;Basis swap;_GBP SONIA 3M / USD SOFR 3M [M;1W;0.00;N;0.00;0.09;\n```\n\n### 5.3 Complete Sample File\n\n```csv\nPORTFOLIO;Trade Number;CURRENCY;CURVE_NAM;Type;Generat;DATE;Basis Zero;ZAR_PROCESSING;Basis Zero (USD);Basis Zero (ZAR);Typology\nIRLNSBLG7P1;58249;EUR;EUR_USD_3MESTR_3MSOFR;;;T/N;-0.03;N;-0.03;-0.63;\nIRLNSBLG7P1;58249;EUR;EUR_USD_3MESTR_3MSOFR;Basis swap;_EUR ESTR 3M /USD SOFR 3M [MT;1W;-0.05;N;-0.05;-0.94;\nIRLNSBLG7P1;58249;EUR;EUR_USD_3MESTR_3MSOFR;Basis swap;_EUR ESTR 3M /USD SOFR 3M [MT;1M;-0.12;N;-0.12;-2.31;\nIRLNSBLG7P1;58249;EUR;EUR_USD_3MESTR_3MSOFR;Basis swap;_EUR ESTR 3M /USD SOFR 3M [MT;3M;-0.25;N;-0.25;-4.82;\nFXDLNPROPALL;58277;GBP;GBP_USD_3MSONIA_3MSOFR;;;T/N;0.00;N;0.00;0.06;\nFXDLNPROPALL;58277;GBP;GBP_USD_3MSONIA_3MSOFR;Basis swap;_GBP SONIA 3M / USD SOFR 3M [M;1W;0.00;N;0.00;0.09;\nFXDLNPROPALL;58277;GBP;GBP_USD_3MSONIA_3MSOFR;Basis swap;_GBP SONIA 3M / USD SOFR 3M [M;1M;0.01;N;0.01;0.18;\n```\n\n---\n\n## 6. Basis Curve Reference\n\n### 6.1 Common Basis Curves\n\n| Curve Name | Currency | Description |\n|------------|----------|-------------|\n| EUR_USD_3MESTR_3MSOFR | EUR | EUR ESTR 3M vs USD SOFR 3M basis |\n| GBP_USD_3MSONIA_3MSOFR | GBP | GBP SONIA 3M vs USD SOFR 3M basis |\n| USD_3MLIBOR_SOFR | USD | USD 3M LIBOR vs SOFR basis (legacy) |\n| EUR_3M6M_BASIS | EUR | EUR 3M vs 6M tenor basis |\n| USD_1M3M_BASIS | USD | USD 1M vs 3M tenor basis |\n| JPY_USD_3MTONA_3MSOFR | JPY | JPY TONA 3M vs USD SOFR 3M basis |\n\n### 6.2 Generator Types\n\n| Type | Description |\n|------|-------------|\n| Basis swap | Cross-currency or cross-index basis swap |\n| Tenor swap | Same currency, different tenor basis |\n| XCS | Cross-currency swap generator |\n\n---\n\n## 7. Integration Guidelines\n\n### 7.1 Consumer Onboarding\n\n| Step | Description | Owner |\n|------|-------------|-------|\n| 1 | Request access via Service Desk | Consumer |\n| 2 | Provide target system details | Consumer |\n| 3 | Configure MFT delivery | Risk Technology |\n| 4 | Provide sample files | Risk Technology |\n| 5 | UAT validation | Consumer |\n| 6 | Production go-live | Joint |\n\n### 7.2 Recommended Processing\n\n```\n1. File Arrival\n   \u2514\u2500\u2500 Monitor MFT landing zone\n   \u2514\u2500\u2500 Extract from ZIP package\n   \u2514\u2500\u2500 Validate file naming convention\n\n2. File Validation\n   \u2514\u2500\u2500 Verify header row structure\n   \u2514\u2500\u2500 Count fields per row (12)\n   \u2514\u2500\u2500 Validate delimiter (semicolon)\n\n3. Data Loading\n   \u2514\u2500\u2500 Parse CSV with semicolon delimiter\n   \u2514\u2500\u2500 Apply data type conversions\n   \u2514\u2500\u2500 Handle empty Type/Generat fields\n   \u2514\u2500\u2500 Insert into staging table\n\n4. Data Quality\n   \u2514\u2500\u2500 Run validation rules\n   \u2514\u2500\u2500 Generate exception report\n   \u2514\u2500\u2500 Alert on critical failures\n\n5. Data Integration\n   \u2514\u2500\u2500 Transform as needed\n   \u2514\u2500\u2500 Load to target tables\n   \u2514\u2500\u2500 Update processing metadata\n```\n\n### 7.3 Aggregation Patterns\n\n#### By Portfolio\n```sql\nSELECT\n    PORTFOLIO,\n    SUM(\"Basis Zero (USD)\") AS TOTAL_BASIS_USD\nFROM IR_ZERO_BASIS\nGROUP BY PORTFOLIO;\n```\n\n#### By Currency\n```sql\nSELECT\n    CURRENCY,\n    SUM(\"Basis Zero (USD)\") AS TOTAL_BASIS_USD\nFROM IR_ZERO_BASIS\nGROUP BY CURRENCY;\n```\n\n#### By Pillar Bucket\n```sql\nSELECT\n    CASE\n        WHEN DATE IN ('O/N', 'T/N', '1W') THEN 'Short'\n        WHEN DATE IN ('1M', '2M', '3M', '6M', '9M') THEN 'Money Market'\n        WHEN DATE IN ('1Y', '2Y', '3Y', '4Y', '5Y') THEN 'Short Swap'\n        WHEN DATE IN ('6Y', '7Y', '8Y', '9Y', '10Y', '12Y') THEN 'Medium Swap'\n        ELSE 'Long Swap'\n    END AS TENOR_BUCKET,\n    SUM(\"Basis Zero (USD)\") AS TOTAL_BASIS_USD\nFROM IR_ZERO_BASIS\nGROUP BY TENOR_BUCKET;\n```\n\n#### By Basis Curve\n```sql\nSELECT\n    CURVE_NAM,\n    COUNT(DISTINCT \"Trade Number\") AS TRADE_COUNT,\n    SUM(\"Basis Zero (USD)\") AS TOTAL_BASIS_USD\nFROM IR_ZERO_BASIS\nGROUP BY CURVE_NAM\nORDER BY ABS(SUM(\"Basis Zero (USD)\")) DESC;\n```\n\n---\n\n## 8. Comparison with Related Feeds\n\n### 8.1 IR Sensitivity Feeds\n\n| Feed | File Pattern | Sensitivity | Maturity Set |\n|------|--------------|-------------|--------------|\n| IR Zero Basis | MxMGB_MR_Rates_Basis_* | Basis spread | RISK_VIEW (40Y) |\n| IR Delta & Gamma | MxMGB_MR_Rates_DV01_* | Outright IR | LNOFFICIAL (30Y) |\n\n### 8.2 Field Comparison\n\n| Field | IR Zero Basis | IR Delta & Gamma |\n|-------|---------------|------------------|\n| Trade ID | Trade Number | TRADE_NUM |\n| Portfolio | PORTFOLIO | PORTFOLIO |\n| Curve | CURVE_NAM | CURVENAME |\n| Pillar | DATE | DATE |\n| Sensitivity | Basis Zero | DELTAUSD |\n| Convexity | N/A | GAMMAUSD |\n| Generator | Type, Generat | N/A |\n\n---\n\n## 9. Change Management\n\n### 9.1 Change Request Process\n\n| Change Type | Lead Time | Approval |\n|-------------|-----------|----------|\n| New field addition | 4 weeks | Change Board |\n| Field format change | 4 weeks | Change Board |\n| File naming change | 2 weeks | Risk Technology Lead |\n| Delivery time change | 2 weeks | Risk Technology Lead |\n| New consumer | 1 week | Risk Technology Lead |\n\n### 9.2 Version Compatibility\n\n| Version | Status | Support Until |\n|---------|--------|---------------|\n| 1.0 | Current | - |\n\n---\n\n## 10. Contact Information\n\n### 10.1 Support Contacts\n\n| Role | Team | Contact |\n|------|------|---------|\n| L1 Support | Risk Technology | risk.tech@meridianbank.com |\n| L2 Support | Murex Support | murex.support@meridianbank.com |\n| Data Quality | Risk Operations | risk.ops@meridianbank.com |\n| Business Owner | Rates Trading | rates.trading@meridianbank.com |\n\n### 10.2 Escalation Path\n\n```\nL1: Risk Technology Service Desk (response: 2 hours)\n    \u2193\nL2: Murex Support Team (response: 4 hours)\n    \u2193\nL3: Risk Technology Lead (response: same day)\n    \u2193\nL4: Head of Risk Technology (response: next day)\n```\n\n---\n\n## 11. Appendices\n\n### Appendix A: Maturity Set RISK_VIEW\n\n| Pillar | Tenor Category | Pillar | Tenor Category |\n|--------|---------------|--------|---------------|\n| O/N | Short-term | 6Y | Medium Swap |\n| T/N | Short-term | 7Y | Medium Swap |\n| 1W | Short-term | 8Y | Medium Swap |\n| 1M | Money Market | 9Y | Medium Swap |\n| 2M | Money Market | 10Y | Medium Swap |\n| 3M | Money Market | 12Y | Medium Swap |\n| 6M | Money Market | 15Y | Long Swap |\n| 9M | Money Market | 20Y | Long Swap |\n| 1Y | Short Swap | 25Y | Long Swap |\n| 2Y | Short Swap | 30Y | Long Swap |\n| 3Y | Short Swap | 35Y | Long Swap |\n| 4Y | Short Swap | 40Y | Long Swap |\n| 5Y | Short Swap | | |\n\n### Appendix B: Portfolio Node Reference\n\nSee IT Configuration document (IRB-CFG-001) for complete portfolio node listings by region.\n\n---\n\n## 12. Document Control\n\n### 12.1 Version History\n\n| Version | Date | Change | Author |\n|---------|------|--------|--------|\n| 1.0 | 2025-01-03 | Initial version | Risk Technology |\n\n### 12.2 Approval\n\n| Role | Name | Date |\n|------|------|------|\n| Technical Owner | Risk Technology Lead | |\n| Data Owner | Head of Risk Data | |\n| Approver | Risk Technology Change Board | |\n\n---\n\n*End of Document*\n"
+    },
+    "tool_use_id": "toolu_01LBSSjCX5g4QQ9kRpGaBCuU"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Create IR Zero Basis Overview document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis Overview document"
+        },
+        {
+          "content": "Create IR Zero Basis BRD document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis BRD document"
+        },
+        {
+          "content": "Create IR Zero Basis IT Config document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis IT Config document"
+        },
+        {
+          "content": "Create IR Zero Basis IDD document",
+          "status": "completed",
+          "activeForm": "Creating IR Zero Basis IDD document"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01LBnGKLfXU2whxkrJq8iZci"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "ls -la /Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds/ir-zero-basis/",
+      "description": "List IR Zero Basis documentation files"
+    },
+    "tool_use_id": "toolu_018tj17ip5ULQEGoRj1Gmk4Q"
+  }
+]

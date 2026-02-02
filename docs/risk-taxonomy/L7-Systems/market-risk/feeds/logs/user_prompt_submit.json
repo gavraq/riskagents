@@ -1,0 +1,26 @@
+[
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "ok have we done this one yet? '/Users/gavinslater/projects/riskagent/data/ICBCS Bank/Feeds/Feed Documentation/RC-IR Delta & Gamma-010925-153342.pdf'"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "is this one done? '/Users/gavinslater/projects/riskagent/data/ICBCS Bank/Feeds/Feed Documentation/RC-IR Zero Basis-010925-153032.pdf'"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L7-Systems/market-risk/feeds",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "yes"
+  }
+]

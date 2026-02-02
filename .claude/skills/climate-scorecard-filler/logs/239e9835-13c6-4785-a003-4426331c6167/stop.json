@@ -1,0 +1,18 @@
+[
+  {
+    "session_id": "239e9835-13c6-4785-a003-4426331c6167",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/239e9835-13c6-4785-a003-4426331c6167.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/.claude/skills/climate-scorecard-filler",
+    "permission_mode": "default",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  },
+  {
+    "session_id": "239e9835-13c6-4785-a003-4426331c6167",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/239e9835-13c6-4785-a003-4426331c6167.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/.claude/skills/climate-scorecard-filler",
+    "permission_mode": "default",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  }
+]

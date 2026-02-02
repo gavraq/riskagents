@@ -1,0 +1,37 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Environment variables (contains secrets)
+.env
+.env.local
+.env.*.local
+
+# Session data
+.riskagent/
+
+# Logs
+*.log
+logs/
+telegram_bot.log
+
+# Regulatory monitor runtime data (mutable state, not source)
+data/regulatory_monitor/known_regulations.json
+data/regulatory_monitor/known_regulations.json.bak
+data/regulatory_monitor/runs/
+
+# OS files
+.DS_Store
+
+# Large data files (market risk feeds, bank-specific data)
+data/
+
+# Generated output reports
+output/regulatory-scans/

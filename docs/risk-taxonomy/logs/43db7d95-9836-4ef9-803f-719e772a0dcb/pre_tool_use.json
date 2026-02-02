@@ -1,0 +1,124 @@
+[
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L6-Models/market-risk/ecap-methodology.md",
+      "old_string": "\u00a3",
+      "new_string": "$",
+      "replace_all": true
+    },
+    "tool_use_id": "toolu_01SA3CLXnSZFcUnC4jYRNzRh"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L3-Governance/committees/enterprise/board-terms-of-reference.md",
+      "old_string": "\u00a3",
+      "new_string": "$",
+      "replace_all": true
+    },
+    "tool_use_id": "toolu_01Rr4jhFLB1M9A7gLxCzXJMG"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/L4-Processes/processes/_deprecated/var-reporting-signoff.md",
+      "old_string": "\u00a3",
+      "new_string": "$",
+      "replace_all": true
+    },
+    "tool_use_id": "toolu_017bwJcxtA9kzKRNwf7YGGqC"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/00-Risk-Taxonomy-Implementation-Plan.md",
+      "old_string": "\u00a3",
+      "new_string": "$",
+      "replace_all": true
+    },
+    "tool_use_id": "toolu_01YcM59B5YvAxZ8gF1zaDv95"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy/README.md",
+      "old_string": "\u00a3",
+      "new_string": "$",
+      "replace_all": true
+    },
+    "tool_use_id": "toolu_01CdLQe1YGicQFjn5MgBecnz"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "Grep",
+    "tool_input": {
+      "pattern": "\u00a3",
+      "path": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy",
+      "output_mode": "files_with_matches"
+    },
+    "tool_use_id": "toolu_01WxsrS6xFHGSN9mYEyqZWty"
+  },
+  {
+    "session_id": "43db7d95-9836-4ef9-803f-719e772a0dcb",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-riskagent/43db7d95-9836-4ef9-803f-719e772a0dcb.jsonl",
+    "cwd": "/Users/gavinslater/projects/riskagent/docs/risk-taxonomy",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PreToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Check and update L4 Process documents",
+          "status": "completed",
+          "activeForm": "Checking L4 Process documents"
+        },
+        {
+          "content": "Check and update L5 Control documents",
+          "status": "completed",
+          "activeForm": "Checking L5 Control documents"
+        },
+        {
+          "content": "Check and update L6 Model documents",
+          "status": "completed",
+          "activeForm": "Checking L6 Model documents"
+        },
+        {
+          "content": "Check and update other documents",
+          "status": "completed",
+          "activeForm": "Checking other documents"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01RevfaZGVKS2JiCPhTyiytY"
+  }
+]
