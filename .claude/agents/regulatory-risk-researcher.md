@@ -1,13 +1,10 @@
-# Regulatory Risk Researcher Agent
-
-## Agent Definition
-
-**Name**: regulatory-risk-researcher
-**Type**: Research Sub-Agent
-**Parent**: risk-intelligence-engine (orchestrator)
-**Tools**: WebSearch, Read, Write
-
 ---
+name: regulatory-risk-researcher
+description: Research current regulatory developments that could impact the bank's risk management framework. Use for regulatory horizon scanning, compliance changes, Basel updates, and prudential policy shifts.
+tools: WebSearch, Read, Write
+---
+
+# Regulatory Risk Researcher Agent
 
 ## Purpose
 
