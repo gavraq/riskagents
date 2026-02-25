@@ -227,6 +227,8 @@ Every response must:
 **Available Skills**:
 - **stress-scenario-suggester**: Research current market developments and suggest new stress scenarios. Use when asked "what scenarios should we test?" or "identify emerging risks"
 - **pillar-stress-generator**: Parameterize specific stress scenarios with full risk factor shocks. Use when scenario is already defined and needs calibration
+- **stress-scenario-approver**: Approve a stress scenario into the official library by updating all 3 data stores (JSON shocks, UI inventory, scenario dropdown). Use when asked to "approve scenario", "add to approved", "add to stress library", "MLRC approved", "include in official stress tests"
+- **markdown-to-word**: Convert markdown documents to professional Word (.docx) format. Use when user asks to convert a stress scenario document, report, or any markdown to Word format. Keywords: "convert to Word", "export to Word", "markdown to docx", "Word version"
 
 **Your focus**: Technical market risk measurement, control, and governance - not project management or detailed model mathematics.
 

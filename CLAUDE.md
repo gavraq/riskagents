@@ -22,13 +22,15 @@ uv run riskagent --verbose
 ## Architecture
 
 ```
-Terminal CLI / Telegram Bot
+Terminal CLI / riskagents-ui (localhost:3002) / Telegram Bot
+    ↓
+Unified Gateway (localhost:8090) → Claude Agent SDK → CLI subprocess
     ↓
 Risk Intelligence Engine (Orchestrator)
     ↓ Task tool
 Change-Agent / Market-Risk-Agent (Domain Specialists)
     ↓ Auto-invoked
-Claude Skills (8 specialized skills)
+Claude Skills (15 specialized skills)
     ↓ Parallel research (stress-scenario-suggester)
 5 Research Sub-Agents (geopolitical, macro, market-structure, climate-esg, tech-sector)
 ```
@@ -47,16 +49,22 @@ riskagent/
 │   │   ├── market-structure-risk-researcher.md  # Research sub-agent
 │   │   ├── climate-esg-risk-researcher.md       # Research sub-agent
 │   │   └── technology-sector-risk-researcher.md # Research sub-agent
-│   ├── skills/                    # Modular capabilities
-│   │   ├── meeting-minutes/
-│   │   ├── project-planner/
-│   │   ├── status-reporter/
-│   │   ├── stakeholder-analysis/
-│   │   ├── itc-template-filler/
-│   │   ├── icc-business-case-filler/
-│   │   ├── process-documenter/
-│   │   ├── pillar-stress-generator/
-│   │   └── stress-scenario-suggester/
+│   ├── skills/                    # Modular capabilities (15 skills)
+│   │   ├── climate-scorecard-filler/    # Climate & ESG credit scorecards
+│   │   ├── icc-business-case-filler/    # ICC business case templates
+│   │   ├── itc-template-filler/         # ITC project templates
+│   │   ├── markdown-to-word/            # Markdown to Word conversion
+│   │   ├── meeting-minutes/             # Meeting minutes structuring
+│   │   ├── pillar-stress-generator/     # Stress scenario parameterization
+│   │   ├── policy-updater/              # Policy document updates
+│   │   ├── process-documenter/          # Process documentation & flows
+│   │   ├── project-planner/             # Project charter creation
+│   │   ├── regulatory-change-assessor/  # Regulatory impact assessment
+│   │   ├── regulatory-monitor/          # Proactive regulatory scanning
+│   │   ├── stakeholder-analysis/        # Stakeholder mapping & RACI
+│   │   ├── status-reporter/             # RAG status reports
+│   │   ├── stress-scenario-approver/    # Approve scenarios to library
+│   │   └── stress-scenario-suggester/   # Emerging risk research
 │   ├── hooks/
 │   └── output-styles/
 ├── src/
@@ -143,20 +151,30 @@ Telegram integration has been moved to standalone services for multi-project sup
 
 See those project READMEs for setup instructions.
 
-## Current Capabilities
+## Current Capabilities (15 Skills)
 
 ### Change Management (change-agent)
-1. **Project Planning** - Create project charters, timelines, risk assessments
-2. **Meeting Minutes** - Structure notes with action items and decisions
-3. **Status Reports** - Generate RAG status reports
-4. **Stakeholder Analysis** - Map and analyze stakeholders
-5. **ITC Template Filler** - Populate ITC governance templates
-6. **ICC Business Case Filler** - Complete ICC business cases with interactive mode
-7. **Process Documenter** - Create process documentation with flow diagrams
+1. **Project Planner** - Create project charters, timelines, resources, risk assessments, governance structures
+2. **Meeting Minutes** - Structure meeting notes with action items, decisions, owners, and due dates
+3. **Status Reporter** - Generate RAG status reports with progress tracking and milestone management
+4. **Stakeholder Analysis** - Map stakeholders with influence/interest matrices, engagement strategies, RACI
+5. **ITC Template Filler** - Populate ITC (Investment Technology Committee) governance templates from project data
+6. **ICC Business Case Filler** - Complete ICC business cases with interactive clarification for missing fields
+7. **Process Documenter** - Create process documentation with flow diagrams and RACI matrices
+8. **Markdown to Word** - Convert markdown documents to professionally formatted Word (.docx) files with cover pages and branding
 
 ### Market Risk (market-risk-agent)
-8. **Pillar Stress Generator** - Parameterize stress scenarios with full risk factor shocks
-9. **Stress Scenario Suggester** - Research emerging risks via 5 parallel research agents
+9. **Pillar Stress Generator** - Parameterize stress scenarios with full risk factor shocks across 7 asset classes (rates, FX, credit, energy, precious metals, base metals, equities)
+10. **Stress Scenario Suggester** - Research emerging risks via 5 parallel research sub-agents (geopolitical, macro, market-structure, climate-esg, tech-sector)
+11. **Stress Scenario Approver** - Approve scenarios into the official library by updating JSON shocks, UI inventory, and scenario dropdown
+
+### Credit Risk (change-agent)
+12. **Climate Scorecard Filler** - Complete Climate & Environmental Risk Scorecards for credit applications, assessing physical and transition risks
+
+### Regulatory (change-agent)
+13. **Regulatory Change Assessor** - Assess impact of new/changed regulations on Risk Taxonomy and control frameworks
+14. **Regulatory Monitor** - Proactive scanning for new regulatory developments with automated alerts
+15. **Policy Updater** - Update policy documents to reflect regulatory and framework changes
 
 ## Roadmap
 

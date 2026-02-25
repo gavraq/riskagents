@@ -5,12 +5,15 @@ Generates professional Word documents for Climate & Environmental Risk Scorecard
 Includes branded cover page with www.risk-agents.com.
 
 Aligned with PRA SS5/25 (December 2025) requirements.
+
+Uses shared DocxBuilder from markdown-to-word skill for common document operations.
 """
 
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 import json
+import sys
 
 # Import will work when python-docx is installed: pip install python-docx
 try:
@@ -26,6 +29,14 @@ except ImportError:
     DOCX_AVAILABLE = False
     print("Warning: python-docx not installed. Word document generation will be limited.")
     print("Install with: pip install python-docx")
+
+# Import shared DocxBuilder
+try:
+    sys.path.insert(0, str(Path(__file__).parent.parent / "markdown-to-word"))
+    from docx_builder import DocxBuilder, BrandConfig
+    SHARED_BUILDER_AVAILABLE = True
+except ImportError:
+    SHARED_BUILDER_AVAILABLE = False
 
 # Import the scorecard classes
 try:
@@ -51,21 +62,39 @@ class ClimateScorecardDocumentBuilder:
     - Full SS5/25 compliance sections
     - Tables for risk assessments
     - Color-coded risk indicators
+
+    Uses shared DocxBuilder for common operations (margins, styles, tables,
+    headings, footer) while retaining climate-specific assessment rendering.
     """
 
-    # Brand colors
-    BRAND_PRIMARY = RGBColor(0, 51, 102)      # Dark blue
-    BRAND_SECONDARY = RGBColor(0, 102, 153)   # Medium blue
-    BRAND_ACCENT = RGBColor(0, 153, 204)      # Light blue
+    # Brand colors (also available via shared BrandConfig)
+    BRAND_PRIMARY = RGBColor(0, 51, 102) if DOCX_AVAILABLE else None
+    BRAND_SECONDARY = RGBColor(0, 102, 153) if DOCX_AVAILABLE else None
+    BRAND_ACCENT = RGBColor(0, 153, 204) if DOCX_AVAILABLE else None
 
     # Risk colors
-    COLOR_LOW = RGBColor(0, 128, 0)           # Green
-    COLOR_MODERATE = RGBColor(255, 165, 0)    # Orange
-    COLOR_HIGH = RGBColor(255, 0, 0)          # Red
-    COLOR_CRITICAL = RGBColor(139, 0, 0)      # Dark red
+    COLOR_LOW = RGBColor(0, 128, 0) if DOCX_AVAILABLE else None
+    COLOR_MODERATE = RGBColor(255, 165, 0) if DOCX_AVAILABLE else None
+    COLOR_HIGH = RGBColor(255, 0, 0) if DOCX_AVAILABLE else None
+    COLOR_CRITICAL = RGBColor(139, 0, 0) if DOCX_AVAILABLE else None
 
     def __init__(self):
         self.document = None
+        # Initialise shared builder with climate brand config
+        if SHARED_BUILDER_AVAILABLE and DOCX_AVAILABLE:
+            self._builder = DocxBuilder(brand=BrandConfig(
+                primary=self.BRAND_PRIMARY,
+                secondary=self.BRAND_SECONDARY,
+                accent=self.BRAND_ACCENT,
+                color_low=self.COLOR_LOW,
+                color_moderate=self.COLOR_MODERATE,
+                color_high=self.COLOR_HIGH,
+                color_critical=self.COLOR_CRITICAL,
+                org_name="Risk Agents",
+                website="www.risk-agents.com",
+            ))
+        else:
+            self._builder = None
 
     def create_scorecard_document(
         self,
@@ -152,25 +181,31 @@ class ClimateScorecardDocumentBuilder:
         return self.document
 
     def _setup_document_styles(self):
-        """Setup custom document styles."""
-        styles = self.document.styles
-
-        # Custom heading style
-        try:
-            heading_style = styles.add_style('Custom Heading', WD_STYLE_TYPE.PARAGRAPH)
-            heading_style.font.size = Pt(14)
-            heading_style.font.bold = True
-            heading_style.font.color.rgb = self.BRAND_PRIMARY
-        except:
-            pass  # Style may already exist
+        """Setup custom document styles. Delegates to shared builder if available."""
+        if self._builder:
+            self._builder.document = self.document
+            self._builder._setup_styles()
+        else:
+            styles = self.document.styles
+            try:
+                heading_style = styles.add_style('Custom Heading', WD_STYLE_TYPE.PARAGRAPH)
+                heading_style.font.size = Pt(14)
+                heading_style.font.bold = True
+                heading_style.font.color.rgb = self.BRAND_PRIMARY
+            except:
+                pass
 
     def _set_document_margins(self):
-        """Set standard document margins."""
-        for section in self.document.sections:
-            section.top_margin = Inches(1)
-            section.bottom_margin = Inches(1)
-            section.left_margin = Inches(1)
-            section.right_margin = Inches(1)
+        """Set standard document margins. Delegates to shared builder if available."""
+        if self._builder:
+            self._builder.document = self.document
+            self._builder._set_margins()
+        else:
+            for section in self.document.sections:
+                section.top_margin = Inches(1)
+                section.bottom_margin = Inches(1)
+                section.left_margin = Inches(1)
+                section.right_margin = Inches(1)
 
     def _add_cover_page(
         self,
@@ -725,36 +760,50 @@ class ClimateScorecardDocumentBuilder:
         self.document.add_paragraph()
 
     def _add_footer(self):
-        """Add footer with branding."""
-        footer_para = self.document.add_paragraph()
-        footer_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        """Add footer with branding. Delegates to shared builder if available."""
+        if self._builder:
+            self._builder.document = self.document
+            self._builder.add_footer()
+        else:
+            footer_para = self.document.add_paragraph()
+            footer_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
-        run = footer_para.add_run("─" * 50)
-        run.font.color.rgb = RGBColor(200, 200, 200)
+            run = footer_para.add_run("─" * 50)
+            run.font.color.rgb = RGBColor(200, 200, 200)
 
-        self.document.add_paragraph()
+            self.document.add_paragraph()
 
-        gen_para = self.document.add_paragraph()
-        gen_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        gen_run = gen_para.add_run(f"Generated by Risk Agents Platform | www.risk-agents.com | {datetime.now().strftime('%d %B %Y')}")
-        gen_run.font.size = Pt(9)
-        gen_run.font.color.rgb = RGBColor(128, 128, 128)
-        gen_run.font.italic = True
+            gen_para = self.document.add_paragraph()
+            gen_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            gen_run = gen_para.add_run(f"Generated by Risk Agents Platform | www.risk-agents.com | {datetime.now().strftime('%d %B %Y')}")
+            gen_run.font.size = Pt(9)
+            gen_run.font.color.rgb = RGBColor(128, 128, 128)
+            gen_run.font.italic = True
 
     def _add_section_heading(self, title: str):
-        """Add a section heading."""
-        heading = self.document.add_heading(title, level=1)
-        for run in heading.runs:
-            run.font.color.rgb = self.BRAND_PRIMARY
+        """Add a section heading. Delegates to shared builder if available."""
+        if self._builder:
+            self._builder.document = self.document
+            self._builder.add_section_heading(title)
+        else:
+            heading = self.document.add_heading(title, level=1)
+            for run in heading.runs:
+                run.font.color.rgb = self.BRAND_PRIMARY
 
     def _add_subsection_heading(self, title: str):
-        """Add a subsection heading."""
-        heading = self.document.add_heading(title, level=2)
-        for run in heading.runs:
-            run.font.color.rgb = self.BRAND_SECONDARY
+        """Add a subsection heading. Delegates to shared builder if available."""
+        if self._builder:
+            self._builder.document = self.document
+            self._builder.add_subsection_heading(title)
+        else:
+            heading = self.document.add_heading(title, level=2)
+            for run in heading.runs:
+                run.font.color.rgb = self.BRAND_SECONDARY
 
     def _get_risk_level_and_color(self, score: float) -> tuple:
-        """Get risk level text and color based on score."""
+        """Get risk level text and color based on score. Uses shared builder if available."""
+        if self._builder:
+            return self._builder.get_risk_level_text(score), self._builder.get_risk_color(score)
         if score <= 1.5:
             return "NEGLIGIBLE", self.COLOR_LOW
         elif score <= 2.5:
@@ -767,7 +816,9 @@ class ClimateScorecardDocumentBuilder:
             return "CRITICAL", self.COLOR_CRITICAL
 
     def _score_to_rating(self, score: Optional[int]) -> str:
-        """Convert score to rating label."""
+        """Convert score to rating label. Uses shared builder if available."""
+        if self._builder:
+            return self._builder.score_to_rating(score)
         if score is None:
             return "Not Assessed"
         elif score <= 1.5:

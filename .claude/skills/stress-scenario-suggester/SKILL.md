@@ -1,6 +1,6 @@
 ---
 name: stress-scenario-suggester
-description: Research current financial market developments and suggest stress scenarios for market risk. Use when user asks to identify emerging risks, suggest new stress scenarios, research market developments for stress testing, or generate scenario ideas. Keywords: suggest scenarios, emerging risks, market research, scenario ideas, new stress tests, current developments, geopolitical risks.
+description: Research current financial market developments and suggest stress scenarios for market risk. Use when user asks to identify emerging risks, suggest new stress scenarios, research market developments for stress testing, or generate scenario ideas. Keywords - suggest scenarios, emerging risks, market research, scenario ideas, new stress tests, current developments, geopolitical risks.
 ---
 
 # Stress Scenario Suggester
@@ -13,7 +13,22 @@ Unlike the pillar-stress-generator (which parameterizes specific scenarios), you
 
 ## Core Capability
 
-When invoked, you will **launch 5 parallel research agents** to investigate different domains of emerging risk, then synthesize their findings into actionable stress scenario suggestions.
+When invoked, you will **launch 5 parallel research agents** to investigate different domains of emerging risk, then synthesize their findings into actionable stress scenario suggestions - **validated against the current stress test inventory**.
+
+## Existing Stress Test Inventory
+
+**CRITICAL**: Before assessing coverage or making recommendations, you MUST read the stress test inventory file:
+
+```
+data/stress_test_inventory.md
+```
+
+This file contains:
+- All currently approved stress scenarios with their domains, triggers, risk factors, and asset classes
+- A coverage summary showing known gaps by risk domain
+- Definitions of Full/Partial/None coverage levels
+
+You MUST use this inventory to make accurate, evidence-based coverage assessments. Never guess whether a scenario is already covered.
 
 ## Research Agent Architecture
 
@@ -61,7 +76,15 @@ You will spawn 5 specialized research sub-agents in parallel:
 
 ## Execution Process
 
-### Step 1: Launch Parallel Research
+### Step 1: Load Stress Test Inventory
+```
+BEFORE launching research agents, read data/stress_test_inventory.md to understand:
+- What scenarios are already approved and tested
+- What domains have known gaps
+- What was last reviewed and when
+```
+
+### Step 2: Launch Parallel Research
 ```
 You MUST use the Task tool to launch all 5 research agents in parallel in a single message.
 
@@ -72,22 +95,54 @@ Each agent receives:
 - Format for returning findings
 ```
 
-### Step 2: Synthesize Findings
+### Step 3: Synthesize & Validate Against Inventory
 Once all agents return, you will:
 - Consolidate the 10-15 scenario suggestions
 - Remove duplicates and merge related ideas
-- Assess each scenario for:
+- **For each scenario, check the inventory** and assess:
   - Plausibility (is this realistic?)
   - Severity potential (how bad could it get?)
-  - Current coverage (do we already test this?)
+  - **Current coverage** (checked against inventory - cite specific scenario names)
   - Timing urgency (is this imminent or longer-term?)
 
-### Step 3: Present Recommendations
+### Step 4: Consistency Check (MANDATORY)
+Before presenting the final output, perform these validation checks:
+
+#### 4a. Coverage Consistency
+For every scenario in your report, verify that the **Current Coverage** value is identical everywhere it appears:
+- In the Executive Summary description
+- In the Prioritization Matrix table
+- In the Recommended Next Steps section
+
+If a scenario is marked "Not tested" in the matrix, the next steps MUST NOT say "update existing". If it's marked "Partial", cite which existing scenario provides partial coverage.
+
+#### 4b. Recommendation Consistency
+Verify that recommendations follow logically from coverage:
+- **Not tested** + High urgency = "Develop from scratch" / "Develop now"
+- **Partial** coverage = "Update existing [specific scenario name]" or "Extend [scenario name] to cover [gap]"
+- **Full** coverage = "Review calibration" or "No action needed"
+
+Never recommend "developing from scratch" a scenario that is marked as partially covered, and never recommend "updating existing" a scenario that is marked as not tested.
+
+#### 4c. Cross-Reference Validation
+For any scenario you mark as "Partial" or "Full" coverage, you MUST name the specific existing scenario from the inventory that provides that coverage and explain what aspect is/isn't covered.
+
+**Example of CORRECT coverage assessment:**
+> **Current Coverage**: Partial - The existing "Shadow Banking Liquidity Shock" scenario covers Chinese non-bank lender stress and CNH/USD dynamics, but does not address the private credit/CLO transmission channel or US insurance sector exposure that makes this scenario distinct.
+> **Recommendation**: Develop as new scenario (the private credit transmission channel is sufficiently different from shadow banking to warrant a separate test)
+
+**Example of INCORRECT coverage assessment:**
+> **Current Coverage**: Partial
+> **Recommendation**: Develop from scratch
+> *(Contradiction: if it's partially covered, explain what's covered and what's not. "Develop from scratch" contradicts "partial" coverage.)*
+
+### Step 5: Present Recommendations
 Output a structured report with:
-- **Executive Summary**: Top 3-5 scenario recommendations
+- **Executive Summary**: Top 3-5 scenario recommendations with coverage assessment
 - **Full Research Findings**: All scenarios by domain
-- **Prioritization Matrix**: Urgency vs Severity
-- **Next Steps**: Which scenarios to develop via pillar-stress-generator
+- **Prioritization Matrix**: Urgency vs Severity vs Coverage
+- **Next Steps**: Consistent with coverage assessments
+- **Inventory Gap Analysis**: What domains remain uncovered
 
 ## Output Format
 
@@ -104,12 +159,22 @@ Based on current market developments, we recommend the following stress scenario
 - **Key Risk Factors**: [Rates, FX, Credit, Commodities affected]
 - **Why Now**: [Current developments making this relevant]
 - **Urgency**: [High/Medium/Low]
+- **Current Coverage**: [Full/Partial/None] - [If Partial/Full, cite specific existing scenario and explain what is/isn't covered]
 
 ### Priority 2: [Scenario Name]
 ...
 
 ### Priority 3: [Scenario Name]
 ...
+
+---
+
+## Existing Inventory Review
+
+Summary of current stress test library (from inventory):
+| Existing Scenario | Domain | Last Reviewed | Still Relevant? | Update Needed? |
+|-------------------|--------|---------------|-----------------|----------------|
+| [From inventory]  | ...    | ...           | Yes/No          | Yes/No + reason|
 
 ---
 
@@ -134,26 +199,50 @@ Based on current market developments, we recommend the following stress scenario
 
 ## Prioritization Matrix
 
-| Scenario | Domain | Severity | Urgency | Current Coverage | Recommendation |
-|----------|--------|----------|---------|------------------|----------------|
-| [Name]   | Geo    | High     | High    | Not tested       | Develop now    |
-| [Name]   | Macro  | High     | Medium  | Partial          | Update existing|
-| ...      | ...    | ...      | ...     | ...              | ...            |
+| Scenario | Domain | Severity | Urgency | Current Coverage | Existing Scenario Ref | Recommendation |
+|----------|--------|----------|---------|------------------|-----------------------|----------------|
+| [Name]   | Geo    | High     | High    | None             | -                     | Develop now    |
+| [Name]   | Macro  | High     | Medium  | Partial          | [Scenario name]       | Update existing|
+| ...      | ...    | ...      | ...     | ...              | ...                   | ...            |
 
 ---
 
 ## Recommended Next Steps
 
 1. **Immediate Action**: Develop [Priority 1 scenario] via pillar-stress-generator
-2. **Short-term**: Review existing [related scenario] for updates
+   - Coverage: [None/Partial] - [explanation of why new development is needed]
+2. **Short-term**: Update existing "[scenario name]" to incorporate [specific new elements]
+   - Coverage: Partial - [explanation of what the existing scenario covers and what gaps remain]
 3. **Medium-term**: Consider [Priority 2-3] for next MLRC cycle
 4. **Expert Consultation**: Discuss [specific scenario] with [relevant desk/team]
+
+---
+
+## Inventory Gap Analysis
+
+### Domains with No Coverage
+[List risk domains from inventory with zero approved scenarios]
+
+### Scenarios Needing Refresh
+[List existing scenarios where market developments have changed the risk landscape since last review]
+
+---
+
+## Consistency Verification
+
+Before finalising this report, the following checks were performed:
+- [ ] Every "Current Coverage" value is consistent across Executive Summary, Matrix, and Next Steps
+- [ ] Every "Partial" or "Full" coverage cites a specific existing scenario by name
+- [ ] Every "Develop from scratch" recommendation corresponds to "None" coverage
+- [ ] Every "Update existing" recommendation corresponds to "Partial" coverage and names the scenario
+- [ ] No contradictions between coverage assessment and recommended action
 
 ---
 
 ## Research Sources & Confidence
 
 - Research conducted: [Date/Time]
+- Inventory referenced: data/stress_test_inventory.md (last updated: [date])
 - Sources: [Web sources used by agents]
 - Confidence: [High/Medium/Low] based on source quality and consistency
 - Recommended validation: [What human experts should verify]
@@ -208,16 +297,18 @@ Return exactly this structure:
 ## Governance & Limitations
 
 ### What This Skill Does
-✅ Identifies emerging risks through current research
-✅ Suggests scenarios for further development
-✅ Prioritizes based on urgency and severity
-✅ Provides sources and confidence levels
+- Identifies emerging risks through current research
+- Validates suggestions against the existing stress test inventory
+- Suggests scenarios for further development with evidence-based coverage assessment
+- Prioritizes based on urgency, severity, and coverage gaps
+- Provides sources and confidence levels
+- Performs self-consistency checks before presenting output
 
 ### What This Skill Does NOT Do
-❌ Parameterize scenarios (use pillar-stress-generator)
-❌ Calculate P&L or VaR impacts
-❌ Make final decisions on what to test
-❌ Replace expert judgment on scenario selection
+- Parameterize scenarios (use pillar-stress-generator)
+- Calculate P&L or VaR impacts
+- Make final decisions on what to test
+- Replace expert judgment on scenario selection
 
 ### Human Review Required
 All suggestions require review by Market Risk team before:
@@ -225,40 +316,10 @@ All suggestions require review by Market Risk team before:
 - Presenting to MLRC
 - Modifying existing scenario library
 
-## Example Interaction
-
-**User**: "Suggest new stress scenarios based on current market developments"
-
-**Assistant**: "I'll research current financial market developments across 5 risk domains in parallel to identify potential stress scenarios.
-
-[Launches 5 research agents simultaneously using Task tool]
-
-[Waits for all agents to complete]
-
-[Synthesizes findings into structured report]
-
-Based on my research, I recommend prioritizing these stress scenarios:
-
-**Priority 1: US Commercial Real Estate Collapse**
-- Driven by: Office vacancy rates at historic highs, regional bank exposure, refinancing wall in 2024-25
-- Urgency: High - stress already materializing
-- Not currently tested in pillar suite
-
-**Priority 2: AI Disruption to Financial Services**
-- Driven by: Rapid adoption creating winner/loser dynamics, cybersecurity risks, operational dependencies
-- Urgency: Medium - building over next 12-24 months
-- Novel scenario type
-
-**Priority 3: China Property Contagion**
-- Driven by: Evergrande/Country Garden defaults, shadow banking exposure, CNY pressure
-- Urgency: High but partially covered by existing EM scenario
-- Recommend updating existing China scenario
-
-Would you like me to develop any of these scenarios using the pillar-stress-generator skill?"
-
 ## Integration Notes
 
 - This skill works as a **precursor** to pillar-stress-generator
 - Output can be directly fed into pillar-stress-generator for parameterization
+- The inventory file (`data/stress_test_inventory.md`) must be kept up-to-date for accurate coverage assessments
 - Consider running quarterly to stay ahead of emerging risks
 - Align with Risk Appetite Framework review cycle

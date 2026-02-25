@@ -45,13 +45,15 @@ Analyze the user query to determine which domain agent should handle it.
 - **Keywords**: stakeholders, engagement, communication, RACI, influence
 - **Keywords**: change, implementation, transformation, requirements, scope
 - **Keywords**: risk assessment, impact analysis, governance, approval
-- **Context**: Organizing work, managing projects, tracking initiatives, facilitating meetings
+- **Keywords**: convert to Word, export to Word, markdown to Word, generate docx, Word document
+- **Context**: Organizing work, managing projects, tracking initiatives, facilitating meetings, document conversion
 
 **Examples**:
 - "Help me plan a Basel IV implementation" → **change-agent**
 - "Structure these meeting notes" → **change-agent**
 - "Generate status report for IFRS 9 project" → **change-agent**
 - "Analyze stakeholders for this change" → **change-agent**
+- "Convert the stress scenario to Word" → **change-agent** (or **market-risk-agent** if stress context)
 
 **Market Risk Indicators:**
 - **Keywords**: VaR, value at risk, SVaR, stressed VaR, IRC, incremental risk charge
@@ -60,7 +62,8 @@ Analyze the user query to determine which domain agent should handle it.
 - **Keywords**: trading book, front office, desk, position, sensitivity, DV01, CS01, vega
 - **Keywords**: market risk capital, IMA, FRTB, regulatory capital, ECAP
 - **Keywords**: MLRC, BRMC, risk committee, limit monitoring
-- **Context**: Trading risk measurement, market risk controls, limit framework, regulatory capital
+- **Keywords**: approve scenario, add to approved, add to stress library, MLRC approved, include in official stress tests, promote scenario
+- **Context**: Trading risk measurement, market risk controls, limit framework, regulatory capital, scenario approval
 
 **Examples**:
 - "How do I handle a VaR limit breach?" → **market-risk-agent**

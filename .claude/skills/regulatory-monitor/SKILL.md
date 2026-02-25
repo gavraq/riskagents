@@ -1,6 +1,6 @@
 ---
 name: regulatory-monitor
-description: Proactive regulatory monitoring workflow. Scans for new regulatory announcements from PRA, FCA, BoE, EBA, BCBS. Compares against known regulations to identify genuinely new developments. Use when asked to run a regulatory scan, check for new regulations, or monitor regulatory changes. Keywords: regulatory scan, monitor regulations, new announcements, PRA updates, FCA updates, regulatory horizon scan.
+description: Proactive regulatory monitoring workflow. Scans for new regulatory announcements from PRA, FCA, BoE, EBA, BCBS. Compares against known regulations to identify genuinely new developments. Use when asked to run a regulatory scan, check for new regulations, or monitor regulatory changes. Keywords - regulatory scan, monitor regulations, new announcements, PRA updates, FCA updates, regulatory horizon scan.
 ---
 
 # Regulatory Monitor

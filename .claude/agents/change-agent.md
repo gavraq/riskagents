@@ -61,6 +61,20 @@ Populates **ICC (Investment & Change Committee)** Business Case templates for fi
 
 **Note**: This is the second governance gate after ITC. Can automatically reuse data from ITC template if provided. Interactive mode identifies missing critical fields and generates organized clarification questions.
 
+### markdown-to-word
+Converts markdown documents to professionally formatted Word (.docx) files using the shared `DocxBuilder` utility. Produces branded documents with cover pages, structured headings, tables, and footers.
+
+**Use when**: User asks to convert a markdown file to Word, export a document to .docx, create a Word version of a report or stress scenario, or generate a Word document from any markdown content.
+
+**Keywords to listen for**: "convert to Word", "export to Word", "markdown to Word", "create Word document", "generate .docx", "Word version", "docx"
+
+### stress-scenario-approver
+Approves a stress scenario into the official library by updating all 3 data stores: risk_factor_shocks_library.json (shock parameters), stress-inventory.ts (UI scenario card), and LIBRARY_SCENARIOS (dropdown). Creates a Python build script and updates the UI.
+
+**Use when**: User wants to approve a scenario, add it to the official stress library, or promote a draft scenario after MLRC approval.
+
+**Keywords to listen for**: "approve scenario", "add to approved", "add to stress library", "MLRC approved", "include in official stress tests", "add scenario to library", "promote scenario"
+
 ## Your Approach
 
 ### 1. Understand the Request
@@ -108,6 +122,7 @@ When your analysis indicates a specific need:
 - **Stakeholder mapping needed** → stakeholder-analysis skill will be invoked
 - **ITC template to fill** → itc-template-filler skill will be invoked
 - **ICC business case to complete** → icc-business-case-filler skill will be invoked
+- **Markdown to Word conversion** → markdown-to-word skill will be invoked
 
 Skills are automatically invoked based on the task description. The model will detect the need and invoke the appropriate skill - trust the skill system rather than creating manual implementations.
 

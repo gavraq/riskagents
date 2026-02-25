@@ -3,12 +3,15 @@ MLRC Document Builder
 
 Generates Word documents in MLRC governance format for stress scenario documentation.
 Supports both new scenario specifications and annual review memos.
+
+Uses shared DocxBuilder from markdown-to-word skill for common document operations.
 """
 
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 from datetime import datetime
 import json
+import sys
 
 # Import will work when python-docx is installed: pip install python-docx
 try:
@@ -22,16 +25,29 @@ except ImportError:
     print("Warning: python-docx not installed. Word document generation will be limited.")
     print("Install with: pip install python-docx")
 
+# Import shared DocxBuilder
+try:
+    sys.path.insert(0, str(Path(__file__).parent.parent / "markdown-to-word"))
+    from docx_builder import DocxBuilder, BrandConfig
+    SHARED_BUILDER_AVAILABLE = True
+except ImportError:
+    SHARED_BUILDER_AVAILABLE = False
+
 from scenario_designer import StressScenario, AssetClassShocks
 from scenario_reviewer import ScenarioReviewResult, AssetClassReview
 
 class MLRCDocumentBuilder:
     """
     Builds MLRC-formatted Word documents for stress scenarios.
+
+    Uses shared DocxBuilder for common operations (margins, headings, tables,
+    document history, governance sections) while retaining MLRC-specific
+    logic for scenario content, validation, and consultation sections.
     """
 
     def __init__(self):
         self.document = None
+        self._builder = DocxBuilder() if SHARED_BUILDER_AVAILABLE and DOCX_AVAILABLE else None
 
     def create_new_scenario_document(
         self,
@@ -156,13 +172,17 @@ class MLRCDocumentBuilder:
         return self.document
 
     def _set_document_margins(self):
-        """Set standard document margins."""
-        sections = self.document.sections
-        for section in sections:
-            section.top_margin = Inches(1)
-            section.bottom_margin = Inches(1)
-            section.left_margin = Inches(1)
-            section.right_margin = Inches(1)
+        """Set standard document margins. Delegates to shared builder if available."""
+        if self._builder:
+            self._builder.document = self.document
+            self._builder._set_margins()
+        else:
+            sections = self.document.sections
+            for section in sections:
+                section.top_margin = Inches(1)
+                section.bottom_margin = Inches(1)
+                section.left_margin = Inches(1)
+                section.right_margin = Inches(1)
 
     def _add_header(self, title: str):
         """Add document header with logo placeholder."""
@@ -395,44 +415,60 @@ class MLRCDocumentBuilder:
         self.document.add_paragraph()
 
     def _add_references(self):
-        """Add references section."""
-        self.document.add_heading("References", level=1)
-        self.document.add_paragraph("[1] Example Bank Stress Testing Parameterisation")
-        self.document.add_paragraph()
+        """Add references section. Delegates to shared builder if available."""
+        if self._builder:
+            self._builder.document = self.document
+            self._builder.add_references(["Example Bank Stress Testing Parameterisation"])
+        else:
+            self.document.add_heading("References", level=1)
+            self.document.add_paragraph("[1] Example Bank Stress Testing Parameterisation")
+            self.document.add_paragraph()
 
     def _add_document_history(self, prepared_by: str, date: str):
-        """Add document history section."""
-        self.document.add_heading("Document History", level=1)
+        """Add document history section. Delegates to shared builder if available."""
+        if self._builder:
+            self._builder.document = self.document
+            self._builder.add_document_history(prepared_by, date)
+        else:
+            self.document.add_heading("Document History", level=1)
 
-        table = self.document.add_table(rows=3, cols=2)
-        table.style = 'Light Grid Accent 1'
+            table = self.document.add_table(rows=3, cols=2)
+            table.style = 'Light Grid Accent 1'
 
-        table.rows[0].cells[0].text = "Prepared by"
-        table.rows[0].cells[1].text = prepared_by
+            table.rows[0].cells[0].text = "Prepared by"
+            table.rows[0].cells[1].text = prepared_by
 
-        table.rows[1].cells[0].text = "Date"
-        table.rows[1].cells[1].text = date
+            table.rows[1].cells[0].text = "Date"
+            table.rows[1].cells[1].text = date
 
-        table.rows[2].cells[0].text = "Reviewed by 2nd line of defence"
-        table.rows[2].cells[1].text = "N/A"
+            table.rows[2].cells[0].text = "Reviewed by 2nd line of defence"
+            table.rows[2].cells[1].text = "N/A"
 
-        self.document.add_paragraph()
+            self.document.add_paragraph()
 
     def _add_formal_governance(self):
-        """Add formal governance section."""
-        self.document.add_heading("Formal Document Governance", level=1)
+        """Add formal governance section. Delegates to shared builder if available."""
+        if self._builder:
+            self._builder.document = self.document
+            self._builder.add_formal_governance(
+                committee="MLRC",
+                outcome="*(To be completed post-MLRC)*",
+                matters="*(To be completed post-MLRC)*"
+            )
+        else:
+            self.document.add_heading("Formal Document Governance", level=1)
 
-        table = self.document.add_table(rows=3, cols=2)
-        table.style = 'Light Grid Accent 1'
+            table = self.document.add_table(rows=3, cols=2)
+            table.style = 'Light Grid Accent 1'
 
-        table.rows[0].cells[0].text = "Reviewing committee and meeting date"
-        table.rows[0].cells[1].text = "MLRC"
+            table.rows[0].cells[0].text = "Reviewing committee and meeting date"
+            table.rows[0].cells[1].text = "MLRC"
 
-        table.rows[1].cells[0].text = "Outcome and key rationale for decision"
-        table.rows[1].cells[1].text = "*(To be completed post-MLRC)*"
+            table.rows[1].cells[0].text = "Outcome and key rationale for decision"
+            table.rows[1].cells[1].text = "*(To be completed post-MLRC)*"
 
-        table.rows[2].cells[0].text = "Significant matters raised and associated actions"
-        table.rows[2].cells[1].text = "*(To be completed post-MLRC)*"
+            table.rows[2].cells[0].text = "Significant matters raised and associated actions"
+            table.rows[2].cells[1].text = "*(To be completed post-MLRC)*"
 
     def save_document(self, output_path: Path) -> Path:
         """Save document to file."""

@@ -1,6 +1,6 @@
 ---
 name: pillar-stress-generator
-description: Generate or review top-down pillar stress scenarios for market risk. Use when user asks to create stress scenarios, review scenarios, generate MLRC memos, stress test parameterization, scenario analysis, or annual stress review. Keywords: pillar stress, macro scenario, stress testing, MLRC, scenario review, parameterization, global markets stress.
+description: Generate or review top-down pillar stress scenarios for market risk. Use when user asks to create stress scenarios, review scenarios, generate MLRC memos, stress test parameterization, scenario analysis, or annual stress review. Keywords - pillar stress, macro scenario, stress testing, MLRC, scenario review, parameterization, global markets stress.
 ---
 
 # Pillar Stress Scenario Generator

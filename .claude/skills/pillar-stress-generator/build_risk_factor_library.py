@@ -139,18 +139,24 @@ def extract_credit_data() -> Dict[str, Any]:
             "description": "Each region has a base credit spread move, multiplied by sector-specific beta",
             "formula": "Total Spread Move = Base Spread Move (%) × Sector Beta"
         },
-        "example_scenario": {
-            "name": "Commodity Price Collapse & Global Double Dip",
-            "region_spreads": {
-                "Europe": {"base_spread_move_pct": 45, "sectors": {"Energy": 1.5, "Materials": 1.5, "Financials": 1.0}},
-                "Emerging Europe": {"base_spread_move_pct": 75, "sectors": {"Energy": 1.5, "Materials": 1.5, "Financials": 1.0}},
-                "North America": {"base_spread_move_pct": 45, "sectors": {"Energy": 1.5, "Materials": 1.5, "Financials": 1.0}},
-                "South America": {"base_spread_move_pct": 75, "sectors": {"Energy": 1.5, "Materials": 1.5, "Financials": 1.0}},
-                "Africa Sub Sahara": {"base_spread_move_pct": 75, "sectors": {"Energy": 1.5, "Materials": 1.5, "Financials": 1.0}},
-                "Emerging Asia": {"base_spread_move_pct": 75, "sectors": {"Energy": 1.5, "Materials": 1.5, "Financials": 1.0}}
+        "scenarios": {
+            "CPC & GDD": {
+                "name": "Commodity Price Collapse & Global Double Dip",
+                "region_spreads": {
+                    "Europe":                       {"base_spread_move_pct": 45,  "sectors": {"Materials": 1.5, "Energy": 1.5, "Oil & Gas": 1.5, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.2, "Consumer Goods": 1.0, "Consumer Services": 1.1, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}},
+                    "Emerging Europe":              {"base_spread_move_pct": 75,  "sectors": {"Materials": 1.5, "Energy": 1.5, "Oil & Gas": 1.5, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.2, "Consumer Goods": 1.0, "Consumer Services": 1.1, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}},
+                    "North America":                {"base_spread_move_pct": 45,  "sectors": {"Materials": 1.5, "Energy": 1.5, "Oil & Gas": 1.5, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.2, "Consumer Goods": 1.0, "Consumer Services": 1.1, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}},
+                    "South America":                {"base_spread_move_pct": 75,  "sectors": {"Materials": 1.5, "Energy": 1.5, "Oil & Gas": 1.5, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.2, "Consumer Goods": 1.0, "Consumer Services": 1.1, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}},
+                    "Central America":              {"base_spread_move_pct": 65,  "sectors": {"Materials": 1.4, "Energy": 1.4, "Oil & Gas": 1.4, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.2, "Consumer Goods": 1.0, "Consumer Services": 1.1, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}},
+                    "Offshore":                     {"base_spread_move_pct": 50,  "sectors": {"Materials": 1.3, "Energy": 1.3, "Oil & Gas": 1.3, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.1, "Consumer Goods": 1.0, "Consumer Services": 1.0, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}},
+                    "Middle East and North Africa": {"base_spread_move_pct": 60,  "sectors": {"Materials": 1.4, "Energy": 1.6, "Oil & Gas": 1.6, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.2, "Consumer Goods": 1.0, "Consumer Services": 1.1, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}},
+                    "Africa Sub Sahara":            {"base_spread_move_pct": 75,  "sectors": {"Materials": 1.5, "Energy": 1.5, "Oil & Gas": 1.5, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.2, "Consumer Goods": 1.0, "Consumer Services": 1.1, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}},
+                    "Emerging Asia":                {"base_spread_move_pct": 75,  "sectors": {"Materials": 1.5, "Energy": 1.5, "Oil & Gas": 1.5, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.2, "Consumer Goods": 1.0, "Consumer Services": 1.1, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}},
+                    "Australasia and Low Risk Asia": {"base_spread_move_pct": 40, "sectors": {"Materials": 1.4, "Energy": 1.3, "Oil & Gas": 1.3, "Utilities": 0.8, "Health Care": 0.7, "Consumer Cyclical": 1.1, "Consumer Goods": 1.0, "Consumer Services": 1.0, "Consumer Stable": 0.7, "Telecommunications": 0.9, "Diversified": 1.0, "Financials": 1.0, "Unclassified": 1.0}}
+                }
             }
         },
-        "note": "Specific sector betas vary by scenario. Energy/Materials typically have higher betas (1.5) in commodity-related scenarios."
+        "note": "Specific sector betas vary by scenario. Energy/Materials typically have higher betas (1.5) in commodity-related scenarios. Base spread moves are higher for EM regions reflecting greater credit risk."
     }
 
     return credit_data
